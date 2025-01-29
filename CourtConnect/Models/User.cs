@@ -1,7 +1,10 @@
-﻿namespace CourtConnect.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CourtConnect.Models
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -12,6 +15,12 @@
 
         public int ClubId { get; set; }
         public Club Club { get; set; }
+        public Ranking Ranking { get; set; }
+
+
+        public virtual ICollection<UserMatch> UserMatches { get; set; }
+        public virtual ICollection<SetResult> SetResults { get; set; }
+        public virtual ICollection<Announce> Announces { get; set; }
 
     }
 }
