@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace CourtConnect.ViewModel
 {
@@ -16,6 +17,15 @@ namespace CourtConnect.ViewModel
         [DataType(DataType.Password)]
         [Compare("ConfirmPassword", ErrorMessage = "Password does not match.")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Campul este obligatoriu")]
+        public int LevelId { get; set; }
+        public IEnumerable<SelectListItem> Levels { get; set; }
+
+        [Required(ErrorMessage ="Campul este obligatoriu")]
+        public int ClubId { get; set; }
+        public IEnumerable<SelectListItem> Clubs { get; set; }
+
 
         [Required(ErrorMessage = "Confirm Password is required.")]
         [DataType(DataType.Password)]

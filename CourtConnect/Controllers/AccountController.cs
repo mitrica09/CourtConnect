@@ -52,6 +52,8 @@ namespace CourtConnect.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
+
+
             if (ModelState.IsValid)
             {
                 User users = new User
@@ -59,6 +61,8 @@ namespace CourtConnect.Controllers
                     FullName = model.Name,
                     Email = model.Email,
                     UserName = model.Email,
+                    LevelId = 1,
+                    ClubId =1
                 };
 
                 var result = await userManager.CreateAsync(users, model.Password);
