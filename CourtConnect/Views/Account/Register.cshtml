@@ -12,9 +12,9 @@
         <form asp-action="Register" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
-                <label asp-for="Name" class="form-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="FullName" class="form-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Email" class="form-label"></label>
@@ -31,6 +31,44 @@
                 <input asp-for="ConfirmPassword" class="form-control" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
+
+
+
+
+
+
+
+            <div class="mb-3">
+                <label asp-for="ClubId" class="form-label"></label>
+                <select asp-for="ClubId" class="form-control">
+                    <option value="" disabled selected>Selectează un club</option>
+                    @foreach (var club in Model.Clubs)
+                    {
+                        <option value="@club.Value">@club.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="ClubId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LevelId" class="form-label"></label>
+                <select asp-for="LevelId" class="form-control">
+                    <option value="" disabled selected>Selectează un nivel</option>
+                    @foreach (var level in Model.Levels)
+                    {
+                        <option value="@level.Value">@level.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="LevelId" class="text-danger"></span>
+            </div>
+
+
+
+
+
+
+
+
             <input type="submit" value="Register" class="btn btn-success w-100 p-2" />
             <p class="text-center mt-2">
                 Already have an account? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Login</a>
@@ -41,6 +79,9 @@
         </form>
     </div>
 </div>
+
+
+
 
 @section Scripts {
     @{
