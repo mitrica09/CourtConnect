@@ -16,9 +16,18 @@ namespace CourtConnect.Repository.Account
             _signInManager = signInManager;
             _roleManager = roleManager;
         }
-        public Task<User> AuthenticateUserAsync(string email, string password)
+        public async Task<User> AuthenticateUserAsync(string email, string password)
         {
-            throw new NotImplementedException();
+            var user = await _userManager.FindByNameAsync(email);
+            if (user != null)
+            {
+                var isPassowrdValid = await _userManager.CheckPasswordAsync(user, password);
+                if (isPassowrdValid)
+                {
+                    return user;
+                }
+            }
+            return null;
         }
 
         public async Task<IdentityResult> RegisterUserAsync(RegisterViewModel registerViewModel, string password)
@@ -39,9 +48,22 @@ namespace CourtConnect.Repository.Account
             };
 
             var result = await _userManager.CreateAsync(user, registerViewModel.Password);
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
-                await _userManager.AddToRoleAsync(user, "User");
+                var roleExists = await _roleManager.RoleExistsAsync("User");
+                if (!roleExists)
+                {
+                    var roleResult = await _roleManager.CreateAsync(new IdentityRole("User"));
+                    if (!roleResult.Succeeded)
+                    {
+                        return IdentityResult.Failed(new IdentityError { Description = "Eroare la crearea rolului 'User'." });
+                    }
+                }
+                var addRoleResult = await _userManager.AddToRoleAsync(user, "User");
+                if (!addRoleResult.Succeeded)
+                {
+                    return IdentityResult.Failed(addRoleResult.Errors.ToArray());
+                }
             }
 
             return result;

@@ -1,14 +1,17 @@
-﻿﻿.account-container {
+﻿.account-container {
     background-image: url('../images/account-bg.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 2rem 0;
+    width: 100vw;
 }
+
 
 .account-box {
     background-color: white;

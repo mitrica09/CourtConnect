@@ -26,8 +26,8 @@ namespace CourtConnect.Controllers
                                , IClubRepository clubRepository
                                , ILevelRepository levelRepository)
         {
-            signInManager = signInManager;
-            userManager = userManager;
+            this.signInManager = signInManager;
+            this.userManager = userManager;
             _userRepository = userRepository;
             _clubRepository = clubRepository;
             _levelRepository = levelRepository;
@@ -66,10 +66,29 @@ namespace CourtConnect.Controllers
 
             return View(register);
         }
+        public IActionResult Login()
+        {
+            return View(new LoginViewModel());
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel login)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(login);
+            }
 
+            var result = await signInManager.PasswordSignInAsync(
+                    login.Email, login.Password, login.RememberMe, lockoutOnFailure: false);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Home");
+            }
 
-
-
+            ModelState.AddModelError(string.Empty, "Nume sau parola gresita.");
+                return View(login);
+        }
+        [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
