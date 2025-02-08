@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CourtConnect.ViewModel
+namespace CourtConnect.ViewModel.Account
 {
     public class VerifyEmailViewModel
     {

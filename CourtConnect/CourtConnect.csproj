@@ -7,9 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Profile\" />
+    <Compile Remove="Profile\**" />
+    <Content Remove="Profile\**" />
+    <EmbeddedResource Remove="Profile\**" />
+    <None Remove="Profile\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Repository\Login\" />
     <Folder Include="Service\Login\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XPTqUo3kTm1n+0aWqiTdlphmrLx23U1EgzgQE9VULeAZNf7T6zzyshZtBOkWE37yCzPGFgNr2bU8xkFNDfRKAg==",
+  "dgSpecHash": "uFrJX7fNBLMP+9DOj8kuitk/8Rtr7BsDt7NgdkslkkDaMgarTDKngWlkEfmR5zcW8lTdW7qj3zbWa+Yzo/l8pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
+  "projectFilePath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

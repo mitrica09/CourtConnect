@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
-namespace CourtConnect.ViewModel
+namespace CourtConnect.ViewModel.Account
 {
     public class RegisterViewModel
     {
@@ -27,7 +27,7 @@ namespace CourtConnect.ViewModel
 
         [Required(ErrorMessage = "Vă rugăm să selectați un club.")]
         public int? ClubId { get; set; }
-       
+
         public IEnumerable<SelectListItem> Clubs { get; set; }
 
 
@@ -38,9 +38,9 @@ namespace CourtConnect.ViewModel
 
         public RegisterViewModel()
         {
-            
+
         }
-       public RegisterViewModel(IClubRepository clubRepository,ILevelRepository  levelRepository)
+        public RegisterViewModel(IClubRepository clubRepository, ILevelRepository levelRepository)
         {
             Clubs = clubRepository.GetClubForDDL();
             Levels = levelRepository.GetLevelsForDDL();

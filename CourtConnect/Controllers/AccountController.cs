@@ -1,13 +1,12 @@
 ﻿using CourtConnect.Models;
-using CourtConnect.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using CourtConnect.Models;
-using CourtConnect.ViewModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using CourtConnect.Repository.Account;
 using CourtConnect.Repository.Level;
 using CourtConnect.Repository.Club;
+using CourtConnect.ViewModel.Account;
 
 namespace CourtConnect.Controllers
 {

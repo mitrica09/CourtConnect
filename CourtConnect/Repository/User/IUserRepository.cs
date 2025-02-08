@@ -1,5 +1,5 @@
 ﻿using CourtConnect.Models;
-using CourtConnect.ViewModel;
+using CourtConnect.ViewModel.Account;
 using Microsoft.AspNetCore.Identity;
 
 namespace CourtConnect.Repository.Account
