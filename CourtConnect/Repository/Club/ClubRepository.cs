@@ -1,4 +1,5 @@
 ﻿using CourtConnect.StartPackage.Database;
+using CourtConnect.ViewModel.Club;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CourtConnect.Repository.Club
@@ -26,6 +27,30 @@ namespace CourtConnect.Repository.Club
 
             }
             return Clubs;
+        }
+
+        public async Task<bool> Create(ClubModelView clubModelView)
+        {
+            using(var transation = _db.Database.BeginTransaction())
+            {
+                try
+                {
+                    Models.Club club = new Models.Club
+                    {
+                        Name = clubModelView.Name,
+                        NumberOfPlayers = 0,
+                    };
+                    _db.Clubs.Add(club);
+                    await _db.SaveChangesAsync();
+                    transation.Commit();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    transation.Rollback();
+                    throw ex;
+                }
+            }
         }
     }
 }

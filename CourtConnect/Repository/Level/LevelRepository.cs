@@ -1,5 +1,6 @@
 ﻿using CourtConnect.Models;
 using CourtConnect.StartPackage.Database;
+using CourtConnect.ViewModel.Level;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CourtConnect.Repository.Level
@@ -29,5 +30,30 @@ namespace CourtConnect.Repository.Level
             }
             return Levels;
         }
+
+        public async Task<bool> Create(LevelViewModel levelViewModel)
+        {
+            using(var transition = _db.Database.BeginTransaction())
+            {
+                try
+                {
+                    Models.Level level = new Models.Level
+                    {
+                        Name = levelViewModel.Name,
+                        Target = levelViewModel.Target
+                    };
+                    _db.Levels.Add(level);
+                    await _db.SaveChangesAsync();
+                    transition.Commit();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    transition.Rollback();
+                    throw ex;
+                }
+            }
+        }
+
     }
 }
