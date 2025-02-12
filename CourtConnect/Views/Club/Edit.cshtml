@@ -7,7 +7,7 @@
 @model CourtConnect.ViewModel.Club.ClubViewModel
 
 @{
-    ViewData["Title"] = "Adaugă Club";
+    ViewData["Title"] = "Editeaza Club";
 }
 
 <h1 class="page-title">Creează un club nou</h1>
@@ -15,9 +15,9 @@
 
 <div class="form-wrapper">
     <div class="form-card">
-        <h2>Adaugă Club</h2>
+        <h2>Editeaza Club</h2>
 
-        <form asp-action="Create" method="post">
+        <form asp-action="Edit" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">

@@ -1,0 +1,47 @@
+﻿<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/general_styles.css" rel="stylesheet" />
+
+@model IEnumerable<CourtConnect.ViewModel.Club.ClubForDisplayViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Cluburile mele</h1>
+
+<button class="generic-btn">
+    <a asp-action="Create">Adaugă un club nou</a>
+</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Denumire club
+
+            </th>
+            <th>
+                Numar participanti
+
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem=>item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfPlayers)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

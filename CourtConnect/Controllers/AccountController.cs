@@ -81,6 +81,8 @@ namespace CourtConnect.Controllers
                     login.Email, login.Password, login.RememberMe, lockoutOnFailure: false);
             if (result.Succeeded)
             {
+                TempData["NotificationMessage"] = "Te-ai logat succes";
+                TempData["NotificationType"] = "success";
                 return RedirectToAction("Index", "Home");
             }
 

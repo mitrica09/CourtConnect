@@ -1,6 +1,7 @@
 ﻿using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Club;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data.Entity;
 
 namespace CourtConnect.Repository.Club
 {
@@ -29,15 +30,16 @@ namespace CourtConnect.Repository.Club
             return Clubs;
         }
 
-        public async Task<bool> Create(ClubModelView clubModelView)
+        public async Task<bool> Create(ClubViewModel clubViewModel)
         {
             using(var transation = _db.Database.BeginTransaction())
             {
                 try
                 {
+                   
                     Models.Club club = new Models.Club
                     {
-                        Name = clubModelView.Name,
+                        Name = clubViewModel.Name,
                         NumberOfPlayers = 0,
                     };
                     _db.Clubs.Add(club);
@@ -51,6 +53,78 @@ namespace CourtConnect.Repository.Club
                     throw ex;
                 }
             }
+        }
+
+        public async Task<bool> Edit(ClubViewModel clubViewModel)
+        {
+            using (var transaction =_db.Database.BeginTransaction())
+            {
+                try
+                {
+                    Models.Club club = await _db.Clubs.FindAsync(clubViewModel.Id);
+                    if (club == null)
+                        return false;
+
+                    club.Name = clubViewModel.Name;
+                    club.NumberOfPlayers = clubViewModel.NumberOfPlayers;
+
+                    await _db.SaveChangesAsync();
+                    transaction.Commit();
+                    return true;
+                }catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw ex;
+                }
+            }
+        }
+
+        public IQueryable<ClubForDisplayViewModel> GetAllClubs()
+        {
+            return _db.Clubs.Select(c => new ClubForDisplayViewModel
+            {
+
+                Name = c.Name,
+                NumberOfPlayers = c.NumberOfPlayers,
+                Id = c.Id
+            }).AsQueryable();
+            
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            using (var transaction = _db.Database.BeginTransaction())
+            {
+                try
+                {
+                    Models.Club club = await _db.Clubs.FindAsync(id);
+                    if(club == null) 
+                      return false;
+
+                    _db.Clubs.Remove(club);
+                    await _db.SaveChangesAsync();
+                    transaction.Commit();
+                    return true;
+
+                }catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw ex;
+                }
+            }
+        }
+
+        public async Task<ClubViewModel> GetClubById(int id)
+        {
+            var club = await _db.Clubs.FindAsync(id);
+            if (club == null) return null;
+
+            return new ClubViewModel
+            {
+                Id = club.Id,
+                Name = club.Name,
+                NumberOfPlayers = club.NumberOfPlayers,
+            };
         }
     }
 }

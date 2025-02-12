@@ -1,7 +1,7 @@
 ﻿
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="~/css/admin/general_pages.css" rel="stylesheet" />
-<link href="~/css/general_styles.css" rel="stylesheet" />
+<link href="~/css/admin.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
@@ -17,16 +17,23 @@
     Layout = null;
 }
 
-<div class="form-group row">
-    <div class="col-md-4 category">
-        <form asp-action="Create" id="createCourtForm" method="post">
+
+
+<h1 class="page-title">Creează un teren nou</h1>
+
+
+<div class="form-wrapper">
+    <div class="form-card">
+        <h2>Adaugă Teren</h2>
+
+        <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Introdu numele terenului" />
                 <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+
                 <label asp-for="LocationId" class="form-label"></label>
                 <select asp-for="LocationId" class="form-control">
                     <option value="" disabled selected>Selectează locatia</option>
@@ -36,17 +43,20 @@
                     }
                 </select>
                 <span asp-validation-for="LocationId" class="text-danger"></span>
+
+
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="generic-btn" />
+
+            <div class="btn-container">
+                <button type="submit" class="btn-primary">Adaugă</button>
+                <a asp-action="Index" class="btn-secondary">Înapoi la listă</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a class="generic-btn" asp-action="Index">Back to List</a>
-</div>
+
+
 
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
