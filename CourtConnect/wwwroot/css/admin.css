@@ -1,12 +1,14 @@
-﻿.page-title {
+﻿/* ✅ Stilizare generală */
+.page-title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    margin-top: 40px; 
-    margin-bottom: 30px; 
+    margin-top: 40px;
+    margin-bottom: 30px;
     color: #2c3e50;
 }
 
+/* ✅ Wrapper pentru formular */
 .form-wrapper {
     display: flex;
     justify-content: center;
@@ -14,7 +16,7 @@
     width: 100%;
 }
 
-
+/* ✅ Stilizare card de form */
 .form-card {
     background: white;
     padding: 40px;
@@ -22,9 +24,10 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
     width: 450px;
     text-align: center;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
+/* ✅ Grup pentru input-uri */
 .form-group {
     text-align: left;
     margin-bottom: 20px;
@@ -36,12 +39,14 @@
         color: #333;
     }
 
+/* ✅ Input-uri și dropdown */
 .form-control {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
     border: 1px solid #ccc;
     transition: 0.3s;
+    font-size: 16px;
 }
 
     .form-control:focus {
@@ -49,35 +54,54 @@
         box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
     }
 
+/* ✅ Stilizare dropdown meniu */
+select.form-control {
+    appearance: none;
+    background: white;
+    padding-right: 20px;
+    cursor: pointer;
+}
 
+/* ✅ Container pentru butoane */
 .btn-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
 
+/* ✅ Stilizare buton Primar */
 .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
     background-color: #007bff;
     color: white;
     font-size: 16px;
     font-weight: 600;
-    padding: 10px;
+    padding: 12px 15px;
     border-radius: 8px;
-    width: 100%;
-    transition: 0.3s;
+    transition: background 0.3s;
     border: none;
+    width: 100%;
+    cursor: pointer;
 }
 
     .btn-primary:hover {
         background-color: #0056b3;
     }
 
+/* ✅ Stilizare buton Secundar */
 .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     color: #007bff;
     font-size: 16px;
     font-weight: 600;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
     width: 100%;
     transition: 0.3s;

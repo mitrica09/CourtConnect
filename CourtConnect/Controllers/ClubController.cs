@@ -64,6 +64,7 @@ namespace CourtConnect.Controllers
                 return View(clubViewModel);
             }
         }
+        [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
             bool ok = await _clubService.Delete(id);

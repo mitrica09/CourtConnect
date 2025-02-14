@@ -1,25 +1,25 @@
 ﻿<link href="~/css/admin/general_pages.css" rel="stylesheet" />
 <link href="~/css/Admin/IndexAdmin.css" rel="stylesheet" />
 
-@model IEnumerable<CourtConnect.ViewModel.Club.ClubForDisplayViewModel>
+@model IEnumerable<CourtConnect.ViewModel.Court.CourtForDisplayViewModel>
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <div class="admin-wrapper">
-    <h1 class="admin-title">Cluburile mele</h1>
+    <h1 class="admin-title">Terenurile mele</h1>
 
     <div class="admin-header">
-        <a asp-action="Create" class="admin-add-btn">➕ Adaugă un club nou</a>
+        <a asp-action="Create" class="admin-add-btn">➕ Adaugă un teren nou</a>
     </div>
 
     <div class="admin-table-container">
         <table class="admin-table">
             <thead>
                 <tr>
-                    <th>Denumire club</th>
-                    <th>Numarul de jucatori</th>
+                    <th>Denumire teren</th>
+                    <th>Locație</th>
                     <th class="actions-header">Acțiuni</th>
                 </tr>
             </thead>
@@ -28,7 +28,7 @@
                 {
                     <tr>
                         <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                        <td>@Html.DisplayFor(modelItem => item.NumberOfPlayers)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Location)</td>
                         <td class="admin-actions">
                             <a asp-action="Edit" asp-route-id="@item.Id" class="admin-edit btn-primary">
                                 ✏️ Edit

@@ -1,0 +1,43 @@
+﻿<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/general_styles.css" rel="stylesheet" />
+
+@model IEnumerable<CourtConnect.ViewModel.Status.StatusForDisplayViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Statusurile mele</h1>
+
+<button class="generic-btn">
+    <a asp-action="Create">Adaugă un status nou</a>
+</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Denumire status
+
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

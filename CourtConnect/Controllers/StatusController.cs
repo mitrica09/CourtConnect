@@ -1,6 +1,7 @@
 ﻿using CourtConnect.ViewModel.Status;
 using Microsoft.AspNetCore.Mvc;
 using CourtConnect.Service.Status;
+using CourtConnect.ViewModel.Level;
 
 namespace CourtConnect.Controllers
 {
@@ -12,10 +13,11 @@ namespace CourtConnect.Controllers
         {
             _statusService = statusService;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            List<StatusForDisplayViewModel> statuses = _statusService.GetAllStatuses().ToList();
+            return View(statuses);
         }
 
         [HttpGet]
@@ -23,7 +25,12 @@ namespace CourtConnect.Controllers
         {
             return View();
         }
-
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            StatusViewModel statusViewModel = await _statusService.GetStatusById(id);
+            return View(statusViewModel);
+        }
 
         [HttpPost]
         public async Task<IActionResult>Create(StatusViewModel statusViewModel)
@@ -36,6 +43,35 @@ namespace CourtConnect.Controllers
             else
             {
                 return View();
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(StatusViewModel statusViewModel)
+        {
+            bool ok = await _statusService.Edit(statusViewModel);
+
+            if (ok)
+            {
+                TempData["NotificationMessage"] = "Statusul a fost editat cu succes";
+                TempData["NotificationType"] = "success";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(statusViewModel);
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            bool ok = await _statusService.Delete(id);
+            if (ok)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return RedirectToAction("Index");
             }
         }
     }

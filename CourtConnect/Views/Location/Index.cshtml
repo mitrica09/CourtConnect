@@ -1,25 +1,27 @@
 ﻿<link href="~/css/admin/general_pages.css" rel="stylesheet" />
 <link href="~/css/Admin/IndexAdmin.css" rel="stylesheet" />
 
-@model IEnumerable<CourtConnect.ViewModel.Club.ClubForDisplayViewModel>
+@model IEnumerable<CourtConnect.ViewModel.Location.LocationForDisplayViewModel>
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <div class="admin-wrapper">
-    <h1 class="admin-title">Cluburile mele</h1>
+    <h1 class="admin-title">Locatiile mele</h1>
 
     <div class="admin-header">
-        <a asp-action="Create" class="admin-add-btn">➕ Adaugă un club nou</a>
+        <a asp-action="Create" class="admin-add-btn">➕ Adaugă o locatie noua</a>
     </div>
 
     <div class="admin-table-container">
         <table class="admin-table">
             <thead>
                 <tr>
-                    <th>Denumire club</th>
-                    <th>Numarul de jucatori</th>
+                    <th>Denumire oras</th>
+                    <th>Denumire judet</th>
+                    <th>Denumire strada</th>
+                    <th>Numar</th>
                     <th class="actions-header">Acțiuni</th>
                 </tr>
             </thead>
@@ -27,8 +29,10 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                        <td>@Html.DisplayFor(modelItem => item.NumberOfPlayers)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CityName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CountyName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.StreetName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.StreetNumber)</td>
                         <td class="admin-actions">
                             <a asp-action="Edit" asp-route-id="@item.Id" class="admin-edit btn-primary">
                                 ✏️ Edit

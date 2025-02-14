@@ -58,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Court/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Court/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,8 +78,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGV2ZWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Level/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGV2ZWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Level/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGV2ZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Location/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Location/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Location/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Shared/Error.cshtml]
@@ -92,6 +116,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Status/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Status/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/Status/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mitrica Alexandru/Desktop/Facultate/An4/LICENTA/CourtConnect/CourtConnect/Views/_ViewImports.cshtml]

@@ -1,16 +1,21 @@
 ﻿using CourtConnect.Repository.Location;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace CourtConnect.ViewModel.Court
 {
     public class CourtViewModel
     {
+        public int Id { get; set; }
+        [DisplayName("Nume")]
         public string Name { get; set; }
 
+        [DisplayName("Locatie")]
+
         [Required(ErrorMessage = "Vă rugăm să selectați o locatie.")]
-        public int? LocationId { get; set; }
+        public int LocationId { get; set; } //in caz de orice aici era "int?"
         public IEnumerable<SelectListItem> Locations { get; set; }
 
         public CourtViewModel()

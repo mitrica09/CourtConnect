@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UsersApp.styles.css" asp-append-version="true" />
+    <link href="~/css/notifications.css" rel="stylesheet" />
+    
 </head>
 <body>
     <header>
@@ -43,44 +45,7 @@
             </div>
         </div>
 
-        <style>
-            .notification-alert {
-                position: fixed;
-                top: -100px;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: #4CAF50; /* Culoare verde pentru succes */
-                color: white;
-                padding: 15px;
-                border-radius: 5px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                z-index: 1050;
-                transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
-                opacity: 0;
-                width: 80%;
-                max-width: 600px;
-                text-align: center;
-            }
-
-                .notification-alert.hidden {
-                    top: -100px;
-                    opacity: 0;
-                }
-
-                .notification-alert.visible {
-                    top: 20px;
-                    opacity: 1;
-                }
-
-            .notification-alert-content strong {
-                font-size: 1.2em;
-            }
-
-            .notification-alert-content p {
-                margin: 0;
-                font-size: 1em;
-            }
-        </style>
+        
 
         <!-- Hidden inputs pentru a transmite mesajul -->
         <input type="hidden" id="notificationMessage" value="@TempData["NotificationMessage"]" />

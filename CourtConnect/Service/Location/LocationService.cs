@@ -16,5 +16,25 @@ namespace CourtConnect.Service.Location
         {
             return _locationRepository.Create(locationViewModel);
         }
+
+        public Task<bool> Delete(int id)
+        {
+            return _locationRepository.Delete(id);
+        }
+
+        public async Task<bool> Edit(LocationViewModel locationViewModel)
+        {
+            return await _locationRepository.Edit(locationViewModel);
+        }
+
+        public IQueryable<LocationForDisplayViewModel> GetAllLocations()
+        {
+            return _locationRepository.GetAllLocations();
+        }
+
+        public Task<LocationViewModel> GetLocationById(int id)
+        {
+            return _locationRepository.GetLocationById(id);
+        }
     }
 }
