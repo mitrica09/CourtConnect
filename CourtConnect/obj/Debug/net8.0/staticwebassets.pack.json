@@ -357,16 +357,16 @@
       "PackagePath": "staticwebassets\\account-bg.jpd_files\\wp-runtime-0344c4588f5c.js.download"
     },
     {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\EditAndCreateAdmin.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\EditAndCreateAdmin.css"
+    },
+    {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\IndexAdmin.css",
       "PackagePath": "staticwebassets\\css\\Admin\\IndexAdmin.css"
     },
     {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\account.css",
       "PackagePath": "staticwebassets\\css\\account.css"
-    },
-    {
-      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\admin.css",
-      "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\notifications.css",

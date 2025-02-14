@@ -1,5 +1,5 @@
 ﻿<link href="~/css/admin/general_pages.css" rel="stylesheet" />
-<link href="~/css/general_styles.css" rel="stylesheet" />
+<link href="~/css/Admin/IndexAdmin.css" rel="stylesheet" />
 
 @model IEnumerable<CourtConnect.ViewModel.Status.StatusForDisplayViewModel>
 
@@ -7,37 +7,40 @@
     ViewData["Title"] = "Index";
 }
 
+<div class="admin-wrapper">
+    <h1 class="admin-title">Statusurile mele</h1>
 
-<h1>Statusurile mele</h1>
+    <div class="admin-header">
+        <a asp-action="Create" class="admin-add-btn">➕ Adaugă un status nou</a>
+    </div>
 
-<button class="generic-btn">
-    <a asp-action="Create">Adaugă un status nou</a>
-</button>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Denumire status
-
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <form asp-action="Delete" method="post">
-                        <input type="hidden" name="id" value="@item.Id" />
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="admin-table-container">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Denumire status</th>
+                    <th class="actions-header">Acțiuni</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td class="admin-actions">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="admin-edit btn-primary">
+                                ✏️ Edit
+                            </a>
+                            <form asp-action="Delete" method="post" class="admin-delete-form">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="admin-delete btn-danger">
+                                    🗑️ Delete
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

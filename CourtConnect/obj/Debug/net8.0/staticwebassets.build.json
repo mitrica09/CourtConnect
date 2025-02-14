@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pv1drRsUrmh6PXaGZee36isvkCfQFUgUr+xDLdy3/M4=",
+  "Hash": "Grgl4noTYrgUi4JhbEfsk99uUgBsYQGH4t+ZK8ftyjI=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -1746,12 +1746,12 @@
       "OriginalItemSpec": "wwwroot\\css\\account.css"
     },
     {
-      "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\admin.css",
+      "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\EditAndCreateAdmin.css",
       "SourceId": "CourtConnect",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
       "BasePath": "_content/CourtConnect",
-      "RelativePath": "css/admin.css",
+      "RelativePath": "css/Admin/EditAndCreateAdmin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1762,7 +1762,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\admin.css"
+      "OriginalItemSpec": "wwwroot\\css\\Admin\\EditAndCreateAdmin.css"
     },
     {
       "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\IndexAdmin.css",
