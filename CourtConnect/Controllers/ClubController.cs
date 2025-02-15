@@ -38,6 +38,8 @@ namespace CourtConnect.Controllers
             }
             else
             {
+                TempData["NotificationMessage"] = "Acest club exista deja";
+                TempData["NotificationType"] = "error";
                 return View();
             }
         }

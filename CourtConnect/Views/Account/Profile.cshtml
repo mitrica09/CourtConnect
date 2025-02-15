@@ -1,0 +1,78 @@
+﻿<style>
+body {
+  background-color: #F3F3F3;
+}
+
+.uxa-form-group {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(50, 50, 50, 0.15);
+}
+
+.form-group span {
+  color: red;
+}
+
+.uxa-user-avatar {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+  // border: 1px solid lightgray;
+  // background-image: url(https://www.youth4work.com/Images/Users/771710.png);
+  // background-position: center center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-color: white;
+
+  img {
+    width: 150px;
+  }
+}
+</style>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 uxa-form-group mt-5">
+
+            <h1 class="text-center mt-5 mb-2">First Name, Last Name</h1>
+            <!-- single sentence description -->
+            <p class="lead text-center">{{email-address}}</p>
+            <!-- /single sentence description -->
+
+            <div class="uxa-user-avatar">
+                <img src="https://s-media-cache-ak0.pinimg.com/564x/07/3d/4c/073d4c881442c782d2cefed3e7e814f2.jpg" alt="User avatar">
+            </div>
+
+
+            <form class="mt-5 mb-5">
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Your Email Address<span>*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share or spam your email address.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputName">First Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputName">Last Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
+                </div>
+
+            </form>
+
+            <button class="btn btn-success" (click)="save()"><i class="fa fa-save mr-2"></i> Update Account Details</button>
+
+        </div>
+    </div>
+</div>

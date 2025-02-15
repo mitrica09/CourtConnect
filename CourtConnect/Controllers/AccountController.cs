@@ -7,6 +7,7 @@ using CourtConnect.Repository.Account;
 using CourtConnect.Repository.Level;
 using CourtConnect.Repository.Club;
 using CourtConnect.ViewModel.Account;
+using CourtConnect.ViewModel.Club;
 
 namespace CourtConnect.Controllers
 {
@@ -94,6 +95,12 @@ namespace CourtConnect.Controllers
         {
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {           
+            return View();
         }
     }
 }

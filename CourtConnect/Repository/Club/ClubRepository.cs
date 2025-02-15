@@ -36,16 +36,23 @@ namespace CourtConnect.Repository.Club
             {
                 try
                 {
-                   
-                    Models.Club club = new Models.Club
+                    string name = _db.Clubs.Where(c => c.Name == clubViewModel.Name).Select(s=>s.Name).FirstOrDefault();
+                    if (name == null)
                     {
-                        Name = clubViewModel.Name,
-                        NumberOfPlayers = 0,
-                    };
-                    _db.Clubs.Add(club);
-                    await _db.SaveChangesAsync();
-                    transation.Commit();
-                    return true;
+
+                        Models.Club club = new Models.Club
+                        {
+                            Name = clubViewModel.Name,
+                            NumberOfPlayers = 0,
+                        };
+                        _db.Clubs.Add(club);
+                        await _db.SaveChangesAsync();
+                        transation.Commit();
+                        return true;
+                    }else
+                    {
+                        return false;
+                    }
                 }
                 catch (Exception ex)
                 {

@@ -1,4 +1,5 @@
 ﻿using CourtConnect.Models;
+using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Account;
 using Microsoft.AspNetCore.Identity;
 
@@ -9,12 +10,17 @@ namespace CourtConnect.Repository.Account
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly CourtConnectDbContext _db;
 
-        public UserRepository(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole> roleManager)
+        public UserRepository(UserManager<User> userManager
+                            , SignInManager<User> signInManager
+                            , RoleManager<IdentityRole> roleManager
+                            , CourtConnectDbContext db)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _db= db;
         }
         public async Task<User> AuthenticateUserAsync(string email, string password)
         {
@@ -46,6 +52,11 @@ namespace CourtConnect.Repository.Account
                ClubId = registerViewModel.ClubId ?? 0,
               
             };
+
+            Models.Club club =await  _db.Clubs.FindAsync(registerViewModel.ClubId);
+            club.NumberOfPlayers += 1;
+            await _db.SaveChangesAsync();
+
 
             var result = await _userManager.CreateAsync(user, registerViewModel.Password);
             if (result.Succeeded)

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj": {}
+    "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj": {
+    "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
+        "projectUniqueName": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
         "projectName": "CourtConnect",
-        "projectPath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
-        "packagesPath": "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\obj\\",
+        "projectPath": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
+        "packagesPath": "C:\\Users\\aex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mitrica Alexandru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -97,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
