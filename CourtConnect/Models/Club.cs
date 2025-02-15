@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CourtConnect.ViewModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace CourtConnect.Models
 {
@@ -12,8 +13,9 @@ namespace CourtConnect.Models
         public int NumberOfPlayers { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-       
 
-       
+
+
+
     }
 }

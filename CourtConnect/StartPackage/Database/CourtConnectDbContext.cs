@@ -1,16 +1,17 @@
 ﻿using CourtConnect.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 
 namespace CourtConnect.StartPackage.Database
 {
-    public class CourtConnectDbContext :DbContext
+    public class CourtConnectDbContext : IdentityDbContext<User>
     {
-        public CourtConnectDbContext(DbContextOptions<CourtConnectDbContext> options)
-       : base(options)
+        public CourtConnectDbContext(DbContextOptions<CourtConnectDbContext> options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
+        
         public DbSet<Level> Levels { get; set; }
         public DbSet<Club> Clubs { get; set; }
         public DbSet<Announce> Announces { get; set; }
@@ -27,11 +28,12 @@ namespace CourtConnect.StartPackage.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
 
             #region Relationship User
             modelBuilder.Entity<User>()
-                .HasOne(b => b.Level) 
-                .WithMany(a => a.Users) 
+                .HasOne(b => b.Level)
+                .WithMany(a => a.Users)
                 .HasForeignKey(b => b.LevelId);
 
             modelBuilder.Entity<User>()
@@ -111,6 +113,8 @@ namespace CourtConnect.StartPackage.Database
             .WithMany(a => a.Announces)
             .HasForeignKey(b => b.AnnounceStatusId);
             #endregion
+
+
         }
     }
 }
