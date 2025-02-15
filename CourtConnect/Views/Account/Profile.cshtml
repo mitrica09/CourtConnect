@@ -1,4 +1,5 @@
-﻿<style>
+﻿@model CourtConnect.ViewModel.Account.ProfileViewModel
+<style>
 body {
   background-color: #F3F3F3;
 }
@@ -47,7 +48,7 @@ body {
             <!-- /single sentence description -->
 
             <div class="uxa-user-avatar">
-                <img src="https://s-media-cache-ak0.pinimg.com/564x/07/3d/4c/073d4c881442c782d2cefed3e7e814f2.jpg" alt="User avatar">
+                <img src=@Model.ImageUrl alt="User avatar">
             </div>
 
 
@@ -60,12 +61,19 @@ body {
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputName">First Name</label>
+                    <label for="exampleInputName">@Model.FullName</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
                 </div>
-
                 <div class="form-group">
-                    <label for="exampleInputName">Last Name</label>
+                    <label for="exampleInputName">@Model.Level</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName">@Model.Club</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName">@Model.Points</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
                 </div>
 

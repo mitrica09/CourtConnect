@@ -8,6 +8,8 @@ using CourtConnect.Repository.Level;
 using CourtConnect.Repository.Club;
 using CourtConnect.ViewModel.Account;
 using CourtConnect.ViewModel.Club;
+using System.Security.Claims;
+using CourtConnect.Service.User;
 
 namespace CourtConnect.Controllers
 {
@@ -18,19 +20,22 @@ namespace CourtConnect.Controllers
         private readonly IUserRepository _userRepository;
         private readonly ILevelRepository _levelRepository;
         private readonly IClubRepository _clubRepository;
+        private readonly IUserService _userService;
 
 
         public AccountController(SignInManager<User> signInManager
                                , UserManager<User> userManager
                                , IUserRepository userRepository
                                , IClubRepository clubRepository
-                               , ILevelRepository levelRepository)
+                               , ILevelRepository levelRepository
+                               , IUserService userService)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
             _userRepository = userRepository;
             _clubRepository = clubRepository;
             _levelRepository = levelRepository;
+            _userService = userService;
         }
 
 
@@ -98,9 +103,11 @@ namespace CourtConnect.Controllers
         }
 
         [HttpGet]
-        public IActionResult Profile()
-        {           
-            return View();
+        public async Task<IActionResult> Profile()
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ProfileViewModel profileViewModel = await _userService.GetMyProfile(userId);
+            return View(profileViewModel);
         }
     }
 }

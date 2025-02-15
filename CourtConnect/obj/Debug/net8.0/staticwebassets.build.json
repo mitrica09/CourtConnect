@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NOJL8dR9q8lgTIbOVETpA6gwl4eq7WiZzybj8VtqzUA=",
+  "Hash": "QNWXaqB25of1FqJCQCiwf/8EXlmokQVwVOZRgjrdWpc=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2052,6 +2052,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "images/995d9976-37e4-4511-b0ab-0462f4ad27dc_download#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3dzmfrub6x",
+      "Integrity": "h7c6Ur51p7R/C7AIi8RBMfKj47IXuD93SQqSd+ZLnZA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png"
     },
     {
       "Identity": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\account-bg.jpg",
@@ -11287,6 +11308,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/995d9976-37e4-4511-b0ab-0462f4ad27dc_download.3dzmfrub6x.png",
+      "AssetFile": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h7c6Ur51p7R/C7AIi8RBMfKj47IXuD93SQqSd+ZLnZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:22:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3dzmfrub6x"
+        },
+        {
+          "Name": "label",
+          "Value": "images/995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h7c6Ur51p7R/C7AIi8RBMfKj47IXuD93SQqSd+ZLnZA="
+        }
+      ]
+    },
+    {
+      "Route": "images/995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png",
+      "AssetFile": "C:\\Users\\aex\\Desktop\\Facultate\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h7c6Ur51p7R/C7AIi8RBMfKj47IXuD93SQqSd+ZLnZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 21:22:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h7c6Ur51p7R/C7AIi8RBMfKj47IXuD93SQqSd+ZLnZA="
         }
       ]
     },

@@ -1,6 +1,7 @@
 using System;
 using CourtConnect.Models;
 using CourtConnect.Repository.Account;
+using CourtConnect.Service.User;
 using CourtConnect.Repository.Club;
 using CourtConnect.Repository.Court;
 using CourtConnect.Service.Court;
@@ -14,7 +15,6 @@ using CourtConnect.Service.Club;
 using CourtConnect.StartPackage.Database;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using CourtConnect.Repository.Status;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +30,7 @@ builder.Services.AddDbContext<CourtConnectDbContext>(options =>
 });
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IClubRepository, ClubRepository>();
 builder.Services.AddScoped<IClubService, ClubService>();
 builder.Services.AddScoped<ILevelRepository, LevelRepository>();

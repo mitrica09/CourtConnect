@@ -93,6 +93,7 @@ wwwroot\css\Admin\IndexAdmin.css
 wwwroot\css\notifications.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png
 wwwroot\images\account-bg.jpg
 wwwroot\images\tennis-bg.jpg
 wwwroot\js\notifications.js
