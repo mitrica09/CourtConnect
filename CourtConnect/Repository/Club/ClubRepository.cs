@@ -90,12 +90,10 @@ namespace CourtConnect.Repository.Club
         {
             return _db.Clubs.Select(c => new ClubForDisplayViewModel
             {
-
                 Name = c.Name,
                 NumberOfPlayers = c.NumberOfPlayers,
                 Id = c.Id
-            }).AsQueryable();
-            
+            });
         }
 
         public async Task<bool> Delete(int id)

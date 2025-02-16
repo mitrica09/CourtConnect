@@ -1,86 +1,31 @@
 ﻿@model CourtConnect.ViewModel.Account.ProfileViewModel
-<style>
-body {
-  background-color: #F3F3F3;
-}
 
-.uxa-form-group {
-  background-color: white;
-  padding: 2rem;
-  box-shadow: 0 0.2rem 0.6rem rgba(50, 50, 50, 0.15);
-}
-
-.form-group span {
-  color: red;
-}
-
-.uxa-user-avatar {
-  width: 140px;
-  height: 140px;
-  margin: auto;
-  overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 100%;
-  // border: 1px solid lightgray;
-  // background-image: url(https://www.youth4work.com/Images/Users/771710.png);
-  // background-position: center center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-color: white;
-
-  img {
-    width: 150px;
-  }
-}
-</style>
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-6 uxa-form-group mt-5">
-
-            <h1 class="text-center mt-5 mb-2">First Name, Last Name</h1>
-            <!-- single sentence description -->
-            <p class="lead text-center">{{email-address}}</p>
-            <!-- /single sentence description -->
-
-            <div class="uxa-user-avatar">
-                <img src=@Model.ImageUrl alt="User avatar">
-            </div>
+<link href="~/css/account/profile.css" rel="stylesheet" />
 
 
-            <form class="mt-5 mb-5">
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Your Email Address<span>*</span></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share or spam your email address.</small>
-                </div>
+<div class="profile-container">
+    <h1>@Model.FullName</h1>
+    <p>@Model.Level - @Model.Club</p>
 
-                <div class="form-group">
-                    <label for="exampleInputName">@Model.FullName</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputName">@Model.Level</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputName">@Model.Club</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputName">@Model.Points</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your First Name">
-                </div>
+    <img src="~/images/@Model.ImageUrl" asp-append-version="true" alt="User avatar" class="profile-avatar">
 
-            </form>
-
-            <button class="btn btn-success" (click)="save()"><i class="fa fa-save mr-2"></i> Update Account Details</button>
-
+    <form class="profile-form">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" value="@Model.FullName">
         </div>
-    </div>
+
+        <div class="form-group">
+            <label for="level">Level</label>
+            <input type="text" id="level" placeholder="Enter your level" value="@Model.Level">
+        </div>
+
+        <div class="form-group">
+            <label for="club">Club</label>
+            <input type="text" id="club" placeholder="Enter your club" value="@Model.Club">
+        </div>
+
+        <button type="submit" class="profile-btn">Update Account Details</button>
+    </form>
 </div>

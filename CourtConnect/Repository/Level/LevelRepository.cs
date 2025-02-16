@@ -85,10 +85,10 @@ namespace CourtConnect.Repository.Level
             {
                 Id = c.Id,
                 Name = c.Name,
-                Target = c.Target,
-            }).AsQueryable();
-
+                Target = c.Target
+            });
         }
+
 
         public async Task<bool> Delete(int id)
         {

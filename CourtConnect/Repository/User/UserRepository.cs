@@ -40,26 +40,28 @@ namespace CourtConnect.Repository.Account
 
         public async Task<ProfileViewModel> GetMyProfile(string userId)
         {
+            var user = await _userManager.FindByIdAsync(userId); // 🔥 Corect pentru IdentityUser
 
-            var query = _db.Users.AsQueryable();
-            var user = await query.Include(u => u.Level)
-                .Include(u => u.Club)
-                .Include(u => u.Ranking)
-                .FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null)
+            {
+                return null;
+            }
 
-
+            // 🔥 Încarcă manual relațiile
+            user.Club = await _db.Clubs.FindAsync(user.ClubId);
+            user.Level = await _db.Levels.FindAsync(user.LevelId);
 
             return new ProfileViewModel
-            { 
-                     Id = user.Id,
-                     FullName = user.FullName,
-                     Level = user.Level.Name,
-                     Club = user.Club.Name,
-                     Points = user.Ranking.Points,
-                     ImageUrl = user.ImageUrl
-                };
-                
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Level = user.Level.Name,
+                Club = user.Club.Name,
+                ImageUrl = user.ImageUrl
+            };
         }
+
+
 
         public async Task<IdentityResult> RegisterUserAsync(RegisterViewModel registerViewModel, string password)
         {

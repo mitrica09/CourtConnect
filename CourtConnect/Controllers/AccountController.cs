@@ -1,13 +1,11 @@
 ﻿using CourtConnect.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using CourtConnect.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using CourtConnect.Repository.Account;
 using CourtConnect.Repository.Level;
 using CourtConnect.Repository.Club;
 using CourtConnect.ViewModel.Account;
-using CourtConnect.ViewModel.Club;
 using System.Security.Claims;
 using CourtConnect.Service.User;
 
@@ -65,7 +63,6 @@ namespace CourtConnect.Controllers
 
             TempData["Message"] = "Nu ai fost înregistrat";
 
-            // 🔴 REPOPULARE `Clubs` și `Levels`
             register.Clubs = _clubRepository.GetClubForDDL();
             register.Levels = _levelRepository.GetLevelsForDDL();
 

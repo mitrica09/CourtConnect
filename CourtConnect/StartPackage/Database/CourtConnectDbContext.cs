@@ -11,7 +11,6 @@ namespace CourtConnect.StartPackage.Database
         public CourtConnectDbContext(DbContextOptions<CourtConnectDbContext> options) : base(options)
         {
         }
-        
         public DbSet<Level> Levels { get; set; }
         public DbSet<Club> Clubs { get; set; }
         public DbSet<Announce> Announces { get; set; }
