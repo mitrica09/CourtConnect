@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4O+ErSOLP+lJVp1YUxR9KG7lxtozSWpfjf4mNPfNQUU=",
+  "Hash": "i2UywFM67y0QRSggmua+RcuOs8w/0ZEWCRUuJzaG86k=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2010,6 +2010,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\tennis-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\Admin\\AdminDashboard.js",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "js/Admin/AdminDashboard.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Admin\\AdminDashboard.js"
     },
     {
       "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\notifications.js",
