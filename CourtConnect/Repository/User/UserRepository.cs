@@ -1,6 +1,8 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using CourtConnect.Models;
+using CourtConnect.Repository.Ranking;
+using CourtConnect.Service.Ranking;
 using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Account;
 using Microsoft.AspNetCore.Identity;
@@ -13,16 +15,20 @@ namespace CourtConnect.Repository.Account
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly CourtConnectDbContext _db;
+        private readonly IRankingService _rankingService;
+        
 
         public UserRepository(UserManager<User> userManager
                             , SignInManager<User> signInManager
                             , RoleManager<IdentityRole> roleManager
-                            , CourtConnectDbContext db)
+                            , CourtConnectDbContext db
+                            , IRankingService rankingService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
             _db= db;
+            _rankingService = rankingService;
         }
         public async Task<User> AuthenticateUserAsync(string email, string password)
         {
@@ -51,13 +57,20 @@ namespace CourtConnect.Repository.Account
             user.Club = await _db.Clubs.FindAsync(user.ClubId);
             user.Level = await _db.Levels.FindAsync(user.LevelId);
 
+            int p = await _rankingService.GetPointsByUserId(userId);
+
+
+
             return new ProfileViewModel
             {
                 Id = user.Id,
                 FullName = user.FullName,
                 Level = user.Level.Name,
                 Club = user.Club.Name,
-                ImageUrl = user.ImageUrl
+                ImageUrl = user.ImageUrl,
+                Points = await _rankingService.GetPointsByUserId(userId),
+              
+
             };
         }
 
@@ -107,6 +120,8 @@ namespace CourtConnect.Repository.Account
             await _db.SaveChangesAsync();
 
 
+
+
             var result = await _userManager.CreateAsync(user, registerViewModel.Password);
             if (result.Succeeded)
             {
@@ -126,6 +141,11 @@ namespace CourtConnect.Repository.Account
                 }
             }
 
+            Models.Ranking rank = new Models.Ranking();
+            rank.UserId = user.Id;
+            rank.Points = 0;
+            await _db.Rankings.AddAsync(rank);
+            await _db.SaveChangesAsync();
             return result;
         }
 

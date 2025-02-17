@@ -389,8 +389,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\312e345d-3f16-46ae-98df-1c3fee7692df_350665390_207066952206059_2673329492093935441_n.jpg",
+      "PackagePath": "staticwebassets\\images\\312e345d-3f16-46ae-98df-1c3fee7692df_350665390_207066952206059_2673329492093935441_n.jpg"
+    },
+    {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\4fdf7d95-6d2c-43f9-8e08-f11e229527b4_fs.webp",
       "PackagePath": "staticwebassets\\images\\4fdf7d95-6d2c-43f9-8e08-f11e229527b4_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp",
+      "PackagePath": "staticwebassets\\images\\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp"
     },
     {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png",
@@ -399,6 +407,22 @@
     {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\account-bg.jpg",
       "PackagePath": "staticwebassets\\images\\account-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp",
+      "PackagePath": "staticwebassets\\images\\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c3501c13-c936-4f4e-8a23-0c4bd63b443a_fs.webp",
+      "PackagePath": "staticwebassets\\images\\c3501c13-c936-4f4e-8a23-0c4bd63b443a_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c7871be9-697c-492c-a256-ff1157841383_fs.webp",
+      "PackagePath": "staticwebassets\\images\\c7871be9-697c-492c-a256-ff1157841383_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp",
+      "PackagePath": "staticwebassets\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp"
     },
     {
       "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\ea2a8e87-bab7-44a0-8fae-544ede48ab92_fs.webp",
