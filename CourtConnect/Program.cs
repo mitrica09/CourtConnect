@@ -1,14 +1,23 @@
 using System;
 using CourtConnect.Models;
 using CourtConnect.Repository.Account;
+using CourtConnect.Service.User;
 using CourtConnect.Repository.Club;
 using CourtConnect.Repository.Court;
+using CourtConnect.Service.Court;
 using CourtConnect.Repository.Level;
+using CourtConnect.Service.Level;
 using CourtConnect.Repository.Location;
 using CourtConnect.Service.Location;
+using CourtConnect.Repository.Status;
+using CourtConnect.Service.Status;
+using CourtConnect.Service.Club;
 using CourtConnect.StartPackage.Database;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using CourtConnect.Service.Ranking;
+using CourtConnect.Repository.Ranking;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,11 +32,20 @@ builder.Services.AddDbContext<CourtConnectDbContext>(options =>
 });
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IClubRepository, ClubRepository>();
+builder.Services.AddScoped<IClubService, ClubService>();
 builder.Services.AddScoped<ILevelRepository, LevelRepository>();
 builder.Services.AddScoped<ICourtRepository, CourtRepository>();
+builder.Services.AddScoped<ICourtService, CourtService>();
 builder.Services.AddScoped<ILocationRepository, LocationRepository>();
 builder.Services.AddScoped<ILocationService, LocationService>();
+builder.Services.AddScoped<ILevelRepository, LevelRepository>();
+builder.Services.AddScoped<ILevelService, LevelService>();
+builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped<IStatusService, StatusService>();
+builder.Services.AddScoped<IRankingService, RankingService>();
+builder.Services.AddScoped<IRankingRepository, RankingRepository>();
 
 
 

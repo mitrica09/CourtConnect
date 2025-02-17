@@ -1,4 +1,5 @@
-﻿using CourtConnect.Models;
+﻿using System.Security.Claims;
+using CourtConnect.Models;
 using CourtConnect.ViewModel.Account;
 using Microsoft.AspNetCore.Identity;
 
@@ -8,5 +9,6 @@ namespace CourtConnect.Repository.Account
     {
         Task<IdentityResult> RegisterUserAsync(RegisterViewModel registerViewModel, string password);
         Task<User> AuthenticateUserAsync(string email, string password);
+        Task<ProfileViewModel> GetMyProfile(string userId);
     }
 }

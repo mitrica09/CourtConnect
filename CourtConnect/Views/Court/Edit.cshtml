@@ -1,0 +1,50 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/general_pages.css" rel="stylesheet" />
+<link href="~/css/admin/editandcreateadmin.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+@model CourtConnect.ViewModel.Court.CourtViewModel
+
+@{
+    ViewData["Title"] = "Editeaza terenul";
+}
+
+<h1 class="page-title">Editează un teren nou</h1>
+
+
+<div class="form-wrapper">
+    <div class="form-card">
+        <h2>Editeaza teren</h2>
+
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Introdu numele clubului" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+            <label asp-for="LocationId" class="form-label"></label>
+            <select asp-for="LocationId" class="form-control">
+                <option value="" disabled selected>Selectează locatia</option>
+                @foreach (var location in Model.Locations)
+                {
+                    <option value="@location.Value">@location.Text</option>
+                }
+            </select>
+            <span asp-validation-for="LocationId" class="text-danger"></span>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn-primary">✏️ Editează</button>
+                <a asp-action="Index" class="btn-secondary">Înapoi la listă</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+

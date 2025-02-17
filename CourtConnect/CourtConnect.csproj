@@ -8,15 +8,17 @@
 
   <ItemGroup>
     <Compile Remove="Profile\**" />
+    <Compile Remove="Repository\Login\**" />
+    <Compile Remove="Service\Login\**" />
     <Content Remove="Profile\**" />
+    <Content Remove="Repository\Login\**" />
+    <Content Remove="Service\Login\**" />
     <EmbeddedResource Remove="Profile\**" />
+    <EmbeddedResource Remove="Repository\Login\**" />
+    <EmbeddedResource Remove="Service\Login\**" />
     <None Remove="Profile\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Repository\Login\" />
-    <Folder Include="Service\Login\" />
-    <Folder Include="Views\Admin\" />
+    <None Remove="Repository\Login\**" />
+    <None Remove="Service\Login\**" />
   </ItemGroup>
 
   <ItemGroup>

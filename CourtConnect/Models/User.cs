@@ -12,6 +12,7 @@ namespace CourtConnect.Models
         public Club Club { get; set; }
         public Ranking Ranking { get; set; }
 
+        public string ImageUrl { get; set; }
 
         public virtual ICollection<UserMatch> UserMatches { get; set; }
         public virtual ICollection<SetResult> SetResults { get; set; }

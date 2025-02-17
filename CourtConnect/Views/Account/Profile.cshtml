@@ -1,0 +1,36 @@
+﻿@model CourtConnect.ViewModel.Account.ProfileViewModel
+
+<link href="~/css/account/profile.css" rel="stylesheet" />
+
+
+
+<div class="profile-container">
+    <h1>@Model.FullName</h1>
+    <p>@Model.Level - @Model.Club</p>
+
+    <img src="~/images/@Model.ImageUrl" asp-append-version="true" alt="User avatar" class="profile-avatar">
+
+    <form class="profile-form">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" value="@Model.FullName">
+        </div>
+
+        <div class="form-group">
+            <label for="level">Level</label>
+            <input type="text" id="level" placeholder="Enter your level" value="@Model.Level">
+        </div>
+
+        <div class="form-group">
+            <label for="club">Club</label>
+            <input type="text" id="club" placeholder="Enter your club" value="@Model.Club">
+        </div>
+
+        <div class="form-group">
+            <label for="club">Numar de puncte</label>
+            <input type="text" id="club" placeholder="Enter your club" value="@Model.Points">
+        </div>
+
+        <button type="submit" class="profile-btn">Update Account Details</button>
+    </form>
+</div>
