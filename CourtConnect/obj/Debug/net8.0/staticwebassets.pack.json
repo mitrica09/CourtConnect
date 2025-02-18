@@ -1,0 +1,709 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CourtConnect.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CourtConnect.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd.html",
+      "PackagePath": "staticwebassets\\account-bg.jpd.html"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\127309278",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\43763049",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\account-bg.jpg",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\account-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-87a4ae-0a6bb0ce2586.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-87a4ae-0a6bb0ce2586.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235-42e06545c1fa.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235-42e06545c1fa.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_sso_ts-ui_packages-900dde-e8bb0b049301.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_sso_ts-ui_packages-900dde-e8bb0b049301.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\app_assets_modules_github_blob-anchor_ts-ui_packages_code-nav_code-nav_ts-ui_packages_filter--8253c1-1320af121fa2.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\app_assets_modules_github_blob-anchor_ts-ui_packages_code-nav_code-nav_ts-ui_packages_filter--8253c1-1320af121fa2.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\app_assets_modules_github_sticky-scroll-into-view_ts-5316a27f9573.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\app_assets_modules_github_sticky-scroll-into-view_ts-5316a27f9573.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\behaviors-6af14f7fc2ee.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\behaviors-6af14f7fc2ee.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\code-0210be90f4d3.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\code-0210be90f4d3.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\code-menu-bfd00ac7c892.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\code-menu-bfd00ac7c892.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\copilot-chat-a8479618c618.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\copilot-chat-a8479618c618.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\copilot-chat.0aeb35e00f77e1bbbebb.module.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\copilot-chat.0aeb35e00f77e1bbbebb.module.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\copilot-markdown-rendering-f6845e8f5d6b.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\copilot-markdown-rendering-f6845e8f5d6b.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\dark-f65db3e8d171.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\dark-f65db3e8d171.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\element-registry-0237e7f19fec.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\element-registry-0237e7f19fec.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\environment-04ca94cb6e8a.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\environment-04ca94cb6e8a.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\github-8049f990d299.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\github-8049f990d299.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\github-elements-b487d8db3717.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\github-elements-b487d8db3717.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\global-copilot-menu-55bcf6c75b08.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\global-copilot-menu-55bcf6c75b08.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\global-create-menu-ff847de8f437.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\global-create-menu-ff847de8f437.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\global-d579f4a5b443.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\global-d579f4a5b443.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\global-user-nav-drawer-e05ea5201a40.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\global-user-nav-drawer-e05ea5201a40.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\global-user-nav-drawer.830d6c10c9fea7fc134e.module.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\global-user-nav-drawer.830d6c10c9fea7fc134e.module.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\keyboard-shortcuts-dialog-4ac6f562b41b.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\keyboard-shortcuts-dialog-4ac6f562b41b.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\light-7aa84bb7e11e.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\light-7aa84bb7e11e.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\notifications-global-bd5619ba39ac.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\notifications-global-bd5619ba39ac.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\octicons-react-611691cca2f6.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\octicons-react-611691cca2f6.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\primer-93aded0ee8a1.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\primer-93aded0ee8a1.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\primer-primitives-d9abecd14f1e.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\primer-primitives-d9abecd14f1e.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\primer-react-4f904282b093.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\primer-react-4f904282b093.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\primer-react.1275b2aabc5faff7be57.module.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\primer-react.1275b2aabc5faff7be57.module.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\react-code-view-ee858ad8bfe5.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\react-code-view-ee858ad8bfe5.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\react-code-view.ab7d8fac328c00e5e0cc.module.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\react-code-view.ab7d8fac328c00e5e0cc.module.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\react-core-5257d05d161f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\react-core-5257d05d161f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\react-lib-f09868a8643f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\react-lib-f09868a8643f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\repository-4fce88777fa8.css",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\repository-4fce88777fa8.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_aria-live_aria-live_ts-ui_packages_promise-with-resolvers-polyfill_promise-with-r-014121-adb7f840e9e5.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_aria-live_aria-live_ts-ui_packages_promise-with-resolvers-polyfill_promise-with-r-014121-adb7f840e9e5.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_code-view-shared_hooks_use-canonical-object_ts-ui_packages_code-view-shared_hooks-495298-d9d5efcddd99.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_code-view-shared_hooks_use-canonical-object_ts-ui_packages_code-view-shared_hooks-495298-d9d5efcddd99.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_commit-attribution_index_ts-ui_packages_commit-checks-status_index_ts-ui_packages-530254-a7bdad87b7b4.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_commit-attribution_index_ts-ui_packages_commit-checks-status_index_ts-ui_packages-530254-a7bdad87b7b4.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_copilot-chat_utils_copilot-chat-helpers_ts-5f31feb10379.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_copilot-chat_utils_copilot-chat-helpers_ts-5f31feb10379.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_copilot-chat_utils_copilot-chat-hooks_ts-ui_packages_issue-viewer_utils_queries_ts-f98de37f7364.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_copilot-chat_utils_copilot-chat-hooks_ts-ui_packages_issue-viewer_utils_queries_ts-f98de37f7364.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_copilot-chat_utils_copilot-chat-types_ts-ui_packages_repos-file-tree-view_repos-f-894be6-2f648fa9490a.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_copilot-chat_utils_copilot-chat-types_ts-ui_packages_repos-file-tree-view_repos-f-894be6-2f648fa9490a.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_copy-to-clipboard_CopyToClipboardButton_tsx-ui_packages_inline-autocomplete_Inlin-d7b165-b3a02afbd077.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_copy-to-clipboard_CopyToClipboardButton_tsx-ui_packages_inline-autocomplete_Inlin-d7b165-b3a02afbd077.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_diffs_diff-parts_ts-b01c1ac6f203.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_diffs_diff-parts_ts-b01c1ac6f203.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_failbot_failbot_ts-25697e0f4c47.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_failbot_failbot_ts-25697e0f4c47.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_item-picker_components_RepositoryPicker_tsx-c4cbc1c72b1e.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_item-picker_components_RepositoryPicker_tsx-c4cbc1c72b1e.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_item-picker_constants_labels_ts-ui_packages_item-picker_constants_values_ts-ui_pa-163a9a-1445049221a7.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_item-picker_constants_labels_ts-ui_packages_item-picker_constants_values_ts-ui_pa-163a9a-1445049221a7.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_paths_index_ts-a30153db44f6.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_paths_index_ts-a30153db44f6.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_promise-with-resolvers-polyfill_promise-with-resolvers-polyfill_ts-ui_packages_re-8d43b0-854c22e33e95.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_promise-with-resolvers-polyfill_promise-with-resolvers-polyfill_ts-ui_packages_re-8d43b0-854c22e33e95.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_ref-selector_RefSelector_tsx-9f1e57bbb696.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_ref-selector_RefSelector_tsx-9f1e57bbb696.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_test-id-props_test-id-props_ts-ui_packages_copilot-markdown_MarkdownRenderer_tsx--f736ee-8637975e17ea.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_test-id-props_test-id-props_ts-ui_packages_copilot-markdown_MarkdownRenderer_tsx--f736ee-8637975e17ea.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_ui-commands_ui-commands_ts-ac3420ecd15f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_ui-commands_ui-commands_ts-ac3420ecd15f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\ui_packages_updatable-content_updatable-content_ts-439f48470426.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\ui_packages_updatable-content_updatable-content_ts-439f48470426.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_braintree_browser-detection_dist_browser-detection_js-node_modules_githu-bb80ec-72267f4e3ff9.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_braintree_browser-detection_dist_browser-detection_js-node_modules_githu-bb80ec-72267f4e3ff9.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_color-convert_index_js-e3180fe3bcb3.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_color-convert_index_js-e3180fe3bcb3.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-f6223d90c7ba.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-f6223d90c7ba.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_dompurify_dist_purify_js-b89b98661809.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_dompurify_dist_purify_js-b89b98661809.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_emotion_is-prop-valid_dist_emotion-is-prop-valid_esm_js-node_modules_emo-62da9f-2df2f32ec596.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_emotion_is-prop-valid_dist_emotion-is-prop-valid_esm_js-node_modules_emo-62da9f-2df2f32ec596.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_arianotify-polyfill_ariaNotify-polyfill_js-node_modules_github_mi-3abb8f-d7e6bc799724.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_arianotify-polyfill_ariaNotify-polyfill_js-node_modules_github_mi-3abb8f-d7e6bc799724.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_auto-complete-element_dist_index_js-node_modules_github_catalyst_-8e9f78-a74b4e0a8a6b.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_auto-complete-element_dist_index_js-node_modules_github_catalyst_-8e9f78-a74b4e0a8a6b.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_combobox-nav_dist_index_js-node_modules_github_hotkey_dist_index_-2c4211-d4ef351bc77f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_combobox-nav_dist_index_js-node_modules_github_hotkey_dist_index_-2c4211-d4ef351bc77f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-c44a69-f0c8a795d1fd.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-c44a69-f0c8a795d1fd.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-b5f1d7-a1760ffda83d.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-b5f1d7-a1760ffda83d.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_markdown-toolbar-element_dist_index_js-ceef33f593fa.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_markdown-toolbar-element_dist_index_js-ceef33f593fa.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_decorators_js-node_modules_accname_dist_access-b37425-35bd8d94d981.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_decorators_js-node_modules_accname_dist_access-b37425-35bd8d94d981.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_catalyst_lib_inde-dbbea9-26cce2010167.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_catalyst_lib_inde-dbbea9-26cce2010167.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_morphdom_dist_morphdom-e-7c534c-a4a1922eb55f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_morphdom_dist_morphdom-e-7c534c-a4a1922eb55f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_stacktrace-parser_dist_s-e7dcdd-f7cc96ebae76.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_stacktrace-parser_dist_s-e7dcdd-f7cc96ebae76.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_quote-selection_dist_index_js-node_modules_github_session-resume_-69cfcc-833249ee3034.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_quote-selection_dist_index_js-node_modules_github_session-resume_-69cfcc-833249ee3034.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_relative-time-element_dist_index_js-f6da4b3fa34c.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_relative-time-element_dist_index_js-f6da4b3fa34c.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-893f9f-6cf3320416b8.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-893f9f-6cf3320416b8.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_selector-observer_dist_index_esm_js-f690fd9ae3d5.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_selector-observer_dist_index_esm_js-f690fd9ae3d5.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_text-expander-element_dist_index_js-78748950cb0c.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_text-expander-element_dist_index_js-78748950cb0c.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-e3cbe28f1638.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-e3cbe28f1638.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_highlight_js_lib_index_js-node_modules_tanstack_react-query_build_modern-d366b9-fe40578a034d.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_highlight_js_lib_index_js-node_modules_tanstack_react-query_build_modern-d366b9-fe40578a034d.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_lit-html_lit-html_js-be8cb88f481b.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_lit-html_lit-html_js-be8cb88f481b.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_lodash-es__Stack_js-node_modules_lodash-es__Uint8Array_js-node_modules_l-4faaa6-4a736fde5c2f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_lodash-es__Stack_js-node_modules_lodash-es__Uint8Array_js-node_modules_l-4faaa6-4a736fde5c2f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_lodash-es__baseIsEqual_js-8929eb9718d5.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_lodash-es__baseIsEqual_js-8929eb9718d5.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_oddbird_popover-polyfill_dist_popover-fn_js-55fea94174bf.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_oddbird_popover-polyfill_dist_popover-fn_js-55fea94174bf.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_oddbird_popover-polyfill_dist_popover_js-9da652f58479.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_oddbird_popover-polyfill_dist_popover_js-9da652f58479.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_primer_behaviors_dist_esm_index_mjs-0dbb79f97f8f.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_primer_behaviors_dist_esm_index_mjs-0dbb79f97f8f.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_react-relay_index_js-f9c38be24130.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_react-relay_index_js-f9c38be24130.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_react-reverse-portal_dist_web_index_js-node_modules_primer_live-region-e-18c5ad-0b67a5a18b33.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_react-reverse-portal_dist_web_index_js-node_modules_primer_live-region-e-18c5ad-0b67a5a18b33.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_remark-gfm_lib_index_js-node_modules_remark-parse_lib_index_js-node_modu-44d0fc-295763c7af92.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_remark-gfm_lib_index_js-node_modules_remark-parse_lib_index_js-node_modu-44d0fc-295763c7af92.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\vendors-node_modules_tanstack_query-core_build_modern_queryObserver_js-node_modules_tanstack_-defd52-843b41414e0e.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\vendors-node_modules_tanstack_query-core_build_modern_queryObserver_js-node_modules_tanstack_-defd52-843b41414e0e.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\account-bg.jpd_files\\wp-runtime-0344c4588f5c.js.download",
+      "PackagePath": "staticwebassets\\account-bg.jpd_files\\wp-runtime-0344c4588f5c.js.download"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Account\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Account\\Profile.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Account\\account.css",
+      "PackagePath": "staticwebassets\\css\\Account\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\EditAndCreateAdmin.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\EditAndCreateAdmin.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\IndexAdmin.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\IndexAdmin.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Admin\\admin.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Ranking\\Ranking.css",
+      "PackagePath": "staticwebassets\\css\\Ranking\\Ranking.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Ranking\\RankingFilter.css",
+      "PackagePath": "staticwebassets\\css\\Ranking\\RankingFilter.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\notifications.css",
+      "PackagePath": "staticwebassets\\css\\notifications.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\312e345d-3f16-46ae-98df-1c3fee7692df_350665390_207066952206059_2673329492093935441_n.jpg",
+      "PackagePath": "staticwebassets\\images\\312e345d-3f16-46ae-98df-1c3fee7692df_350665390_207066952206059_2673329492093935441_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\4fdf7d95-6d2c-43f9-8e08-f11e229527b4_fs.webp",
+      "PackagePath": "staticwebassets\\images\\4fdf7d95-6d2c-43f9-8e08-f11e229527b4_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp",
+      "PackagePath": "staticwebassets\\images\\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png",
+      "PackagePath": "staticwebassets\\images\\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\account-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\account-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp",
+      "PackagePath": "staticwebassets\\images\\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c3501c13-c936-4f4e-8a23-0c4bd63b443a_fs.webp",
+      "PackagePath": "staticwebassets\\images\\c3501c13-c936-4f4e-8a23-0c4bd63b443a_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c7871be9-697c-492c-a256-ff1157841383_fs.webp",
+      "PackagePath": "staticwebassets\\images\\c7871be9-697c-492c-a256-ff1157841383_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp",
+      "PackagePath": "staticwebassets\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\ea2a8e87-bab7-44a0-8fae-544ede48ab92_fs.webp",
+      "PackagePath": "staticwebassets\\images\\ea2a8e87-bab7-44a0-8fae-544ede48ab92_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\f0197805-affc-409e-9edb-c05748dc9969_AEX_logo_lilac_light.jpg",
+      "PackagePath": "staticwebassets\\images\\f0197805-affc-409e-9edb-c05748dc9969_AEX_logo_lilac_light.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\fe076cf7-184d-432e-949f-d86d0b14cf45_fs.webp",
+      "PackagePath": "staticwebassets\\images\\fe076cf7-184d-432e-949f-d86d0b14cf45_fs.webp"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\tennis-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\tennis-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\Admin\\AdminDashboard.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\AdminDashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\notifications.js",
+      "PackagePath": "staticwebassets\\js\\notifications.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CourtConnect.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CourtConnect.props",
+      "PackagePath": "build\\CourtConnect.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CourtConnect.props",
+      "PackagePath": "buildMultiTargeting\\CourtConnect.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CourtConnect.props",
+      "PackagePath": "buildTransitive\\CourtConnect.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
