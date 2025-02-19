@@ -4,11 +4,14 @@ using CourtConnect.Repository.Ranking;
 using CourtConnect.Service.Ranking;
 using CourtConnect.ViewModel.Ranking;
 using Microsoft.AspNetCore.Mvc;
+using X.PagedList;
 
 namespace CourtConnect.Controllers
 {
     public class RankingController : Controller
     {
+
+        int _pageSize = 2;
         public RankingViewModel RankingVm { get; set; }
         private readonly IRankingService _rankingService;
         private readonly ILevelRepository _levelRepository;
@@ -27,11 +30,13 @@ namespace CourtConnect.Controllers
 
         public  void SetFilterData(int levelId
                                  ,int clubId
-                                 ,string name)
+                                 ,string name
+                                 ,int? page)
         {
-            List<RankingForDisplayViewModel> ranking =    _rankingService.GetRanking().Result.ToList();
+            List<RankingForDisplayViewModel> ranking = _rankingService.GetRanking().Result.ToList();
+            int pageNumber = page ?? 1;
 
-            if(levelId !=0)
+            if (levelId !=0)
             {
                 ranking =  _rankingService.GetRankingByLevelId(ranking,levelId).Result.ToList();
             }
@@ -46,15 +51,23 @@ namespace CourtConnect.Controllers
                 ranking =  _rankingService.GetRankingByName(ranking, name).Result.ToList();
             }
 
-            RankingVm.Ranking = ranking;
+            RankingVm.Ranking = new StaticPagedList<RankingForDisplayViewModel>(
+            ranking.Skip((pageNumber - 1) * _pageSize).Take(_pageSize),
+            pageNumber,
+            _pageSize,
+            ranking.Count
+        ); ;
             RankingVm.Filter = new RankingFilterViewModel(_levelRepository, _clubRepository, clubId, levelId, name);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index(int clubId,int levelId,string name)
+        public async Task<IActionResult> Index(int clubId,int levelId,string name,int? page)
         {
-            SetFilterData(levelId,clubId,name);
+            SetFilterData(levelId,clubId,name,page);
             return View(RankingVm);
         }
     }
 }
+/* 
+ La paginare sa se incarce in ordine, mereu o ia de la 1 acum.
+ */

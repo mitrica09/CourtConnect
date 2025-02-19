@@ -10,6 +10,7 @@ namespace CourtConnect.Repository.Ranking
 {
     public class RankingRepository : IRankingRepository
     {
+        
         private readonly CourtConnectDbContext _db;
         private readonly UserManager<User> _userManager;
 
@@ -73,10 +74,5 @@ namespace CourtConnect.Repository.Ranking
 
 /*
 De facut:
-
--in momentul in care esti logat, sa te duca atunci cand accesezi clasamentul la locul in care esti logat
-si sa fie cumva accentuat sa ti dai seama pe ce loc esti(exemplu daca clasamentul are 500 playeri si
-tu esti pe 257 sa iti arate cumva mai hasurat clasamentul in genul flashscore)
-
--cautare in clasament dupa nume (sortare), asta sa mearga oricand, poate nu ai cont si vrei sa vezi cum arata clasamentul
+-de facut paginare la clasament
 */

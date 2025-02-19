@@ -153,3 +153,12 @@ namespace CourtConnect.Repository.Account
 
     }
 }
+/*
+De facut:
+-de afisat locul ocupat in clasament
+-de afisat cat mai ai pana ajungi la nivelul urmator
+
+-cand 2 useri s au asociat sa joace sa poata sa si scrie in matchroom ca un fel de chat
+-sa primesti notificare cand un user ti-a accesat anuntul sa jucati cum ca meciul este confirmat
+
+*/

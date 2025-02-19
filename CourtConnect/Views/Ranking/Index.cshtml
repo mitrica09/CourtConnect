@@ -1,5 +1,6 @@
 ﻿@model CourtConnect.ViewModel.Ranking.RankingViewModel
-
+@using X.PagedList
+@using X.PagedList.Mvc.Core
 @{
     ViewData["Title"] = "Clasament";
 }
@@ -39,4 +40,15 @@
             }
         </tbody>
     </table>
+
+    <div class="pagination">
+        @Html.PagedListPager(Model.Ranking, page => Url.Action("Index", new
+            {
+                page,
+                levelId = Model.Filter.LevelId,
+                clubId = Model.Filter.ClubId,
+                name = Model.Filter.Name
+            }))
+
+    </div>
 </div>

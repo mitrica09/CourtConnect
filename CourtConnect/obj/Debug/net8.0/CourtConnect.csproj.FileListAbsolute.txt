@@ -186,3 +186,6 @@ C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConne
 C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConnect\obj\Debug\net8.0\CourtConnect.pdb
 C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConnect\obj\Debug\net8.0\CourtConnect.genruntimeconfig.cache
 C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConnect\obj\Debug\net8.0\ref\CourtConnect.dll
+C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConnect\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConnect\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+C:\Users\Mitrica Alexandru\Desktop\Facultate\An4\LICENTA\CourtConnect\CourtConnect\obj\Debug\net8.0\CourtConnect.MvcApplicationPartsAssemblyInfo.cs

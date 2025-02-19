@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mCx60lbuzXsRGVOMuR+RAT6hi43win8jjzdc7lg8IOw=",
+  "Hash": "qTFgcvm0cRGcd02LRLu/+Qd3AJG/VOcYNB1SygSWqQo=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -1915,6 +1915,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\1292a3a6-1c0e-483c-9459-ef27ee999e8e_fs.webp",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "images/1292a3a6-1c0e-483c-9459-ef27ee999e8e_fs.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1292a3a6-1c0e-483c-9459-ef27ee999e8e_fs.webp"
     },
     {
       "Identity": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\312e345d-3f16-46ae-98df-1c3fee7692df_350665390_207066952206059_2673329492093935441_n.jpg",

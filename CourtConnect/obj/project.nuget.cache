@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uFrJX7fNBLMP+9DOj8kuitk/8Rtr7BsDt7NgdkslkkDaMgarTDKngWlkEfmR5zcW8lTdW7qj3zbWa+Yzo/l8pQ==",
+  "dgSpecHash": "xyZkAKst0vkoRB7/P4s8FdaToJTnWeYBwEiF2YQKk9RKGXSxkmcz5j3xs88JtUTe3twEnrAS5kju2CHlYshHbg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
   "expectedPackageFiles": [
@@ -88,7 +88,9 @@
     "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\system.text.encodings.web\\9.0.1\\system.text.encodings.web.9.0.1.nupkg.sha512",
     "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\system.text.json\\9.0.1\\system.text.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
-    "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\x.pagedlist\\10.5.7\\x.pagedlist.10.5.7.nupkg.sha512",
+    "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\x.pagedlist.mvc.core\\10.5.7\\x.pagedlist.mvc.core.10.5.7.nupkg.sha512"
   ],
   "logs": []
 }

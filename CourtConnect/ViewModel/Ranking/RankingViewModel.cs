@@ -1,11 +1,12 @@
 ﻿using CourtConnect.Repository.Club;
 using CourtConnect.Repository.Level;
+using X.PagedList;
 
 namespace CourtConnect.ViewModel.Ranking
 {
     public class RankingViewModel
     {
-        public List<RankingForDisplayViewModel> Ranking { get; set; }
+        public StaticPagedList<RankingForDisplayViewModel> Ranking { get; set; }
 
         public RankingFilterViewModel Filter { get; set; }
 
