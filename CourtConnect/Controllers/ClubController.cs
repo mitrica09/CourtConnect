@@ -82,3 +82,4 @@ namespace CourtConnect.Controllers
 
     }
 }
+//Cand iti schimbi clubul din profil sa se decrementeze numarul de jucatori din baza de date
