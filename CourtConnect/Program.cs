@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using CourtConnect.Service.Ranking;
 using CourtConnect.Repository.Ranking;
+using CourtConnect.Repository.Announce;
+using CourtConnect.Service.Announce;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,6 +48,8 @@ builder.Services.AddScoped<IStatusRepository, StatusRepository>();
 builder.Services.AddScoped<IStatusService, StatusService>();
 builder.Services.AddScoped<IRankingService, RankingService>();
 builder.Services.AddScoped<IRankingRepository, RankingRepository>();
+builder.Services.AddScoped<IAnnounceRepository, AnnounceRepository>();
+builder.Services.AddScoped<IAnnounceService, AnnounceService>();
 
 
 

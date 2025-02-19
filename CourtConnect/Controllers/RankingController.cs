@@ -11,7 +11,7 @@ namespace CourtConnect.Controllers
     public class RankingController : Controller
     {
 
-        int _pageSize = 2;
+        int _pageSize = 5;
         public RankingViewModel RankingVm { get; set; }
         private readonly IRankingService _rankingService;
         private readonly ILevelRepository _levelRepository;
@@ -68,6 +68,3 @@ namespace CourtConnect.Controllers
         }
     }
 }
-/* 
- La paginare sa se incarce in ordine, mereu o ia de la 1 acum.
- */

@@ -1,4 +1,5 @@
 ﻿using CourtConnect.ViewModel.Court;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CourtConnect.Service.Court
 {
@@ -11,5 +12,6 @@ namespace CourtConnect.Service.Court
         Task<bool> Delete(int id);
 
         Task<CourtViewModel> GetCourtById(int id);
+        public IEnumerable<SelectListItem> GetCourtsForDDL();
     }
 }

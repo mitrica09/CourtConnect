@@ -80,3 +80,94 @@
     font-weight: bold;
     color: #002cf2;
 }
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-pagination {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 8px;
+}
+
+    .custom-pagination .page-item {
+        list-style: none;
+    }
+
+        .custom-pagination .page-item a,
+        .custom-pagination .page-item span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333 !important;
+            text-decoration: none;
+            background: white;
+            border: 2px solid #6a11cb;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            .custom-pagination .page-item a:hover {
+                background: linear-gradient(135deg, #6a11cb, #2575fc);
+                color: white !important;
+                transform: scale(1.1);
+            }
+
+        .custom-pagination .page-item.active span {
+            background: linear-gradient(135deg, #6a11cb, #2575fc) !important;
+            color: white !important;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    .custom-pagination .PagedList-skipToFirst a,
+    .custom-pagination .PagedList-skipToLast a {
+        background: #f1f1f1;
+        border: 2px solid #6a11cb;
+        color: #333;
+        font-weight: bold;
+    }
+
+        .custom-pagination .PagedList-skipToFirst a:hover,
+        .custom-pagination .PagedList-skipToLast a:hover {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+        }
+
+    .custom-pagination .PagedList-skipToPrevious a,
+    .custom-pagination .PagedList-skipToNext a {
+        background: #f8f9fa;
+        border-color: #ccc;
+        color: #555;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+        .custom-pagination .PagedList-skipToPrevious a:hover,
+        .custom-pagination .PagedList-skipToNext a:hover {
+            background: #6a11cb;
+            color: white;
+        }
+
+    .custom-pagination .page-item.disabled span {
+        background: #ddd;
+        color: #999;
+        border: none;
+        cursor: not-allowed;
+    }
+
+

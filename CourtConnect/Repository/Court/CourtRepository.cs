@@ -3,6 +3,7 @@ using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Club;
 using CourtConnect.ViewModel.Court;
 using CourtConnect.ViewModel.Location;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace CourtConnect.Repository.Court
 
         public async Task<bool> Create(CourtViewModel courtViewModel)
         {
-            using (var transation = _db.Database.BeginTransaction())
+            using (var transaction = _db.Database.BeginTransaction())
             {
                 try
                 {
@@ -31,12 +32,12 @@ namespace CourtConnect.Repository.Court
                     };
                     _db.Courts.Add(court);
                     await _db.SaveChangesAsync();
-                    transation.Commit();
+                    transaction.Commit();
                     return true;
                 }
                 catch (Exception ex)
                 {
-                    transation.Rollback();
+                    transaction.Rollback();
                     throw ex;
                 }
             }
@@ -113,6 +114,22 @@ namespace CourtConnect.Repository.Court
                 Name = court.Name,
                 LocationId = court.LocationId,
             };
+        }
+
+        public IEnumerable<SelectListItem> GetCourtsForDDL()
+        {
+            List<SelectListItem> Courts = new List<SelectListItem>();
+            IEnumerable<Models.Court> ListCourts = _db.Courts;
+            foreach (var court in ListCourts)
+            {
+                Courts.Add(new SelectListItem
+                {
+                    Value = court.Id.ToString(),
+                    Text = court.Name,
+                });
+
+            }
+            return Courts;
         }
     }
 }

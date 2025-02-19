@@ -13,7 +13,7 @@ namespace CourtConnect.Repository.Ranking
         
         private readonly CourtConnectDbContext _db;
         private readonly UserManager<User> _userManager;
-
+ 
         public RankingRepository(CourtConnectDbContext db, UserManager<User> userManager)
         {
             _db = db;
@@ -72,7 +72,3 @@ namespace CourtConnect.Repository.Ranking
 }
 
 
-/*
-De facut:
--de facut paginare la clasament
-*/
