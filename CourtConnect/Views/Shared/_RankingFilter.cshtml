@@ -1,0 +1,22 @@
+﻿@model CourtConnect.ViewModel.Ranking.RankingFilterViewModel
+<link href="~/css/ranking/rankingfilter.css" rel="stylesheet" />
+
+<div class="filter-bar">
+    <form method="get" class="filter-form">
+        <div class="filter-group">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Caută jucător..." } })
+        </div>
+
+        <div class="filter-group">
+            @Html.DropDownListFor(model => model.LevelId, Model.Levels, "Alege un nivel", new { @class = "form-control custom-dropdown" })
+        </div>
+
+        <div class="filter-group">
+            @Html.DropDownListFor(model => model.ClubId, Model.Clubs, "Alege un club", new { @class = "form-control custom-dropdown" })
+        </div>
+
+        <div class="filter-button">
+            <button type="submit" class="btn btn-primary">Filtrează</button>
+        </div>
+    </form>
+</div>

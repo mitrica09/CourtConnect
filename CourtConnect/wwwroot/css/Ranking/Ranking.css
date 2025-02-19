@@ -1,0 +1,82 @@
+﻿.ranking-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+.ranking-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .ranking-table thead {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+    }
+
+    .ranking-table th {
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .ranking-table td {
+        padding: 12px;
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .ranking-table tbody tr:nth-child(odd) {
+        background: #f8f9fa;
+    }
+
+    .ranking-table tbody tr:hover {
+        background: #e3e6ea;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Stilizare pentru TOP 3 */
+    .ranking-table tbody tr.gold {
+        background: #ffd700 !important;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .ranking-table tbody tr.silver {
+        background: #c0c0c0 !important;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .ranking-table tbody tr.bronze {
+        background: #cd7f32 !important;
+        color: #000;
+        font-weight: bold;
+    }
+
+/* Stilizare numere si puncte */
+.rank-number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rank-points {
+    font-weight: bold;
+    color: #002cf2;
+}

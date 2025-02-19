@@ -1,0 +1,54 @@
+﻿@model CourtConnect.ViewModel.Ranking.RankingViewModel
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "Clasament";
+}
+
+<link href="~/css/ranking/ranking.css" rel="stylesheet" />
+
+<form>
+    @using (Html.BeginForm("Index", "Ranking", FormMethod.Get))
+    {
+        @Html.Partial("_RankingFilter", Model.Filter);
+      
+    }
+</form>
+
+<div class="ranking-container">
+    <h1 class="ranking-title">🏆 Clasament General 🏆</h1>
+    <table class="ranking-table">
+        <thead>
+            <tr>
+                <th>Loc</th>
+                <th>Nume</th>
+                <th>Club</th>
+                <th>Nivel</th>
+                <th>Puncte</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Ranking.Count(); i++)
+            {
+                <tr class="ranking-row @(i == 0 ? "gold" : i == 1 ? "silver" : i == 2 ? "bronze" : "")">
+                    <td class="rank-number">@(i + 1)</td>
+                    <td>@Model.Ranking[i].FullName</td>
+                    <td>@Model.Ranking[i].Club</td>
+                    <td>@Model.Ranking[i].Level</td>
+                    <td class="rank-points">@Model.Ranking[i].Points</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        @Html.PagedListPager(Model.Ranking, page => Url.Action("Index", new
+            {
+                page,
+                levelId = Model.Filter.LevelId,
+                clubId = Model.Filter.ClubId,
+                name = Model.Filter.Name
+            }))
+
+    </div>
+</div>
