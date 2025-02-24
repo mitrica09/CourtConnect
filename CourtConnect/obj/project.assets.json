@@ -5029,11 +5029,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
+      "projectUniqueName": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
       "projectName": "CourtConnect",
-      "projectPath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
+      "projectPath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\CourtConnect.csproj",
       "packagesPath": "C:\\Users\\Mitrica Alexandru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4\\LICENTA\\CourtConnect\\CourtConnect\\obj\\",
+      "outputPath": "C:\\Users\\Mitrica Alexandru\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mitrica Alexandru\\AppData\\Roaming\\NuGet\\NuGet.Config",
