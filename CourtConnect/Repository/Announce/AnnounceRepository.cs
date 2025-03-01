@@ -3,6 +3,7 @@ using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Announce;
 using CourtConnect.ViewModel.Court;
 using Microsoft.AspNetCore.Identity;
+using System.Data.Entity;
 using System.Security.Claims;
 
 namespace CourtConnect.Repository.Announce
@@ -39,7 +40,7 @@ namespace CourtConnect.Repository.Announce
                         CourtId = announceForm.CourtId,
                         StartDate = announceForm.StartDate,
                         EndDate = announceForm.EndDate,
-                        AnnounceStatusId = 4,
+                        AnnounceStatusId = 1,
                     };
                     _db.Announces.Add(announce);
                     await _db.SaveChangesAsync();
@@ -52,6 +53,30 @@ namespace CourtConnect.Repository.Announce
                     throw ex;
                 }
             }
+
+        }
+
+        public  async Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces()
+        {
+            var announce =  _db.Announces.ToList();
+            List<AnnounceForDisplayViewModel> announceForDisplayViewModels = new List<AnnounceForDisplayViewModel>();
+
+            foreach(var item in announce)
+            {
+                AnnounceForDisplayViewModel announceForDisplayViewModel = new AnnounceForDisplayViewModel();
+                announceForDisplayViewModel.StartDate = item.StartDate.ToString();
+                announceForDisplayViewModel.EndDate = item.EndDate.ToString();
+                announceForDisplayViewModel.Courts = _db.Courts.Where(s=>s.Id == item.CourtId).Select(s=>s.Name).FirstOrDefault();
+                announceForDisplayViewModel.Status = _db.AnnouncesStatus.Where(s=>s.Id == item.AnnounceStatusId).Select(s=>s.Name).FirstOrDefault();
+                announceForDisplayViewModel.ImageUrl = _db.Users.Where(s => s.Id == item.UserId).Select(s => s.ImageUrl).FirstOrDefault();
+                announceForDisplayViewModel.Name = item.Name;
+                announceForDisplayViewModel.Id = item.Id;
+                announceForDisplayViewModels.Add(announceForDisplayViewModel);                 
+
+            }
+            return announceForDisplayViewModels;
+
+
 
         }
     }

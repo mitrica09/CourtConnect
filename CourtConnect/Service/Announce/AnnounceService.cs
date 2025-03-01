@@ -7,6 +7,7 @@ namespace CourtConnect.Service.Announce
     public class AnnounceService : IAnnounceService
     {
         private readonly IAnnounceRepository _announceRepository;
+        
 
         public AnnounceService(IAnnounceRepository announceRepository)
         {
@@ -16,6 +17,11 @@ namespace CourtConnect.Service.Announce
         public async Task<bool> Create(AnnounceFormViewModel announceForm)
         {
             return await _announceRepository.Create(announceForm);
+        }
+
+        public Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces()
+        {
+            return _announceRepository.GetAllAnnounces();
         }
     }
 }

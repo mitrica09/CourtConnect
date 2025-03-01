@@ -2,6 +2,7 @@
 using CourtConnect.Service.Court;
 using CourtConnect.ViewModel.Announce;
 using CourtConnect.ViewModel.Club;
+using CourtConnect.ViewModel.Level;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourtConnect.Controllers
@@ -17,9 +18,10 @@ namespace CourtConnect.Controllers
             _courtService = courtService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+           List<AnnounceForDisplayViewModel> announces = await _announceService.GetAllAnnounces();
+           return View(announces);
         }
 
         [HttpGet]
@@ -46,5 +48,7 @@ namespace CourtConnect.Controllers
                 return View();
             }
         }
+
+      
     }
 }

@@ -1,5 +1,31 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<link href="~/css/announce/indexannounce.css" rel="stylesheet" />
+
+@model IEnumerable<CourtConnect.ViewModel.Announce.AnnounceForDisplayViewModel>
+
+<div class="announce-container">
+    @foreach (var item in Model)
+    {
+        <div class="announce-card">
+            <div class="announce-header">
+                <div class="announce-avatar">
+                    <img src="~/images/@item.ImageUrl" asp-append-version="true" alt="User avatar">
+                </div>
+                <div class="announce-info">
+                    <strong>@item.Name</strong>
+                    <span class="announce-date">@item.StartDate</span>
+                </div>
+            </div>
+
+            <div class="announce-image">
+                <img src="~/images/@item.ImageUrl" asp-append-version="true" alt="Announce image">
+            </div>
+
+            <div class="announce-details">
+                <span class="announce-status">@item.Status</span>
+                <span class="announce-court">🏟 @item.Courts</span>
+            </div>
+
+            <button class="announce-button"><i class="fa fa-play faspace"></i> PLAY</button>
+        </div>
+    }
+</div>

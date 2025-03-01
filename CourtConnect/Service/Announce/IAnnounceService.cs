@@ -5,5 +5,7 @@ namespace CourtConnect.Service.Announce
     public interface IAnnounceService
     {
         Task<bool> Create(AnnounceFormViewModel announceForm);
+        Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces();
+
     }
 }
