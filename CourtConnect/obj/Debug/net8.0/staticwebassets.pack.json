@@ -377,6 +377,10 @@
       "PackagePath": "staticwebassets\\css\\Admin\\admin.css"
     },
     {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Announce\\AnnounceMatchroomDetails.css",
+      "PackagePath": "staticwebassets\\css\\Announce\\AnnounceMatchroomDetails.css"
+    },
+    {
       "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Announce\\IndexAnnounce.css",
       "PackagePath": "staticwebassets\\css\\Announce\\IndexAnnounce.css"
     },

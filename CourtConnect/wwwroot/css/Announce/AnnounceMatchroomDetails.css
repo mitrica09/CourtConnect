@@ -1,0 +1,57 @@
+﻿.matchroom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    width: 100%;
+    gap: 20px;
+}
+
+.player-card {
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+}
+
+.host {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.guest {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.match-details {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .matchroom-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+ChatGPT is still generating a response...

@@ -2,6 +2,14 @@
 
 @model IEnumerable<CourtConnect.ViewModel.Announce.AnnounceForDisplayViewModel>
 
+<div class="announce-header-container">
+    <h2 class="announce-title">Anunțuri disponibile</h2>
+    <a asp-action="Create" class="announce-create-btn">
+        <i class="ri-add-line"></i> Creează un anunț nou
+    </a>
+</div>
+
+
 <div class="announce-container">
     @foreach (var item in Model)
     {
@@ -25,7 +33,14 @@
                 <span class="announce-court">🏟 @item.Courts</span>
             </div>
 
-            <button class="announce-button"><i class="fa fa-play faspace"></i> PLAY</button>
+            <form asp-controller="Announce" asp-action="MatchroomDetails" method="get">
+                <input type="hidden" name="announceId" value="@item.Id" />
+                <button type="submit" class="announce-button">
+                    <i class="fa fa-play faspace"></i> PLAY
+                </button>
+            </form>
+
         </div>
     }
 </div>
+

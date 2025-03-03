@@ -108,3 +108,46 @@
     .announce-button:hover {
         background-color: #E74C3C;
     }
+
+.announce-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.announce-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.announce-create-btn {
+    position: absolute;
+    right: 0; 
+    margin-top: 40px; 
+    padding: 12px 18px;
+    background-color: #222; 
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.3s;
+    font-size: 16px;
+    white-space: nowrap; 
+}
+
+    .announce-create-btn i {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    .announce-create-btn:hover {
+        background-color: #E74C3C; 
+        color: white; 
+    }

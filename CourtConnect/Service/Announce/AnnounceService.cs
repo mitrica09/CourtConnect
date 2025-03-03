@@ -19,9 +19,14 @@ namespace CourtConnect.Service.Announce
             return await _announceRepository.Create(announceForm);
         }
 
-        public Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces()
+        public async  Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces()
         {
-            return _announceRepository.GetAllAnnounces();
+            return await _announceRepository.GetAllAnnounces();
+        }
+
+        public async Task<AnnounceDetailsViewModel> GetAnnounceDetails(int announceId, string userId)
+        {
+            return await _announceRepository.GetAnnounceDetails(announceId, userId);
         }
     }
 }

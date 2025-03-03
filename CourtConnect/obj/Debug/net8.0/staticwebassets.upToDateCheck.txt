@@ -91,6 +91,7 @@ wwwroot\css\Account\Profile.css
 wwwroot\css\Admin\admin.css
 wwwroot\css\Admin\EditAndCreateAdmin.css
 wwwroot\css\Admin\IndexAdmin.css
+wwwroot\css\Announce\AnnounceMatchroomDetails.css
 wwwroot\css\Announce\IndexAnnounce.css
 wwwroot\css\notifications.css
 wwwroot\css\Ranking\Ranking.css

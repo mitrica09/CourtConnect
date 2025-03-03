@@ -2,11 +2,18 @@
 
 namespace CourtConnect.ViewModel.Announce
 {
-    public class AnnounceDetailsViewModel :AnnounceForDisplayViewModel
-    {     
-        public string UserFullName { get; set; }
+    public class AnnounceDetailsViewModel 
+    {  
+        public string HostFullName { get; set; }
+        public string GuestFullName { get; set; }
+        public string GuestLevel { get; set; }
+        public string HostLevel { get; set; }
+        public int GuestRank { get; set; }
+        public int HostRank { get; set; }
+        public string LocationDetails { get; set; }
+        public string StartDate { get; set;}        
+        public string GuestClub { get; set;}
+        public string HostClub { get; set;}
 
-
-     
     }
 }

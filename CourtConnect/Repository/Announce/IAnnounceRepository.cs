@@ -7,10 +7,13 @@ namespace CourtConnect.Repository.Announce
         Task<bool> Create(AnnounceFormViewModel announceForm);
 
         Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces();
+
+        Task<AnnounceDetailsViewModel> GetAnnounceDetails(int announceId,string userId);
     }
 }
 
 /* 
+ Sa iti arunce o exceptie ca nu esti logat daca vrei sa creezi un anunt fara a fi logat.
  De facut:
 - Creare anunt(deja facut), dar trebuie modificat in felul urmator:
 1)daca inainte cu 24 de ore de la cat ai pus in anunt ora ca vrei sa joci in locatia X nu iti gaseste partener, anuntul sa se dezactiveze automat

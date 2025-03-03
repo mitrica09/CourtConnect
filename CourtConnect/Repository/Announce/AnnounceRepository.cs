@@ -11,15 +11,18 @@ namespace CourtConnect.Repository.Announce
     public class AnnounceRepository : IAnnounceRepository
     {
         private readonly CourtConnectDbContext _db;
-       
+
+        private readonly UserManager<User> _userManager;
+
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        
-
-        public AnnounceRepository(CourtConnectDbContext db, IHttpContextAccessor httpContextAccessor)
+        public AnnounceRepository(CourtConnectDbContext db
+                                , UserManager<User> userManager
+                                , IHttpContextAccessor httpContextAccessor)
         {
             _db = db;
-           _httpContextAccessor = httpContextAccessor;
+            _userManager = userManager;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<bool> Create(AnnounceFormViewModel announceForm)
@@ -79,10 +82,50 @@ namespace CourtConnect.Repository.Announce
 
 
         }
+
+        public async Task<AnnounceDetailsViewModel> GetAnnounceDetails(int announceId, string userId)
+        {
+            var guestUser = await _userManager.FindByIdAsync(userId);
+
+            guestUser.Club = await _db.Clubs.FindAsync(guestUser.ClubId);
+            guestUser.Level = await _db.Levels.FindAsync(guestUser.LevelId);
+            var guestRanking = _db.Rankings.Where(s => s.UserId == guestUser.Id).FirstOrDefault();
+
+            var announce = await _db.Announces.FindAsync(announceId);
+            announce.Court = await _db.Courts.FindAsync(announce.CourtId);
+        
+
+            var hostUser = await _userManager.FindByIdAsync(announce.UserId);
+
+            hostUser.Club = await _db.Clubs.FindAsync(hostUser.ClubId);
+            hostUser.Level = await _db.Levels.FindAsync(hostUser.LevelId);
+            var hostRanking = _db.Rankings.Where(s => s.UserId == hostUser.Id).FirstOrDefault();
+
+            var location = await _db.Locations.FindAsync(announce.Court.LocationId);
+
+            return new AnnounceDetailsViewModel
+            { 
+              HostFullName = hostUser.FullName,
+              GuestFullName = guestUser.FullName,
+              GuestLevel = guestUser.Level.Name,
+              HostLevel = hostUser.Level.Name,
+              GuestRank = guestRanking.Points,
+              HostRank = hostRanking.Points,
+              LocationDetails = location.County + "-" + location.City + "," + location.Street + "," + location.Number,
+              StartDate = announce.StartDate.ToString(),
+              GuestClub = guestUser.Club.Name,
+              HostClub = hostUser.Club.Name      
+            };
+
+
+
+        }
     }
 }
 
 /*
+ * 
+ * !!!!Sa fii logat cand esti guest user si vrei sa dai play pe un anunt.
  De facut:
 - sa poti sa pui doar un singur anunt per utilizator
 - sa se schimbe statusul anuntului in functie de anunt, adica daca e acceptat de cineva sa treaca la statusul respectiv

@@ -4,6 +4,7 @@ using CourtConnect.ViewModel.Announce;
 using CourtConnect.ViewModel.Club;
 using CourtConnect.ViewModel.Level;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace CourtConnect.Controllers
 {
@@ -27,13 +28,23 @@ namespace CourtConnect.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            AnnounceFormViewModel announceFormView = new AnnounceFormViewModel(_courtService);
-            return View(announceFormView);
+            if (User.Identity.IsAuthenticated)
+            {
+                AnnounceFormViewModel announceFormView = new AnnounceFormViewModel(_courtService);
+                return View(announceFormView);
+            } else
+            {
+                TempData["NotificationMessage"] = "Trebuie sa fii logat pentru a adauga un anunt";
+                TempData["NotificationType"] = "error";
+                return RedirectToAction("Login", "Account");
+            }
+               
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(AnnounceFormViewModel announceFormViewModel)
         {
+
             bool ok = await _announceService.Create(announceFormViewModel);
             if (ok)
             {
@@ -48,7 +59,15 @@ namespace CourtConnect.Controllers
                 return View();
             }
         }
+        public async Task<IActionResult> MatchroomDetails(int announceId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            AnnounceDetailsViewModel announceDetailsViewModel =await _announceService.GetAnnounceDetails(announceId, userId);
+            return View(announceDetailsViewModel);
 
-      
+
+        }
+
+
     }
 }

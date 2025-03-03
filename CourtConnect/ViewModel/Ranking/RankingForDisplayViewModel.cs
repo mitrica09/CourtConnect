@@ -2,6 +2,7 @@
 {
     public class RankingForDisplayViewModel
     {
+        public int Id { get; set; }
         public string FullName { get; set; }
 
         public int Points { get; set; }

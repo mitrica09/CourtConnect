@@ -1,0 +1,33 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/announce/announcematchroomdetails.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+@model CourtConnect.ViewModel.Announce.AnnounceDetailsViewModel
+
+@{
+    ViewData["Title"] = "Matchroom Details";
+}
+
+    <div class="matchroom-container">
+        <div class="player-card host">
+            <h2>@Model.HostFullName</h2>
+            <p>Club: @Model.HostClub</p>
+            <p>Level: @Model.HostLevel</p>
+            <p>Puncte: @Model.HostRank</p>
+        </div>
+
+        <div class="match-details">
+            <h2>Match Details</h2>
+            <p><strong>Location:</strong> @Model.LocationDetails</p>
+            <p><strong>Start Date:</strong> @Model.StartDate</p>
+        </div>
+
+        <div class="player-card guest">
+            <h2>@Model.GuestFullName</h2>
+            <p>Club: @Model.GuestClub</p>
+            <p>Level: @Model.GuestLevel</p>
+            <p>Puncte: @Model.GuestRank</p>
+        </div>
+    </div>
