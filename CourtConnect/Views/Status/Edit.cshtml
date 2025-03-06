@@ -7,26 +7,26 @@
 @model CourtConnect.ViewModel.Status.StatusViewModel
 
 @{
-    ViewData["Title"] = "Editeaza un status";
+    ViewData["Title"] = "Editează un status";
 }
 
-<h1 class="page-title">Editeaza statusul selectat</h1>
-
+<h1 class="page-title">Editează statusul selectat</h1>
 
 <div class="form-wrapper">
     <div class="form-card">
-        <h2>Editeaza statusul</h2>
+        <h2>Editează statusul</h2>
 
         <form asp-action="Edit" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="Name"></label>
+                <label asp-for="Name" class="form-label">Nume Status</label>
                 <input asp-for="Name" class="form-control" placeholder="Introdu numele statusului" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <span asp-validation-for="Name" class="text-danger d-block"></span>
             </div>
+
             <div class="btn-container">
-                <button type="submit" class="btn-primary">Editează</button>
+                <button type="submit" class="btn-primary">✏️ Editează</button>
                 <a asp-action="Index" class="btn-secondary">Înapoi la listă</a>
             </div>
         </form>
@@ -36,4 +36,5 @@
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

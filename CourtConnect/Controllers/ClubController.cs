@@ -63,7 +63,7 @@ namespace CourtConnect.Controllers
                 return RedirectToAction("Index");
             }else
             {
-                return View(clubViewModel);
+                return View(clubViewModel); 
             }
         }
         [HttpPost]

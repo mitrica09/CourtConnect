@@ -118,6 +118,7 @@ wwwroot\images\ea2a8e87-bab7-44a0-8fae-544ede48ab92_fs.webp
 wwwroot\images\f0197805-affc-409e-9edb-c05748dc9969_AEX_logo_lilac_light.jpg
 wwwroot\images\fcfb814b-8f02-44d9-8abd-a446cd6f92cc_pexels-elina-sazonova-1914984.jpg
 wwwroot\images\fe076cf7-184d-432e-949f-d86d0b14cf45_fs.webp
+wwwroot\images\logo.png
 wwwroot\images\tennis-bg.jpg
 wwwroot\js\Admin\AdminDashboard.js
 wwwroot\js\notifications.js

@@ -33,7 +33,7 @@ namespace CourtConnect.Repository.Announce
                 try
                 {
                     var user = _httpContextAccessor.HttpContext?.User;
-                    string userID = user?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                    string userID = user.FindFirst(ClaimTypes.NameIdentifier).Value;
 
                     Models.Announce announce = new Models.Announce
                     {
@@ -127,8 +127,14 @@ namespace CourtConnect.Repository.Announce
  * 
  * !!!!Sa fii logat cand esti guest user si vrei sa dai play pe un anunt.
  De facut:
-- sa poti sa pui doar un singur anunt per utilizator
-- sa se schimbe statusul anuntului in functie de anunt, adica daca e acceptat de cineva sa treaca la statusul respectiv
-- sa poti sa nu mai scoti anuntul daca este deja acceptat de cineva
-- sa primesti notificare daca cineva ti-a acceptat anuntul
- */ 
+
+-- La anunt pe model se vor mai adauga doua tipuri de variabile de tip bool Una se va numi bool ConfirmHost, bool ConfrmGuest
+--Initial sunt puse pe 0 cand confirma Guest se pune la guest, iar atunci cand Host va intra in anutul lui se verfica ConfirmGuest
+daca este pe 0 va aparea anuntul normal daca este pe 1n jos sau undeva in pagina va fi afsat mesajul jucatorul X doreste sa joace 
+cu tine (Confirma meci), si cand a dat pe confirma match se va face si ala 1 ConfirmHost, se va crea pe moedul match si adauga in baza de date 
+Task<bool> CreateHost
+
+-- Creez in repository functia CreateMatch() care se va apela atunci cand dai comfirMatc
+ */
+
+

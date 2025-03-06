@@ -21,23 +21,25 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control" placeholder="Introdu numele terenului" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label for="Name" class="form-label">Titlul anuntului</label>
+                <input asp-for="Name" class="form-control" placeholder="Introdu titlul anuntului" />
+                <span asp-validation-for="Name" class="text-danger d-block"></span>
+            </div>
 
-                <label asp-for="CourtId" class="form-label"></label>
+            <div class="form-group">
+                <label for="CourtId" class="form-label">Teren</label>
                 <select asp-for="CourtId" class="form-control">
-                    <option value="" disabled selected>Selectează terenul</option>
+                    <option value="0" disabled selected>Selectează terenul</option>
                     @foreach (var court in Model.Courts)
                     {
                         <option value="@court.Value">@court.Text</option>
                     }
                 </select>
-                <span asp-validation-for="CourtId" class="text-danger"></span>
-
-
+                <span asp-validation-for="CourtId" class="text-danger d-block"></span>
             </div>
+
             <div class="form-group">
+
                 <label asp-for="StartDate"></label>
                 <input asp-for="StartDate" class="form-control" type="datetime-local" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
@@ -59,4 +61,7 @@
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
 

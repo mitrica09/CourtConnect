@@ -108,3 +108,7 @@ namespace CourtConnect.Controllers
         }
     }
 }
+
+/*
+ * Sa ai campul de name obligatoriu cand creezi un anunt ca sa nu ti arunce eroare 
+ */

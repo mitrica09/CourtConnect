@@ -10,6 +10,8 @@ namespace CourtConnect.ViewModel.Court
     {
         public int Id { get; set; }
         [DisplayName("Nume")]
+        [Required(ErrorMessage = "Numele clubului este obligatoriu.")]
+        [StringLength(10, ErrorMessage = "Numele nu poate avea mai mult de 10 caractere")]
         public string Name { get; set; }
 
         [DisplayName("Locatie")]

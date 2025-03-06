@@ -12,7 +12,6 @@
 
 <h1 class="page-title">Creează un nivel nou</h1>
 
-
 <div class="form-wrapper">
     <div class="form-card">
         <h2>Adaugă nivel</h2>
@@ -20,15 +19,18 @@
         <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+            <!-- Name Field -->
             <div class="form-group">
                 <label asp-for="Name"></label>
                 <input asp-for="Name" class="form-control" placeholder="Introdu numele nivelului" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <span asp-validation-for="Name" class="text-danger d-block"></span>
             </div>
+
+            <!-- Target Field -->
             <div class="form-group">
                 <label asp-for="Target"></label>
                 <input asp-for="Target" class="form-control" placeholder="Introdu punctele pentru a atinge nivelul respectiv" />
-                <span asp-validation-for="Target" class="text-danger"></span>
+                <span asp-validation-for="Target" class="text-danger d-block"></span>
             </div>
 
             <div class="btn-container">
@@ -39,8 +41,8 @@
     </div>
 </div>
 
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

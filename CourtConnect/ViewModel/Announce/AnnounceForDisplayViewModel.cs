@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace CourtConnect.ViewModel.Announce
 {
     public class AnnounceForDisplayViewModel
     {
-        public int Id { get; set; }
+        public int Id { get; set; }        
         public string Name { get; set; }
         public string ImageUrl { get; set; }
         public string Courts { get; set; }

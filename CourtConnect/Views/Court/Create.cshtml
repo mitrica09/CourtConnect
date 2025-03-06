@@ -1,5 +1,4 @@
-﻿
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="~/css/admin/general_pages.css" rel="stylesheet" />
 <link href="~/css/admin/editandcreateadmin.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -11,16 +10,7 @@
     ViewData["Title"] = "Adaugă Teren";
 }
 
-<h1>Crează o categorie</h1>
-
-@{
-    Layout = null;
-}
-
-
-
 <h1 class="page-title">Creează un teren nou</h1>
-
 
 <div class="form-wrapper">
     <div class="form-card">
@@ -30,11 +20,13 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
-                <label asp-for="Name"></label>
+                <label asp-for="Name" class="form-label">Nume</label>
                 <input asp-for="Name" class="form-control" placeholder="Introdu numele terenului" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <span asp-validation-for="Name" class="text-danger d-block"></span>
+            </div>
 
-                <label asp-for="LocationId" class="form-label"></label>
+            <div class="form-group">
+                <label asp-for="LocationId" class="form-label">Locație</label>
                 <select asp-for="LocationId" class="form-control">
                     <option value="" disabled selected>Selectează locatia</option>
                     @foreach (var location in Model.Locations)
@@ -42,9 +34,7 @@
                         <option value="@location.Value">@location.Text</option>
                     }
                 </select>
-                <span asp-validation-for="LocationId" class="text-danger"></span>
-
-
+                <span asp-validation-for="LocationId" class="text-danger d-block"></span>
             </div>
 
             <div class="btn-container">
@@ -55,10 +45,8 @@
     </div>
 </div>
 
-
-
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
