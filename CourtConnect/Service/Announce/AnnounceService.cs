@@ -14,6 +14,20 @@ namespace CourtConnect.Service.Announce
             _announceRepository = announceRepository;
         }
 
+        public async Task<bool> ConfirmGuest(int announceId, string userId)
+        {
+            return await _announceRepository.ConfirmGuest(announceId, userId);
+        }
+
+        public async Task<bool> ConfirmHost(int announceId, string userId)
+        {
+            return await _announceRepository.ConfirmHost(announceId, userId);
+        }
+        public async Task<bool> RejectGuest(int announceId, string userId)
+        {
+            return await _announceRepository.RejectGuest(announceId, userId);
+        }
+
         public async Task<bool> Create(AnnounceFormViewModel announceForm)
         {
             return await _announceRepository.Create(announceForm);
@@ -28,5 +42,12 @@ namespace CourtConnect.Service.Announce
         {
             return await _announceRepository.GetAnnounceDetails(announceId, userId);
         }
+
+        public async Task<List<AnnounceDetailsViewModel>> GetMyAnnounces()
+        {
+            return await _announceRepository.GetMyAnnounces();
+        }
+
+
     }
 }

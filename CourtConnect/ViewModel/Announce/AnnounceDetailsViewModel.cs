@@ -4,6 +4,7 @@ namespace CourtConnect.ViewModel.Announce
 {
     public class AnnounceDetailsViewModel 
     {  
+        public int Id { get; set; }
         public string HostFullName { get; set; }
         public string GuestFullName { get; set; }
         public string GuestLevel { get; set; }
@@ -15,5 +16,10 @@ namespace CourtConnect.ViewModel.Announce
         public string GuestClub { get; set;}
         public string HostClub { get; set;}
 
+
+
+        public bool ConfirmGuest { get; set; }
+        public bool ConfirmHost { get; set; }
+        public bool IsHost { get; set; }
     }
 }

@@ -1,0 +1,77 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link href="~/css/notifications.css" rel="stylesheet" />
+@model List<CourtConnect.ViewModel.Announce.AnnounceDetailsViewModel>
+
+<h2>Anunțurile Mele</h2>
+
+@if (!Model.Any())
+{
+    <p>Nu ai anunțuri confirmate de alți jucători.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Adversar</th>
+                <th>Locație</th>
+                <th>Start Date</th>
+                <th>Club</th>
+                <th>Nivel</th>
+                <th>Puncte</th>
+                <th>Confirmare</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var announce in Model)
+            {
+                <tr>
+                    <td>@announce.GuestFullName</td>
+                    <td>@announce.LocationDetails</td>
+                    <td>@announce.StartDate</td>
+                    <td>@announce.GuestClub</td>
+                    <td>@announce.GuestLevel</td>
+                    <td>@announce.GuestRank</td>
+                    <td>
+                        @if (announce.ConfirmHost)
+                        {
+                            <span class="badge bg-success">Confirmat</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning">În așteptare</span>
+                        }
+                    </td>
+                    <td>
+                        @if (!announce.ConfirmHost)
+                        {
+                            <form method="post" action="/Announce/ConfirmHost">
+                                <input type="hidden" name="announceId" value="@announce.Id" />
+                                <button type="submit" class="btn btn-success">Confirmă Meci</button>
+                            </form>
+
+                            <form method="post" action="/Announce/RejectGuest" style="margin-top: 5px;">
+                                <input type="hidden" name="announceId" value="@announce.Id" />
+                                <button type="submit" class="btn btn-danger">Refuză Adversar</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+

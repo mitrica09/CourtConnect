@@ -3,6 +3,7 @@ using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Announce;
 using CourtConnect.ViewModel.Court;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Hosting;
 using System.Data.Entity;
 using System.Security.Claims;
 
@@ -23,6 +24,57 @@ namespace CourtConnect.Repository.Announce
             _db = db;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
+        }
+
+        public async Task<bool> ConfirmGuest(int announceId, string userId)
+        {
+            var announce = await _db.Announces.FindAsync(announceId);
+            if (announce == null) 
+                return false;
+           
+            if (announce.ConfirmGuest) 
+                return false;
+
+            announce.ConfirmGuest = true;
+            announce.GuestUserId = userId;
+            _db.Announces.Update(announce);
+            await _db.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<bool> ConfirmHost(int announceId, string userId)
+        {
+            var announce = await _db.Announces.FindAsync(announceId);
+
+            if (announce == null || !announce.ConfirmGuest)
+                return false;
+
+            if (announce.UserId != userId) 
+                return false;
+
+            announce.ConfirmHost = true;
+            _db.Announces.Update(announce);
+            await _db.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<bool> RejectGuest(int announceId, string userId)
+        {
+            var announce = await _db.Announces.FindAsync(announceId);
+
+            if (announce == null || announce.UserId != userId)
+                return false;
+
+            // Resetăm Guest-ul și Confirmarea lui
+            announce.GuestUserId = null;
+            announce.ConfirmGuest = false;
+
+            _db.Announces.Update(announce);
+            await _db.SaveChangesAsync();
+
+            return true;
         }
 
         public async Task<bool> Create(AnnounceFormViewModel announceForm)
@@ -59,67 +111,131 @@ namespace CourtConnect.Repository.Announce
 
         }
 
-        public  async Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces()
+        public async Task<List<AnnounceForDisplayViewModel>> GetAllAnnounces()
         {
-            var announce =  _db.Announces.ToList();
+            var user = _httpContextAccessor.HttpContext?.User;
+            string userId = user?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var announces = _db.Announces.ToList();
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                // Dacă utilizatorul NU este logat, returnăm toate anunțurile
+                announces = _db.Announces.AsNoTracking().ToList();
+            }
+            else
+            {
+                // Dacă utilizatorul este logat, excludem anunțurile postate de el
+                announces = _db.Announces.Where(a => a.UserId != userId).AsNoTracking().ToList();
+            }
+
             List<AnnounceForDisplayViewModel> announceForDisplayViewModels = new List<AnnounceForDisplayViewModel>();
 
-            foreach(var item in announce)
+            foreach (var item in announces)
             {
-                AnnounceForDisplayViewModel announceForDisplayViewModel = new AnnounceForDisplayViewModel();
-                announceForDisplayViewModel.StartDate = item.StartDate.ToString();
-                announceForDisplayViewModel.EndDate = item.EndDate.ToString();
-                announceForDisplayViewModel.Courts = _db.Courts.Where(s=>s.Id == item.CourtId).Select(s=>s.Name).FirstOrDefault();
-                announceForDisplayViewModel.Status = _db.AnnouncesStatus.Where(s=>s.Id == item.AnnounceStatusId).Select(s=>s.Name).FirstOrDefault();
-                announceForDisplayViewModel.ImageUrl = _db.Users.Where(s => s.Id == item.UserId).Select(s => s.ImageUrl).FirstOrDefault();
-                announceForDisplayViewModel.Name = item.Name;
-                announceForDisplayViewModel.Id = item.Id;
-                announceForDisplayViewModels.Add(announceForDisplayViewModel);                 
+                AnnounceForDisplayViewModel announceForDisplayViewModel = new AnnounceForDisplayViewModel
+                {
+                    StartDate = item.StartDate.ToString(),
+                    EndDate = item.EndDate.ToString(),
+                    Courts = _db.Courts.Where(s => s.Id == item.CourtId).Select(s => s.Name).FirstOrDefault(),
+                    Status = _db.AnnouncesStatus.Where(s => s.Id == item.AnnounceStatusId).Select(s => s.Name).FirstOrDefault(),
+                    ImageUrl = _db.Users.Where(s => s.Id == item.UserId).Select(s => s.ImageUrl).FirstOrDefault(),
+                    Name = item.Name,
+                    Id = item.Id
+                };
 
+                announceForDisplayViewModels.Add(announceForDisplayViewModel);
             }
+
             return announceForDisplayViewModels;
-
-
-
         }
+
 
         public async Task<AnnounceDetailsViewModel> GetAnnounceDetails(int announceId, string userId)
         {
-            var guestUser = await _userManager.FindByIdAsync(userId);
-
-            guestUser.Club = await _db.Clubs.FindAsync(guestUser.ClubId);
-            guestUser.Level = await _db.Levels.FindAsync(guestUser.LevelId);
-            var guestRanking = _db.Rankings.Where(s => s.UserId == guestUser.Id).FirstOrDefault();
-
             var announce = await _db.Announces.FindAsync(announceId);
+            if (announce == null) return null;
+
             announce.Court = await _db.Courts.FindAsync(announce.CourtId);
-        
+            var location = await _db.Locations.FindAsync(announce.Court.LocationId);
 
             var hostUser = await _userManager.FindByIdAsync(announce.UserId);
-
             hostUser.Club = await _db.Clubs.FindAsync(hostUser.ClubId);
             hostUser.Level = await _db.Levels.FindAsync(hostUser.LevelId);
             var hostRanking = _db.Rankings.Where(s => s.UserId == hostUser.Id).FirstOrDefault();
 
-            var location = await _db.Locations.FindAsync(announce.Court.LocationId);
+            var guestUser = await _userManager.FindByIdAsync(userId);
+            guestUser.Club = await _db.Clubs.FindAsync(guestUser.ClubId);
+            guestUser.Level = await _db.Levels.FindAsync(guestUser.LevelId);
+            var guestRanking = _db.Rankings.Where(s => s.UserId == guestUser.Id).FirstOrDefault();
 
             return new AnnounceDetailsViewModel
-            { 
-              HostFullName = hostUser.FullName,
-              GuestFullName = guestUser.FullName,
-              GuestLevel = guestUser.Level.Name,
-              HostLevel = hostUser.Level.Name,
-              GuestRank = guestRanking.Points,
-              HostRank = hostRanking.Points,
-              LocationDetails = location.County + "-" + location.City + "," + location.Street + "," + location.Number,
-              StartDate = announce.StartDate.ToString(),
-              GuestClub = guestUser.Club.Name,
-              HostClub = hostUser.Club.Name      
+            {
+                Id = announce.Id,
+                HostFullName = hostUser.FullName,
+                GuestFullName = guestUser.FullName,
+                GuestLevel = guestUser.Level.Name,
+                HostLevel = hostUser.Level.Name,
+                GuestRank = guestRanking.Points,
+                HostRank = hostRanking.Points,
+                LocationDetails = location.County + "-" + location.City + "," + location.Street + "," + location.Number,
+                StartDate = announce.StartDate.ToString(),
+                GuestClub = guestUser.Club.Name,
+                HostClub = hostUser.Club.Name,
+
+                ConfirmGuest = announce.ConfirmGuest,
+                ConfirmHost = announce.ConfirmHost,
+
+                IsHost = userId == announce.UserId
             };
-
-
-
         }
+
+        public async Task<List<AnnounceDetailsViewModel>> GetMyAnnounces()
+        {
+            var user = _httpContextAccessor.HttpContext?.User;
+            string userId = user?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return new List<AnnounceDetailsViewModel>(); // Dacă nu e logat, returnăm listă goală
+            }
+
+            var announces = _db.Announces
+                .Where(a => a.UserId == userId && a.GuestUserId != null) // Doar anunțurile unde există un Guest
+                .AsNoTracking()
+                .ToList();
+
+            List<AnnounceDetailsViewModel> announceDetailsViewModels = new List<AnnounceDetailsViewModel>();
+
+            foreach (var item in announces)
+            {
+                var guestUser = await _userManager.FindByIdAsync(item.GuestUserId);
+                guestUser.Club = await _db.Clubs.FindAsync(guestUser.ClubId);
+                guestUser.Level = await _db.Levels.FindAsync(guestUser.LevelId);
+                var guestRanking = _db.Rankings.FirstOrDefault(s => s.UserId == guestUser.Id);
+
+                var court = await _db.Courts.FindAsync(item.CourtId);
+                var location = await _db.Locations.FindAsync(court.LocationId);
+
+                announceDetailsViewModels.Add(new AnnounceDetailsViewModel
+                {
+                    Id = item.Id,
+                    GuestFullName = guestUser.FullName,
+                    GuestLevel = guestUser.Level.Name,
+                    GuestRank = guestRanking?.Points ?? 0,
+                    LocationDetails = location.County + "-" + location.City + "," + location.Street + "," + location.Number,
+                    StartDate = item.StartDate.ToString("yyyy-MM-dd HH:mm:ss"),
+                    GuestClub = guestUser.Club.Name,
+                    ConfirmGuest = item.ConfirmGuest,
+                    ConfirmHost = item.ConfirmHost,
+                    IsHost = true
+                });
+            }
+
+            return announceDetailsViewModels;
+        }
+
+
     }
 }
 
@@ -135,6 +251,10 @@ cu tine (Confirma meci), si cand a dat pe confirma match se va face si ala 1 Con
 Task<bool> CreateHost
 
 -- Creez in repository functia CreateMatch() care se va apela atunci cand dai comfirMatc
+
+
+
+Ca GuestUser daca ai deja un meci confirmat, sa nu mai poti confirma altul pana nu primesti un raspuns de la anuntul respectiv.
  */
 
 

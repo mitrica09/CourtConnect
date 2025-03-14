@@ -1140,17 +1140,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jhogjj1qce"},{"Name":"integrity","Value":"sha256-CXF99dP\u002B2ZKi7lrrVY4c9uljTgjv46t/28nhKP1u8Jk="},{"Name":"label","Value":"_content/CourtConnect/css/Announce/AnnounceMatchroomDetails.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1010"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CXF99dP\u002B2ZKi7lrrVY4c9uljTgjv46t/28nhKP1u8Jk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 03 Mar 2025 18:10:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Announce/IndexAnnounce.6f0cngghwm.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\IndexAnnounce.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6f0cngghwm"},{"Name":"integrity","Value":"sha256-IoQ7q\u002BTo2Y1SdslUi1yDwOlDUvgySHUXeTJhH0ZK8Lc="},{"Name":"label","Value":"_content/CourtConnect/css/Announce/IndexAnnounce.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2573"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IoQ7q\u002BTo2Y1SdslUi1yDwOlDUvgySHUXeTJhH0ZK8Lc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 11:47:16 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Announce/IndexAnnounce.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\IndexAnnounce.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IoQ7q\u002BTo2Y1SdslUi1yDwOlDUvgySHUXeTJhH0ZK8Lc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2573"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IoQ7q\u002BTo2Y1SdslUi1yDwOlDUvgySHUXeTJhH0ZK8Lc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 11:47:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jpWZWSv\u002Bjx3LL9dfaVQ8AtSRPqA92rFyvgBRTLsE34E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3693"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jpWZWSv\u002Bjx3LL9dfaVQ8AtSRPqA92rFyvgBRTLsE34E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:00:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Announce/IndexAnnounce.qum344sgp0.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\IndexAnnounce.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qum344sgp0"},{"Name":"integrity","Value":"sha256-jpWZWSv\u002Bjx3LL9dfaVQ8AtSRPqA92rFyvgBRTLsE34E="},{"Name":"label","Value":"_content/CourtConnect/css/Announce/IndexAnnounce.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3693"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jpWZWSv\u002Bjx3LL9dfaVQ8AtSRPqA92rFyvgBRTLsE34E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 12:00:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/css/notifications.6y7q9jqms2.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\notifications.css'))</AssetFile>

@@ -24,6 +24,7 @@ namespace CourtConnect.StartPackage.Database
         public DbSet<SetResult> SetsResult { get; set; }
         public DbSet<Status> Statuses { get; set; }
         public DbSet<UserMatch> UserMatches { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -112,7 +113,6 @@ namespace CourtConnect.StartPackage.Database
             .WithMany(a => a.Announces)
             .HasForeignKey(b => b.AnnounceStatusId);
             #endregion
-
 
         }
     }

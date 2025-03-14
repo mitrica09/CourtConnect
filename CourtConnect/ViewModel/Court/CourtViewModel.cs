@@ -11,13 +11,13 @@ namespace CourtConnect.ViewModel.Court
         public int Id { get; set; }
         [DisplayName("Nume")]
         [Required(ErrorMessage = "Numele clubului este obligatoriu.")]
-        [StringLength(10, ErrorMessage = "Numele nu poate avea mai mult de 10 caractere")]
+        [StringLength(20, ErrorMessage = "Numele nu poate avea mai mult de 20 caractere")]
         public string Name { get; set; }
 
         [DisplayName("Locatie")]
 
         [Required(ErrorMessage = "Vă rugăm să selectați o locatie.")]
-        public int LocationId { get; set; } //in caz de orice aici era "int?"
+        public int LocationId { get; set; } 
         public IEnumerable<SelectListItem> Locations { get; set; }
 
         public CourtViewModel()

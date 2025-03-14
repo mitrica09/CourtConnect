@@ -23,6 +23,12 @@ namespace CourtConnect.Controllers
         {
            List<AnnounceForDisplayViewModel> announces = await _announceService.GetAllAnnounces();
            return View(announces);
+        } 
+        
+        public async Task<IActionResult> MyAnnounces()
+        {
+           List<AnnounceDetailsViewModel> announces = await _announceService.GetMyAnnounces();
+           return View(announces);
         }
 
         [HttpGet]
@@ -50,7 +56,7 @@ namespace CourtConnect.Controllers
             {
                 TempData["NotificationMessage"] = "Anutul a fost adaugat cu succes";
                 TempData["NotificationType"] = "succes";
-                return RedirectToAction("Index","Announce");
+                return RedirectToAction("MyAnnounces","Announce");
             }
             else
             {
@@ -67,7 +73,59 @@ namespace CourtConnect.Controllers
 
 
         }
+        [HttpPost]
+        public async Task<IActionResult> ConfirmGuest(int announceId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var success = await _announceService.ConfirmGuest(announceId, userId);
+
+            if (success)
+            {
+                TempData["SuccessMessage"] = "Ai confirmat meciul!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Eroare la confirmarea meciului!";
+            }
+
+            return RedirectToAction("Index", "Announce");
+        }
 
 
+        [HttpPost]
+        public async Task<IActionResult> ConfirmHost(int announceId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var success = await _announceService.ConfirmHost(announceId, userId);
+
+            if (success)
+            {
+                TempData["SuccessMessage"] = "Meci confirmat!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Eroare la confirmare!";
+            }
+
+            return RedirectToAction("MyAnnounces");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RejectGuest(int announceId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var success = await _announceService.RejectGuest(announceId, userId);
+
+            if (success)
+            {
+                TempData["SuccessMessage"] = "Adversarul a fost refuzat!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Eroare la refuz!";
+            }
+
+            return RedirectToAction("MyAnnounces");
+        }
     }
 }

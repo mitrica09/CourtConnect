@@ -4,6 +4,7 @@ using CourtConnect.StartPackage.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CourtConnect.Migrations
 {
     [DbContext(typeof(CourtConnectDbContext))]
-    partial class CourtConnectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250312165901_GuestUserId")]
+    partial class GuestUserId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,6 +49,7 @@ namespace CourtConnect.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("GuestUserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
