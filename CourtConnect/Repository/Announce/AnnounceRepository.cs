@@ -50,15 +50,23 @@ namespace CourtConnect.Repository.Announce
             if (announce == null || !announce.ConfirmGuest)
                 return false;
 
-            if (announce.UserId != userId) 
+            if (announce.UserId != userId)
                 return false;
 
             announce.ConfirmHost = true;
+
+            // 🔹 Verificăm dacă și Guest a confirmat, atunci schimbăm statusul anunțului
+            if (announce.ConfirmGuest && announce.ConfirmHost)
+            {
+                announce.AnnounceStatusId = 2; // Setăm statusul "Meci acceptat"
+            }
+
             _db.Announces.Update(announce);
             await _db.SaveChangesAsync();
 
             return true;
         }
+
 
         public async Task<bool> RejectGuest(int announceId, string userId)
         {
@@ -67,7 +75,6 @@ namespace CourtConnect.Repository.Announce
             if (announce == null || announce.UserId != userId)
                 return false;
 
-            // Resetăm Guest-ul și Confirmarea lui
             announce.GuestUserId = null;
             announce.ConfirmGuest = false;
 
@@ -116,17 +123,16 @@ namespace CourtConnect.Repository.Announce
             var user = _httpContextAccessor.HttpContext?.User;
             string userId = user?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            var announces = _db.Announces.ToList();
+            // Adăugăm înapoi anunțurile care fie nu au fost confirmate deloc, fie Guest-ul a renunțat
+            var announces = _db.Announces
+                .Where(a => a.GuestUserId == null || (a.ConfirmGuest == false && a.ConfirmHost == false)) // Afișăm doar anunțurile disponibile
+                .AsNoTracking()
+                .ToList();
 
-            if (string.IsNullOrEmpty(userId))
-            {
-                // Dacă utilizatorul NU este logat, returnăm toate anunțurile
-                announces = _db.Announces.AsNoTracking().ToList();
-            }
-            else
+            if (!string.IsNullOrEmpty(userId))
             {
                 // Dacă utilizatorul este logat, excludem anunțurile postate de el
-                announces = _db.Announces.Where(a => a.UserId != userId).AsNoTracking().ToList();
+                announces = announces.Where(a => a.UserId != userId).ToList();
             }
 
             List<AnnounceForDisplayViewModel> announceForDisplayViewModels = new List<AnnounceForDisplayViewModel>();
@@ -149,6 +155,8 @@ namespace CourtConnect.Repository.Announce
 
             return announceForDisplayViewModels;
         }
+
+
 
 
         public async Task<AnnounceDetailsViewModel> GetAnnounceDetails(int announceId, string userId)
@@ -197,22 +205,56 @@ namespace CourtConnect.Repository.Announce
 
             if (string.IsNullOrEmpty(userId))
             {
-                return new List<AnnounceDetailsViewModel>(); // Dacă nu e logat, returnăm listă goală
+                return new List<AnnounceDetailsViewModel>(); 
             }
 
-            var announces = _db.Announces
-                .Where(a => a.UserId == userId && a.GuestUserId != null) // Doar anunțurile unde există un Guest
+            var hostAnnounces = _db.Announces
+                .Where(a => a.UserId == userId) 
+                .AsNoTracking()
+                .ToList();
+
+            // Selectam anunturile unde utilizatorul este GUEST
+            var guestAnnounces = _db.Announces
+                .Where(a => a.GuestUserId == userId) //Selectează DOAR anunturile unde utilizatorul s-a inscris
                 .AsNoTracking()
                 .ToList();
 
             List<AnnounceDetailsViewModel> announceDetailsViewModels = new List<AnnounceDetailsViewModel>();
 
-            foreach (var item in announces)
+            foreach (var item in hostAnnounces)
             {
                 var guestUser = await _userManager.FindByIdAsync(item.GuestUserId);
-                guestUser.Club = await _db.Clubs.FindAsync(guestUser.ClubId);
-                guestUser.Level = await _db.Levels.FindAsync(guestUser.LevelId);
-                var guestRanking = _db.Rankings.FirstOrDefault(s => s.UserId == guestUser.Id);
+                if (guestUser != null)
+                {
+                    guestUser.Club = await _db.Clubs.FindAsync(guestUser.ClubId);
+                    guestUser.Level = await _db.Levels.FindAsync(guestUser.LevelId);
+                    var guestRanking = _db.Rankings.FirstOrDefault(s => s.UserId == guestUser.Id);
+
+                    var court = await _db.Courts.FindAsync(item.CourtId);
+                    var location = await _db.Locations.FindAsync(court.LocationId);
+
+                    announceDetailsViewModels.Add(new AnnounceDetailsViewModel
+                    {
+                        Id = item.Id,
+                        GuestFullName = guestUser.FullName,
+                        GuestLevel = guestUser.Level.Name,
+                        GuestRank = guestRanking?.Points ?? 0,
+                        LocationDetails = location.County + "-" + location.City + "," + location.Street + "," + location.Number,
+                        StartDate = item.StartDate.ToString("yyyy-MM-dd HH:mm:ss"),
+                        GuestClub = guestUser.Club.Name,
+                        ConfirmGuest = item.ConfirmGuest,
+                        ConfirmHost = item.ConfirmHost,
+                        IsHost = true
+                    });
+                }
+            }
+
+            foreach (var item in guestAnnounces)
+            {
+                var hostUser = await _userManager.FindByIdAsync(item.UserId);
+                hostUser.Club = await _db.Clubs.FindAsync(hostUser.ClubId);
+                hostUser.Level = await _db.Levels.FindAsync(hostUser.LevelId);
+                var hostRanking = _db.Rankings.FirstOrDefault(s => s.UserId == hostUser.Id);
 
                 var court = await _db.Courts.FindAsync(item.CourtId);
                 var location = await _db.Locations.FindAsync(court.LocationId);
@@ -220,20 +262,21 @@ namespace CourtConnect.Repository.Announce
                 announceDetailsViewModels.Add(new AnnounceDetailsViewModel
                 {
                     Id = item.Id,
-                    GuestFullName = guestUser.FullName,
-                    GuestLevel = guestUser.Level.Name,
-                    GuestRank = guestRanking?.Points ?? 0,
+                    GuestFullName = hostUser.FullName, // Afisam numele Host-ului, nu al Guest-ului
+                    GuestLevel = hostUser.Level.Name,
+                    GuestRank = hostRanking?.Points ?? 0,
                     LocationDetails = location.County + "-" + location.City + "," + location.Street + "," + location.Number,
                     StartDate = item.StartDate.ToString("yyyy-MM-dd HH:mm:ss"),
-                    GuestClub = guestUser.Club.Name,
+                    GuestClub = hostUser.Club.Name,
                     ConfirmGuest = item.ConfirmGuest,
                     ConfirmHost = item.ConfirmHost,
-                    IsHost = true
+                    IsHost = false
                 });
             }
 
             return announceDetailsViewModels;
         }
+
 
 
     }

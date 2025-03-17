@@ -68,11 +68,16 @@ namespace CourtConnect.Controllers
         public async Task<IActionResult> MatchroomDetails(int announceId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             AnnounceDetailsViewModel announceDetailsViewModel =await _announceService.GetAnnounceDetails(announceId, userId);
             return View(announceDetailsViewModel);
-
-
         }
+
         [HttpPost]
         public async Task<IActionResult> ConfirmGuest(int announceId)
         {
@@ -88,7 +93,7 @@ namespace CourtConnect.Controllers
                 TempData["ErrorMessage"] = "Eroare la confirmarea meciului!";
             }
 
-            return RedirectToAction("Index", "Announce");
+            return RedirectToAction("MyAnnounces");
         }
 
 

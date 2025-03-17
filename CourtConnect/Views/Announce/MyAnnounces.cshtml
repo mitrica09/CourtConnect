@@ -9,7 +9,7 @@
 
 @if (!Model.Any())
 {
-    <p>Nu ai anunțuri confirmate de alți jucători.</p>
+    <p>Nu ai anunțuri disponibile.</p>
 }
 else
 {
@@ -47,7 +47,7 @@ else
                         }
                     </td>
                     <td>
-                        @if (!announce.ConfirmHost)
+                        @if (announce.IsHost && !announce.ConfirmHost) // ✅ DOAR Host-ul poate confirma
                         {
                             <form method="post" action="/Announce/ConfirmHost">
                                 <input type="hidden" name="announceId" value="@announce.Id" />
@@ -65,8 +65,6 @@ else
         </tbody>
     </table>
 }
-
-
 
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
