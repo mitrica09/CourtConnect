@@ -1632,8 +1632,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k49rsuorri</Fingerprint>
-      <Integrity>DIWilEZd4nCWCmGcaUI75dAAFe2w1Kb+Ua10cjAk0Mw=</Integrity>
+      <Fingerprint>bzi2hjfq0r</Fingerprint>
+      <Integrity>aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Account\Profile.css'))</OriginalItemSpec>
@@ -1722,11 +1722,47 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qum344sgp0</Fingerprint>
-      <Integrity>jpWZWSv+jx3LL9dfaVQ8AtSRPqA92rFyvgBRTLsE34E=</Integrity>
+      <Fingerprint>fns38s7943</Fingerprint>
+      <Integrity>NaR8o+b7C+OkJtOOnlSuNW5BWX2d1NobygPWiWRkraA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\IndexAnnounce.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\MyAnnounces.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourtConnect</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourtConnect</BasePath>
+      <RelativePath>css/Announce/MyAnnounces.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oly5i2jdm0</Fingerprint>
+      <Integrity>lLc78VdOHUG/rXIxMr10yoXH12Y0M6J7ODq+89uK3C4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\MyAnnounces.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Match\MatchDetails.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourtConnect</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourtConnect</BasePath>
+      <RelativePath>css/Match/MatchDetails.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ktpnp4552y</Fingerprint>
+      <Integrity>eLt4rTN0HfxVjhSvaZNKe08eWoTgW1V4ucISFUxNAM8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Match\MatchDetails.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\notifications.css'))">
       <SourceType>Package</SourceType>

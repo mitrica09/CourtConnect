@@ -385,6 +385,14 @@
       "PackagePath": "staticwebassets\\css\\Announce\\IndexAnnounce.css"
     },
     {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Announce\\MyAnnounces.css",
+      "PackagePath": "staticwebassets\\css\\Announce\\MyAnnounces.css"
+    },
+    {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MatchDetails.css",
+      "PackagePath": "staticwebassets\\css\\Match\\MatchDetails.css"
+    },
+    {
       "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Ranking\\Ranking.css",
       "PackagePath": "staticwebassets\\css\\Ranking\\Ranking.css"
     },

@@ -1,0 +1,135 @@
+﻿@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.no-announces {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}
+
+.announce-table-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announce-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .announce-table th, .announce-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .announce-table th {
+        background-color: #222;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+.confirmed-row {
+    background-color: #eafaea;
+}
+
+.pending-row {
+    background-color: #fffbe6;
+}
+
+/* ✅ Statusurile stilizate mai bine */
+.status-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    min-width: 120px;
+    text-align: center;
+}
+
+    .status-badge.confirmed {
+        background-color: #28a745;
+        color: white;
+        border: 1px solid #218838;
+    }
+
+    .status-badge.pending {
+        background-color: #ffc107;
+        color: white;
+        border: 1px solid #e0a800;
+    }
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+    .action-buttons form {
+        display: inline-block;
+    }
+
+    /* 🔘 Butoanele îmbunătățite */
+    .action-buttons button {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #c82333;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* ✅ Iconițe pentru butoane */
+.btn-success::before {
+
+    font-weight: bold;
+}
+
+.btn-danger::before {
+
+    font-weight: bold;
+}

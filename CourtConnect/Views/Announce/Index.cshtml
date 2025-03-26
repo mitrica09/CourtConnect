@@ -1,13 +1,22 @@
-﻿<link href="~/css/announce/indexannounce.css" rel="stylesheet" />
-
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/announce/indexannounce.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 @model IEnumerable<CourtConnect.ViewModel.Announce.AnnounceForDisplayViewModel>
 
 <div class="announce-header-container">
+    <a asp-action="MyAnnounces" class="announce-btn-left">
+        <i class="ri-file-list-line"></i> My Announces
+    </a>
+
     <h2 class="announce-title">Anunțuri disponibile</h2>
+
     <a asp-action="Create" class="announce-create-btn">
         <i class="ri-add-line"></i> Creează un anunț nou
     </a>
 </div>
+
 
 
 <div class="announce-container">

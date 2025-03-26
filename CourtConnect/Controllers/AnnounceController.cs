@@ -105,11 +105,18 @@ namespace CourtConnect.Controllers
 
             if (success)
             {
-                TempData["SuccessMessage"] = "Meci confirmat!";
+                // Verifică dacă și host-ul a confirmat
+                var announce = await _announceService.GetAnnounceDetails(announceId, userId);
+                if (announce.ConfirmHost)
+                {
+                    await _announceService.CreateMatch(announceId);
+                }
+
+                TempData["SuccessMessage"] = "Ai confirmat meciul!";
             }
             else
             {
-                TempData["ErrorMessage"] = "Eroare la confirmare!";
+                TempData["ErrorMessage"] = "Eroare la confirmarea meciului!";
             }
 
             return RedirectToAction("MyAnnounces");

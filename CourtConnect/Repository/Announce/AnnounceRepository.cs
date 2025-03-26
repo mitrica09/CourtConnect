@@ -277,26 +277,50 @@ namespace CourtConnect.Repository.Announce
             return announceDetailsViewModels;
         }
 
+        public async Task<bool> CreateMatch(int announceId)
+        {
+            var announce = await _db.Announces.FindAsync(announceId);
+            if (announce == null || !announce.ConfirmGuest || !announce.ConfirmHost)
+                return false;
 
+            using (var transaction = await _db.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    var match = new Models.Match
+                    {
+                        StatusId = 1, // presupunem că 1 = Match Confirmed
+                        ResultId = 1,
+                        UserMatches = new List<UserMatch>
+                {
+                    new UserMatch { UserId = announce.UserId },
+                    new UserMatch { UserId = announce.GuestUserId }
+                }
+                    };
 
+                    _db.Matches.Add(match);
+
+                    // Schimbăm și statusul anunțului dacă e nevoie (ex: 2 = „match creat”)
+                    announce.AnnounceStatusId = 2;
+                    _db.Announces.Update(announce);
+
+                    await _db.SaveChangesAsync();
+                    await transaction.CommitAsync();
+                    return true;
+                }
+                catch
+                {
+                    await transaction.RollbackAsync();
+                    throw;
+                }
+            }
+        }
     }
 }
 
 /*
  * 
- * !!!!Sa fii logat cand esti guest user si vrei sa dai play pe un anunt.
  De facut:
-
--- La anunt pe model se vor mai adauga doua tipuri de variabile de tip bool Una se va numi bool ConfirmHost, bool ConfrmGuest
---Initial sunt puse pe 0 cand confirma Guest se pune la guest, iar atunci cand Host va intra in anutul lui se verfica ConfirmGuest
-daca este pe 0 va aparea anuntul normal daca este pe 1n jos sau undeva in pagina va fi afsat mesajul jucatorul X doreste sa joace 
-cu tine (Confirma meci), si cand a dat pe confirma match se va face si ala 1 ConfirmHost, se va crea pe moedul match si adauga in baza de date 
-Task<bool> CreateHost
-
--- Creez in repository functia CreateMatch() care se va apela atunci cand dai comfirMatc
-
-
-
 Ca GuestUser daca ai deja un meci confirmat, sa nu mai poti confirma altul pana nu primesti un raspuns de la anuntul respectiv.
  */
 

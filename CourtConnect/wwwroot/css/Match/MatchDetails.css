@@ -1,0 +1,27 @@
+﻿.match-details-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.player {
+    flex: 1;
+    text-align: center;
+}
+
+.vs {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 15px;
+}

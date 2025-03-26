@@ -1,0 +1,53 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/announce/indexannounce.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+@model CourtConnect.ViewModel.Match.MatchDetailsViewModel
+@{
+    ViewData["Title"] = "Detalii Meci";
+}
+
+<link href="~/css/match/details.css" rel="stylesheet" />
+
+<div class="match-details-container">
+    <h2>Detalii Meci</h2>
+
+    <div class="players">
+        <div class="player">
+            <h4>@Model.PlayerOneFullName</h4>
+        </div>
+        <div class="vs">vs</div>
+        <div class="player">
+            <h4>@Model.PlayerTwoFullName</h4>
+        </div>
+    </div>
+
+    <p><strong>Data:</strong> @Model.StartDate.ToString("dd MMM yyyy, HH:mm")</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+
+    @if (!string.IsNullOrEmpty(Model.ResultDescription))
+    {
+        <p><strong>Rezultat:</strong> @Model.ResultDescription</p>
+    }
+
+    @if (Model.SetScores != null && Model.SetScores.Any())
+    {
+        <h4>Scor pe seturi:</h4>
+        <ul>
+            @foreach (var set in Model.SetScores)
+            {
+                <li>@set</li>
+            }
+        </ul>
+    }
+
+    <a href="@Url.Action("Index", "Match")" class="btn btn-primary mt-3">Înapoi la meciuri</a>
+</div>
+
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
