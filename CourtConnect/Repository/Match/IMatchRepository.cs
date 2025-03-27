@@ -1,6 +1,10 @@
-﻿namespace CourtConnect.Repository.Match
+﻿using CourtConnect.ViewModel.Announce;
+using CourtConnect.ViewModel.Match;
+
+namespace CourtConnect.Repository.Match
 {
-    public class IMatchRepository
+    public interface IMatchRepository
     {
+        Task<MatchDetailsViewModel> GetMatchDetails(int announceId, int matchId);
     }
 }

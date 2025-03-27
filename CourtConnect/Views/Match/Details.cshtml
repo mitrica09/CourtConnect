@@ -1,48 +1,49 @@
 ﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="~/css/admin/general_pages.css" rel="stylesheet" />
-<link href="~/css/announce/indexannounce.css" rel="stylesheet" />
+<link href="~/css/match/matchdetails.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 @model CourtConnect.ViewModel.Match.MatchDetailsViewModel
-@{
-    ViewData["Title"] = "Detalii Meci";
-}
 
-<link href="~/css/match/details.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/match/matchdetails.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 
-<div class="match-details-container">
-    <h2>Detalii Meci</h2>
+<div class="match-container">
+    <h1 class="title">TENIS</h1>
 
-    <div class="players">
-        <div class="player">
-            <h4>@Model.PlayerOneFullName</h4>
+    <div class="players-wrapper">
+        <!-- Player 1 -->
+        <div class="player-card">
+            <img src="~/images/player1.png" class="player-img" alt="Player 1" />
+            <h2>@Model.HostFullName</h2>
+            <p>Level: @Model.HostLevel</p>
+            <p>Rank: @Model.HostRank</p>
         </div>
-        <div class="vs">vs</div>
-        <div class="player">
-            <h4>@Model.PlayerTwoFullName</h4>
+
+        <!-- VS + match info -->
+        <div class="vs-card">
+            <h2>VS</h2>
+            <p>@Model.LocationDetails</p>
+            <p>@Model.StartDate</p>
+
+            <div class="match-info">
+                <p><strong>Status:</strong> @Model.Status</p>
+                <p><strong>Rezultat:</strong> @(string.IsNullOrEmpty(Model.ResultDescription) ? "Meci neinceput" : Model.ResultDescription)</p>
+                <a href="@Url.Action("Index", "Match")" class="btn-back">Înapoi la meciuri</a>
+            </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player-card">
+            <img src="~/images/player1.png" class="player-img" alt="Player 2" />
+            <h2>@Model.GuestFullName</h2>
+            <p>Level: @Model.GuestLevel</p>
+            <p>Rank: @Model.GuestRank</p>
         </div>
     </div>
-
-    <p><strong>Data:</strong> @Model.StartDate.ToString("dd MMM yyyy, HH:mm")</p>
-    <p><strong>Status:</strong> @Model.Status</p>
-
-    @if (!string.IsNullOrEmpty(Model.ResultDescription))
-    {
-        <p><strong>Rezultat:</strong> @Model.ResultDescription</p>
-    }
-
-    @if (Model.SetScores != null && Model.SetScores.Any())
-    {
-        <h4>Scor pe seturi:</h4>
-        <ul>
-            @foreach (var set in Model.SetScores)
-            {
-                <li>@set</li>
-            }
-        </ul>
-    }
-
-    <a href="@Url.Action("Index", "Match")" class="btn btn-primary mt-3">Înapoi la meciuri</a>
 </div>
 
 

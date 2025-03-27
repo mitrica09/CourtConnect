@@ -1,27 +1,80 @@
-﻿.match-details-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    font-family: 'Poppins', sans-serif;
-}
-
-.players {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.player {
-    flex: 1;
+﻿.match-container {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-.vs {
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #004d40;
+    margin-bottom: 40px;
+}
+
+.players-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.player-card, .vs-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 280px;
+}
+
+.vs-card {
+    background-color: #004d40;
+    color: white;
     font-weight: bold;
-    font-size: 20px;
-    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-info {
+    background-color: #00332d;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+    .match-info p {
+        margin: 5px 0;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+.btn-back {
+    margin-top: 10px;
+    background-color: #2f54eb;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-back:hover {
+        background-color: #1d39c4;
+    }
+
+.player-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }

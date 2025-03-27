@@ -1,5 +1,6 @@
 ﻿using CourtConnect.Service.Announce;
 using CourtConnect.Service.Court;
+using CourtConnect.Service.Match;
 using CourtConnect.ViewModel.Announce;
 using CourtConnect.ViewModel.Club;
 using CourtConnect.ViewModel.Level;
@@ -17,6 +18,7 @@ namespace CourtConnect.Controllers
         {
             _announceService = announceService;
             _courtService = courtService;
+
         }
 
         public async Task<IActionResult> Index()
@@ -101,22 +103,31 @@ namespace CourtConnect.Controllers
         public async Task<IActionResult> ConfirmHost(int announceId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var success = await _announceService.ConfirmHost(announceId, userId);
 
             if (success)
             {
-                // Verifică dacă și host-ul a confirmat
+                // Obținem din nou anunțul ca să verificăm statusul actualizat
                 var announce = await _announceService.GetAnnounceDetails(announceId, userId);
-                if (announce.ConfirmHost)
+
+                if (announce.ConfirmHost && announce.ConfirmGuest)
                 {
-                    await _announceService.CreateMatch(announceId);
+                    // Dacă amândoi au confirmat, creăm meciul și redirectăm spre detalii
+                    var matchId = await _announceService.CreateMatch(announceId);
+
+                    if (matchId != null)
+                    {
+                        return RedirectToAction("Details", "Match", new { announceId = announceId, matchId = matchId });
+                        // 👈 te duce direct la pagina de meci
+                    }
                 }
 
-                TempData["SuccessMessage"] = "Ai confirmat meciul!";
+                TempData["SuccessMessage"] = "Meci confirmat!";
             }
             else
             {
-                TempData["ErrorMessage"] = "Eroare la confirmarea meciului!";
+                TempData["ErrorMessage"] = "Eroare la confirmare!";
             }
 
             return RedirectToAction("MyAnnounces");

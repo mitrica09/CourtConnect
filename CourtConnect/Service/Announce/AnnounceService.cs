@@ -48,7 +48,7 @@ namespace CourtConnect.Service.Announce
             return await _announceRepository.GetMyAnnounces();
         }
 
-        public async Task<bool> CreateMatch(int announceId)
+        public async Task<int?> CreateMatch(int announceId)
         {
             return await _announceRepository.CreateMatch(announceId);
         }

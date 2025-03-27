@@ -277,11 +277,11 @@ namespace CourtConnect.Repository.Announce
             return announceDetailsViewModels;
         }
 
-        public async Task<bool> CreateMatch(int announceId)
+        public async Task<int?> CreateMatch(int announceId)
         {
             var announce = await _db.Announces.FindAsync(announceId);
             if (announce == null || !announce.ConfirmGuest || !announce.ConfirmHost)
-                return false;
+                return null;
 
             using (var transaction = await _db.Database.BeginTransactionAsync())
             {
@@ -306,7 +306,7 @@ namespace CourtConnect.Repository.Announce
 
                     await _db.SaveChangesAsync();
                     await transaction.CommitAsync();
-                    return true;
+                    return match.Id;
                 }
                 catch
                 {

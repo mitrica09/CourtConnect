@@ -11,7 +11,7 @@ namespace CourtConnect.Service.Announce
         Task<bool> ConfirmHost(int announceId, string userId);
         Task<List<AnnounceDetailsViewModel>> GetMyAnnounces();
         Task<bool> RejectGuest(int announceId, string userId);
-        Task<bool> CreateMatch(int announceId);
+        Task<int?> CreateMatch(int announceId);
 
 
     }
