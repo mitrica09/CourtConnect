@@ -1,6 +1,3 @@
-
-bin/
-obj/
-CourtConnect/bin/
-CourtConnect/obj/
 /.vs
+/bin/
+/obj/
