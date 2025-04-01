@@ -31,7 +31,7 @@ namespace CourtConnect.Controllers
         [HttpGet]
         public async Task<IActionResult> AddScore(int matchId)
         {
-            var model = _matchService.PrepareAddScoreViewModel(matchId);
+            var model = _matchService.GetScoreForDDL(matchId);
             return View(model);
         }
         [HttpPost]
@@ -40,9 +40,10 @@ namespace CourtConnect.Controllers
             ModelState.Remove("Sets");
             ModelState.Remove("Players");
             ModelState.Remove("Scores");
+
             if (!ModelState.IsValid)
             {
-                model = _matchService.PrepareAddScoreViewModel(model.MatchId);
+                model = _matchService.GetScoreForDDL(model.MatchId);
                 return View(model);
             }
 

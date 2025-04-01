@@ -124,7 +124,7 @@ namespace CourtConnect.Repository.Match
                       .ToList();
         }
 
-        public MatchResultViewModel PrepareAddScoreViewModel(int matchId)
+        public MatchResultViewModel GetScoreForDDL(int matchId)
         {
             return new MatchResultViewModel
             {

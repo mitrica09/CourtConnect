@@ -39,9 +39,9 @@ namespace CourtConnect.Service.Match
             return _matchRepository.GetSetsForDDL();
         }
 
-        public MatchResultViewModel PrepareAddScoreViewModel(int matchId)
+        public MatchResultViewModel GetScoreForDDL(int matchId)
         {
-            return _matchRepository.PrepareAddScoreViewModel(matchId);
+            return _matchRepository.GetScoreForDDL(matchId);
         }
     }
 }
