@@ -2,7 +2,8 @@
 {
     public class MatchDetailsViewModel
     {
-        public int Id { get; set; }
+
+        public int MatchId { get; set; }
 
         // Jucători
         public string HostFullName { get; set; }

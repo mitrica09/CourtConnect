@@ -1,10 +1,16 @@
 ﻿using CourtConnect.ViewModel.Match;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CourtConnect.Service.Match
 {
     public interface IMatchService
     {
         Task<MatchDetailsViewModel> GetMatchDetails(int announceId, int matchId);
+        public IEnumerable<SelectListItem> GetSetsForDDL();
+        public IEnumerable<SelectListItem> GetPlayersForDDL(int matchId);
+        public IEnumerable<SelectListItem> GetScoresForDDL();
+        public Task<bool> CreateResultMatch(MatchResultViewModel model);
+        public MatchResultViewModel PrepareAddScoreViewModel(int matchId);
 
     }
 }

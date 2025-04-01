@@ -1,15 +1,11 @@
-﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link href="~/css/admin/general_pages.css" rel="stylesheet" />
-<link href="~/css/match/matchdetails.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-@model CourtConnect.ViewModel.Match.MatchDetailsViewModel
+﻿@model CourtConnect.ViewModel.Match.MatchDetailsViewModel
 
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="~/css/admin/general_pages.css" rel="stylesheet" />
-<link href="~/css/match/matchdetails.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link href="~/css/match/matchdetails.css" rel="stylesheet" />
+<script src="~/js/match/matchdetails.js"></script>
 
 <div class="match-container">
     <h1 class="title">TENIS</h1>
@@ -32,8 +28,19 @@
             <div class="match-info">
                 <p><strong>Status:</strong> @Model.Status</p>
                 <p><strong>Rezultat:</strong> @(string.IsNullOrEmpty(Model.ResultDescription) ? "Meci neinceput" : Model.ResultDescription)</p>
+
                 <a href="@Url.Action("Index", "Match")" class="btn-back">Înapoi la meciuri</a>
+
+                <button id="startMatchBtn" class="btn-start">Start Match</button>
+                <a id="stopMatchBtn" class="btn-stop" style="display:none;"
+                   href="@Url.Action("AddScore", "Match", new { matchId = Model.MatchId })">
+                    Stop Match
+                </a>
+
+
+                <p id="matchTimer" class="timer-display">00:00</p>
             </div>
+
         </div>
 
         <!-- Player 2 -->
@@ -46,9 +53,10 @@
     </div>
 </div>
 
-
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<!-- Script-uri -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+
+

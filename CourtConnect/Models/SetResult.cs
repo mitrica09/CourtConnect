@@ -7,6 +7,7 @@ namespace CourtConnect.Models
         [Key]
         public int Id { get; set; }
         public int SetId { get; set; }
+        public string Score { get; set; }
         public Set Set {  get; set; }
         public int MatchId { get; set; }
         public Match Match { get; set; }

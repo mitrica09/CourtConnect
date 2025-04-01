@@ -1,0 +1,27 @@
+﻿@model CourtConnect.ViewModel.Match.MatchResultViewModel
+@{
+    ViewData["Title"] = "Adaugă Scor";
+}
+
+<h2>Adaugă Scor</h2>
+
+<form asp-action="AddScore" method="post">
+    <input type="hidden" asp-for="MatchId" />
+
+    <div class="form-group">
+        <label>Set</label>
+        <select asp-for="SetId" asp-items="Model.Sets" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Jucător</label>
+        <select asp-for="UserId" asp-items="Model.Players" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Scor</label>
+        <select asp-for="Score" asp-items="Model.Scores" class="form-control"></select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvează Scorul</button>
+</form>

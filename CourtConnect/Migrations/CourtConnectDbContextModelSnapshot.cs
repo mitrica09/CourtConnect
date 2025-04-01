@@ -268,6 +268,10 @@ namespace CourtConnect.Migrations
                     b.Property<int>("MatchId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Score")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("SetId")
                         .HasColumnType("int");
 

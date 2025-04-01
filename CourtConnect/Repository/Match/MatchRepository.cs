@@ -2,6 +2,7 @@
 using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Match;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CourtConnect.Repository.Match
 {
@@ -51,6 +52,7 @@ namespace CourtConnect.Repository.Match
 
             return new MatchDetailsViewModel
             {
+                MatchId = match.Id,
                 HostFullName = hostUser.FullName,
                 GuestFullName = guestUser.FullName,
 
@@ -67,6 +69,72 @@ namespace CourtConnect.Repository.Match
                 ResultDescription = match.Result?.Name
             };
         }
+
+        public async Task<bool> CreateResultMatch(MatchResultViewModel model)
+        {
+            var setResult = new SetResult
+            {
+                MatchId = model.MatchId,
+                SetId = model.SetId,
+                UserId = model.UserId,
+                Score = model.Score
+            };
+
+            _db.SetsResult.Add(setResult);
+            await _db.SaveChangesAsync();
+            return true;
+        }
+
+        public IEnumerable<SelectListItem> GetPlayersForDDL(int matchId)
+        {
+            var players = _db.UserMatches
+                             .Where(um => um.MatchId == matchId)
+                             .Select(um => new SelectListItem
+                             {
+                                 Value = um.UserId,
+                                 Text = um.User.FullName
+                             })
+                             .ToList();
+
+            return players;
+        }
+
+        public IEnumerable<SelectListItem> GetScoresForDDL()
+        {
+            List<string> scores = new List<string>
+            {
+                "6-0", "6-1", "6-2", "6-3", "6-4", "7-5", "7-6"
+            };
+
+            return scores.Select(score => new SelectListItem
+            {
+                Value = score,
+                Text = score
+            }).ToList();
+        }
+
+        public IEnumerable<SelectListItem> GetSetsForDDL()
+        {
+            return _db.Sets
+                      .Select(set => new SelectListItem
+                      {
+                          Value = set.Id.ToString(),
+                          Text = set.Name
+                      })
+                      .ToList();
+        }
+
+        public MatchResultViewModel PrepareAddScoreViewModel(int matchId)
+        {
+            return new MatchResultViewModel
+            {
+                MatchId = matchId,
+                Sets = GetSetsForDDL(),
+                Players = GetPlayersForDDL(matchId),
+                Scores = GetScoresForDDL()
+            };
+        }
+
 
 
 
@@ -89,7 +157,7 @@ namespace CourtConnect.Repository.Match
 
         // In pagina de meci vei avea un buton de finalizeaza meci(se va trimitre Id-ul meciului)
         // dupa accesare va aparea o pagina in care vei introduce scorul meciului (Dropdown cu setul,dropdown cu jucatorul si scorul setului) iti va veni in backend o lista cu acestea)
-        // Se va adauga in tabela din baza de date SetResul (SetId,MatchId,UserId)
+        // Se va adauga in tabela din baza de date SetResult (SetId,MatchId,UserId)
         // In SetsResult vei mai adauga un camp de tip string Score in care vei introduce scorul  
         // Pentru dropDown ca sa iti vina doar jucatorii din acel meci ii vei lua dupa Id-urile din anunt
         // In matchRepository voi creea functia de: CreateResultMatch
