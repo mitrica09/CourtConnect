@@ -83,5 +83,17 @@ namespace CourtConnect.Repository.Match
         //Faci un ViewModel cu pagina meciului, date despre jucatori, date despre meci ,cote pariuri,si mai vezi tu 
         //In pagina de meci vei avea un buton pe care sa apesti startMeci si va porni un cronometru, butonul se va face stop meci iar status va vi pe asteptare scor 
 
+
+
+
+
+        // In pagina de meci vei avea un buton de finalizeaza meci(se va trimitre Id-ul meciului)
+        // dupa accesare va aparea o pagina in care vei introduce scorul meciului (Dropdown cu setul,dropdown cu jucatorul si scorul setului) iti va veni in backend o lista cu acestea)
+        // Se va adauga in tabela din baza de date SetResul (SetId,MatchId,UserId)
+        // In SetsResult vei mai adauga un camp de tip string Score in care vei introduce scorul  
+        // Pentru dropDown ca sa iti vina doar jucatorii din acel meci ii vei lua dupa Id-urile din anunt
+        // In matchRepository voi creea functia de: CreateResultMatch
+        // Creez un VM numit MatchResultViewModel
+        //Se va schimba statusul meciul in terminat dupa ce salvez tot in db.
     }
 }
