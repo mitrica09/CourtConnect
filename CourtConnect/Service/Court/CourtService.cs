@@ -1,6 +1,7 @@
 ﻿using CourtConnect.Repository.Court;
 using CourtConnect.ViewModel.Club;
 using CourtConnect.ViewModel.Court;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CourtConnect.Service.Court
 {
@@ -36,6 +37,11 @@ namespace CourtConnect.Service.Court
         public Task<CourtViewModel> GetCourtById(int id)
         {
             return _courtRepository.GetCourtById(id);
+        }
+
+        public IEnumerable<SelectListItem> GetCourtsForDDL()
+        {
+            return _courtRepository.GetCourtsForDDL();
         }
     }
 

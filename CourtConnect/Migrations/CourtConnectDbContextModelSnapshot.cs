@@ -33,11 +33,20 @@ namespace CourtConnect.Migrations
                     b.Property<int>("AnnounceStatusId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("ConfirmGuest")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("ConfirmHost")
+                        .HasColumnType("bit");
+
                     b.Property<int>("CourtId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("GuestUserId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()

@@ -1,0 +1,60 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/announce/indexannounce.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+@model IEnumerable<CourtConnect.ViewModel.Announce.AnnounceForDisplayViewModel>
+
+<div class="announce-header-container">
+    <a asp-action="MyAnnounces" class="announce-btn-left">
+        <i class="ri-file-list-line"></i> My Announces
+    </a>
+
+    <h2 class="announce-title">Anunțuri disponibile</h2>
+
+    <a asp-action="Create" class="announce-create-btn">
+        <i class="ri-add-line"></i> Creează un anunț nou
+    </a>
+</div>
+
+
+
+<div class="announce-container">
+    @foreach (var item in Model)
+    {
+        <div class="announce-card">
+            <div class="announce-header">
+                <div class="announce-avatar">
+                    <img src="~/images/@item.ImageUrl" asp-append-version="true" alt="User avatar">
+                </div>
+                <div class="announce-info">
+                    <strong>@item.Name</strong>
+                    <span class="announce-date">@item.StartDate</span>
+                </div>
+            </div>
+
+            <div class="announce-image">
+                <img src="~/images/@item.ImageUrl" asp-append-version="true" alt="Announce image">
+            </div>
+
+            <div class="announce-details">
+                <span class="announce-status">@item.Status</span>
+                <span class="announce-court">🏟 @item.Courts</span>
+            </div>
+
+            <form asp-controller="Announce" asp-action="MatchroomDetails" method="get">
+                <input type="hidden" name="announceId" value="@item.Id" />
+                <button type="submit" class="announce-button">
+                    <i class="fa fa-play faspace"></i> PLAY
+                </button>
+            </form>
+
+        </div>
+    }
+</div>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

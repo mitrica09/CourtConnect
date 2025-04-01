@@ -1,4 +1,5 @@
-﻿body {
+﻿/* 🔹 Stil general pentru pagina de profil */
+body {
     background-color: #f9f9f9;
     font-family: 'Poppins', sans-serif;
 }
@@ -13,19 +14,20 @@
     text-align: center;
 }
 
-    .profile-container h1 {
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: #333;
-    }
+.profile-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-    .profile-container p {
-        font-size: 14px;
-        color: #777;
-        margin-bottom: 20px;
-    }
+.profile-container p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
 
+/* 🔹 Stil pentru avatar */
 .profile-avatar {
     width: 120px;
     height: 120px;
@@ -35,39 +37,48 @@
     transition: transform 0.3s ease-in-out;
 }
 
-    .profile-avatar:hover {
-        transform: scale(1.05);
-    }
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
 
+/* 🔹 Form styling */
 .profile-form {
     margin-top: 20px;
     text-align: left;
 }
 
-    .profile-form .form-group {
-        margin-bottom: 15px;
-    }
+.profile-form .form-group {
+    margin-bottom: 15px;
+}
 
-    .profile-form label {
-        font-weight: 600;
-        color: #555;
-    }
+.profile-form label {
+    font-weight: 600;
+    color: #555;
+}
 
-    .profile-form input {
-        width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        transition: border 0.3s ease-in-out;
-    }
-
-        .profile-form input:focus {
-            border-color: #4CAF50;
-            outline: none;
-        }
-
-.profile-btn {
+.profile-form input {
     width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease-in-out;
+}
+
+.profile-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* 🔹 Butoane - container */
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* 🔹 Buton principal */
+.profile-btn {
+    width: 48%;
     background: #4CAF50;
     color: white;
     border: none;
@@ -76,8 +87,20 @@
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
-    .profile-btn:hover {
-        background: #45a049;
-    }
+.profile-btn:hover {
+    background: #45a049;
+}
+
+/* 🔹 Buton secundar (My Announces) */
+.secondary-btn {
+    background: #007bff;
+}
+
+.secondary-btn:hover {
+    background: #0056b3;
+}

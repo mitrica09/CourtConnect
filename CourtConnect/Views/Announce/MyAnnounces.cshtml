@@ -1,0 +1,80 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link href="~/css/announce/myannounces.css" rel="stylesheet" />
+<link href="~/css/notifications.css" rel="stylesheet" />
+@model List<CourtConnect.ViewModel.Announce.AnnounceDetailsViewModel>
+
+<h2 class="page-title">Anunțurile Mele</h2>
+
+@if (!Model.Any())
+{
+    <p class="no-announces">Nu ai anunțuri disponibile.</p>
+}
+else
+{
+    <div class="announce-table-wrapper">
+        <table class="announce-table">
+            <thead>
+                <tr>
+                    <th>Adversar</th>
+                    <th>Locație</th>
+                    <th>Start Date</th>
+                    <th>Club</th>
+                    <th>Nivel</th>
+                    <th>Puncte</th>
+                    <th>Confirmare</th>
+                    <th>Acțiuni</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var announce in Model)
+                {
+                    <tr class="@(announce.ConfirmHost ? "confirmed-row" : "pending-row")">
+                        <td>@announce.GuestFullName</td>
+                        <td>@announce.LocationDetails</td>
+                        <td>@announce.StartDate</td>
+                        <td>@announce.GuestClub</td>
+                        <td>@announce.GuestLevel</td>
+                        <td>@announce.GuestRank</td>
+                        <td>
+                            @if (announce.ConfirmHost)
+                            {
+                                <span class="status-badge confirmed">Confirmat</span>
+                            }
+                            else
+                            {
+                                <span class="status-badge pending">În așteptare</span>
+                            }
+                        </td>
+                        <td>
+                            @if (announce.IsHost && !announce.ConfirmHost)
+                            {
+                                <div class="action-buttons">
+                                    <form method="post" action="/Announce/ConfirmHost">
+                                        <input type="hidden" name="announceId" value="@announce.Id" />
+                                        <button type="submit" class="btn btn-success">✔ Confirmă</button>
+                                    </form>
+
+                                    <form method="post" action="/Announce/RejectGuest">
+                                        <input type="hidden" name="announceId" value="@announce.Id" />
+                                        <button type="submit" class="btn btn-danger">✖ Refuză</button>
+                                    </form>
+                                </div>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+

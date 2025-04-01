@@ -10,13 +10,14 @@
 <form>
     @using (Html.BeginForm("Index", "Ranking", FormMethod.Get))
     {
-        @Html.Partial("_RankingFilter", Model.Filter);
-      
+        @Html.Partial("_RankingFilter", Model.Filter)
+        ;
     }
 </form>
 
 <div class="ranking-container">
     <h1 class="ranking-title">🏆 Clasament General 🏆</h1>
+
     <table class="ranking-table">
         <thead>
             <tr>
@@ -28,10 +29,18 @@
             </tr>
         </thead>
         <tbody>
+            @{
+                int pageSize = Model.Ranking.PageSize; 
+                int pageNumber = Model.Ranking.PageNumber; 
+                int indexStart = (pageNumber - 1) * pageSize; 
+            }
+
             @for (int i = 0; i < Model.Ranking.Count(); i++)
             {
-                <tr class="ranking-row @(i == 0 ? "gold" : i == 1 ? "silver" : i == 2 ? "bronze" : "")">
-                    <td class="rank-number">@(i + 1)</td>
+                int rankNumber = indexStart + i + 1; 
+
+                <tr class="ranking-row @(rankNumber == 1 ? "gold" : rankNumber == 2 ? "silver" : rankNumber == 3 ? "bronze" : "")">
+                    <td class="rank-number">@rankNumber</td>
                     <td>@Model.Ranking[i].FullName</td>
                     <td>@Model.Ranking[i].Club</td>
                     <td>@Model.Ranking[i].Level</td>
@@ -41,14 +50,27 @@
         </tbody>
     </table>
 
-    <div class="pagination">
+    <div class="pagination-container">
         @Html.PagedListPager(Model.Ranking, page => Url.Action("Index", new
             {
                 page,
                 levelId = Model.Filter.LevelId,
                 clubId = Model.Filter.ClubId,
                 name = Model.Filter.Name
-            }))
-
+            }),
+                 new PagedListRenderOptions
+        {
+            DisplayLinkToFirstPage = PagedListDisplayMode.Always, 
+            DisplayLinkToLastPage = PagedListDisplayMode.Always,  
+            DisplayLinkToPreviousPage = PagedListDisplayMode.Always, 
+            DisplayLinkToNextPage = PagedListDisplayMode.Always, 
+            MaximumPageNumbersToDisplay = 5, 
+            UlElementClasses = new[] { "pagination", "custom-pagination" }, 
+            LiElementClasses = new[] { "page-item" }, 
+            PageClasses = new[] { "page-link" }
+        })
     </div>
+
+
+
 </div>

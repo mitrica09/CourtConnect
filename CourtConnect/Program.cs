@@ -17,6 +17,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using CourtConnect.Service.Ranking;
 using CourtConnect.Repository.Ranking;
+using CourtConnect.Repository.Announce;
+using CourtConnect.Service.Announce;
+using CourtConnect.Repository.Match;
+using CourtConnect.Service.Match;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,6 +50,11 @@ builder.Services.AddScoped<IStatusRepository, StatusRepository>();
 builder.Services.AddScoped<IStatusService, StatusService>();
 builder.Services.AddScoped<IRankingService, RankingService>();
 builder.Services.AddScoped<IRankingRepository, RankingRepository>();
+builder.Services.AddScoped<IAnnounceRepository, AnnounceRepository>();
+builder.Services.AddScoped<IAnnounceService, AnnounceService>();
+builder.Services.AddScoped<IMatchRepository, MatchRepository>();
+builder.Services.AddScoped<IMatchService, MatchService>();
+
 
 
 

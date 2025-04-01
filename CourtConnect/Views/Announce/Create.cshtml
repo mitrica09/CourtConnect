@@ -1,0 +1,67 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/admin/editandcreateadmin.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link href="~/css/notifications.css" rel="stylesheet" />
+@model CourtConnect.ViewModel.Announce.AnnounceFormViewModel
+
+@{
+    ViewData["Title"] = "Adaugă anunt";
+}
+
+<h1 class="page-title">Creează un anunt nou</h1>
+
+
+<div class="form-wrapper">
+    <div class="form-card">
+        <h2>Adaugă anunt</h2>
+
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label for="Name" class="form-label">Titlul anuntului</label>
+                <input asp-for="Name" class="form-control" placeholder="Introdu titlul anuntului" />
+                <span asp-validation-for="Name" class="text-danger d-block"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="CourtId" class="form-label">Teren</label>
+                <select asp-for="CourtId" class="form-control">
+                    <option value="0" disabled selected>Selectează terenul</option>
+                    @foreach (var court in Model.Courts)
+                    {
+                        <option value="@court.Value">@court.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="CourtId" class="text-danger d-block"></span>
+            </div>
+
+            <div class="form-group">
+
+                <label asp-for="StartDate"></label>
+                <input asp-for="StartDate" class="form-control" type="datetime-local" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EndDate"></label>
+                <input asp-for="EndDate" class="form-control" type="datetime-local" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn-primary">Adaugă</button>
+                <a asp-action="Index" class="btn-secondary">Înapoi la listă</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+

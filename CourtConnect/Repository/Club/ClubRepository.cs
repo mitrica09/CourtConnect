@@ -73,7 +73,7 @@ namespace CourtConnect.Repository.Club
                         return false;
 
                     club.Name = clubViewModel.Name;
-                    club.NumberOfPlayers = clubViewModel.NumberOfPlayers;
+                    //club.NumberOfPlayers = clubViewModel.NumberOfPlayers; - doar daca vreau sa resetez numarul de jucatori la 0 atunci cand editez numele.
 
                     await _db.SaveChangesAsync();
                     transaction.Commit();

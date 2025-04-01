@@ -1,0 +1,54 @@
+﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/match/matchdetails.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+@model CourtConnect.ViewModel.Match.MatchDetailsViewModel
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/admin/general_pages.css" rel="stylesheet" />
+<link href="~/css/match/matchdetails.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="match-container">
+    <h1 class="title">TENIS</h1>
+
+    <div class="players-wrapper">
+        <!-- Player 1 -->
+        <div class="player-card">
+            <img src="~/images/player1.png" class="player-img" alt="Player 1" />
+            <h2>@Model.HostFullName</h2>
+            <p>Level: @Model.HostLevel</p>
+            <p>Rank: @Model.HostRank</p>
+        </div>
+
+        <!-- VS + match info -->
+        <div class="vs-card">
+            <h2>VS</h2>
+            <p>@Model.LocationDetails</p>
+            <p>@Model.StartDate</p>
+
+            <div class="match-info">
+                <p><strong>Status:</strong> @Model.Status</p>
+                <p><strong>Rezultat:</strong> @(string.IsNullOrEmpty(Model.ResultDescription) ? "Meci neinceput" : Model.ResultDescription)</p>
+                <a href="@Url.Action("Index", "Match")" class="btn-back">Înapoi la meciuri</a>
+            </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player-card">
+            <img src="~/images/player1.png" class="player-img" alt="Player 2" />
+            <h2>@Model.GuestFullName</h2>
+            <p>Level: @Model.GuestLevel</p>
+            <p>Rank: @Model.GuestRank</p>
+        </div>
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
