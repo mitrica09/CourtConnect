@@ -5,7 +5,6 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
-
 @{
     ViewData["Title"] = "Adaugă Scor";
     var setsJson = Html.Raw(Json.Serialize(Model.Sets));
@@ -14,6 +13,17 @@
 }
 
 <h2>Adaugă scorul meciului</h2>
+
+<!-- ✅ Afișare erori din ModelState -->
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
 
 <form asp-action="AddScore" method="post" id="scoreForm">
     <input type="hidden" asp-for="MatchId" />
@@ -66,17 +76,13 @@
     <button type="submit" class="btn btn-success">Salvează Scorul</button>
 </form>
 
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
 
-
-
 @section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         let setIndex = @Model.SetResults.Count;
 

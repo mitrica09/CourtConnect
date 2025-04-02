@@ -13,16 +13,13 @@ namespace CourtConnect.ViewModel.Match
     public class MatchResultViewModel
     {
         public int MatchId { get; set; }
+        public int AnnounceId { get; set; }
 
         public List<MatchResultItemViewModel> SetResults { get; set; } = new(); // ADĂUGAT
 
-        [BindNever]
         public IEnumerable<SelectListItem> Sets { get; set; }
 
-        [BindNever]
         public IEnumerable<SelectListItem> Players { get; set; }
-
-        [BindNever]
         public IEnumerable<SelectListItem> Scores { get; set; }
     }
 }

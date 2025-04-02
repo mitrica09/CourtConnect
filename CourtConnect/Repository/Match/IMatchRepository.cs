@@ -12,5 +12,7 @@ namespace CourtConnect.Repository.Match
         public IEnumerable<SelectListItem> GetScoresForDDL();
         public Task<bool> CreateResultMatch(MatchResultViewModel model);
         public MatchResultViewModel GetScoreForDDL(int matchId);
+        public Task<bool> SetScoreAlreadyExists(int matchId, int setId);
+
     }
 }

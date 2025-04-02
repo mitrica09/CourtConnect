@@ -1,4 +1,5 @@
 ﻿using CourtConnect.Models;
+using Microsoft.EntityFrameworkCore;
 using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Match;
 using Microsoft.AspNetCore.Identity;
@@ -142,6 +143,12 @@ namespace CourtConnect.Repository.Match
             return true;
         }
 
+        public async Task<bool> SetScoreAlreadyExists(int matchId, int setId)
+        {
+            return await _db.SetsResult
+                .AnyAsync(s => s.MatchId == matchId && s.SetId == setId);
+        }
+
 
 
 
@@ -172,5 +179,15 @@ namespace CourtConnect.Repository.Match
         // In matchRepository voi creea functia de: CreateResultMatch
         // Creez un VM numit MatchResultViewModel
         //Se va schimba statusul meciul in terminat dupa ce salvez tot in db.
+
+
+
+        //Creez o metoda numita DeclaraCastigator(), ii dau ca parametrii announceId si MatchId, de aici iau ambii useri si vad in lista din SetsResult care user castiga(dupa matchId) 
+        // cred ca: am o functie care deja iti cauta in lista dupa o valoare si vede de cate ori apare si dupa daca e cazul fac comparatie sa vad care e castigatorul
+        // trebuie sa te uiti si in anuntul meciului ca sa iei ambii jucatori
+        // iei lista SetsResult dupa match Id si iei doar USer 
+        //Vezi care user apare de mai multe ori iar acela a castigat meciul 
+        //Cine a castigat meciul cauti unde are el punctele(faci cautare dupa userId) si la acel user adaugi 3 puncte si la cine a pierdut ii scazi 3 puncte 
+
     }
 }

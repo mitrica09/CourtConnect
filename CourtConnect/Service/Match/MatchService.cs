@@ -43,5 +43,10 @@ namespace CourtConnect.Service.Match
         {
             return _matchRepository.GetScoreForDDL(matchId);
         }
+
+        public Task<bool> SetScoreAlreadyExists(int matchId, int setId)
+        {
+            return _matchRepository.SetScoreAlreadyExists(matchId, setId);
+        }
     }
 }
