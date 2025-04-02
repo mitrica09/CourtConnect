@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 15:30:22 GMT"
+          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 15:30:22 GMT"
+          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -7953,6 +7953,88 @@
         {
           "Name": "label",
           "Value": "css/Announce/MyAnnounces.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Match/AddScore.c18t9yf0i4.css",
+      "AssetFile": "css/Match/AddScore.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:17:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c18t9yf0i4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Match/AddScore.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Match/AddScore.css",
+      "AssetFile": "css/Match/AddScore.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:17:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg="
         }
       ]
     },

@@ -70,21 +70,6 @@ namespace CourtConnect.Repository.Match
             };
         }
 
-        public async Task<bool> CreateResultMatch(MatchResultViewModel model)
-        {
-            var setResult = new SetResult
-            {
-                MatchId = model.MatchId,
-                SetId = model.SetId,
-                UserId = model.UserId,
-                Score = model.Score
-            };
-
-            _db.SetsResult.Add(setResult);
-            await _db.SaveChangesAsync();
-            return true;
-        }
-
         public IEnumerable<SelectListItem> GetPlayersForDDL(int matchId)
         {
             var players = _db.UserMatches
@@ -134,6 +119,30 @@ namespace CourtConnect.Repository.Match
                 Scores = GetScoresForDDL()
             };
         }
+
+        public async Task<bool> CreateResultMatch(MatchResultViewModel model)
+        {
+            if (model.SetResults == null || !model.SetResults.Any())
+                return false;
+
+            foreach (var set in model.SetResults)
+            {
+                var setResult = new SetResult
+                {
+                    MatchId = model.MatchId,
+                    SetId = set.SetId,
+                    UserId = set.UserId,
+                    Score = set.Score
+                };
+
+                _db.SetsResult.Add(setResult);
+            }
+
+            await _db.SaveChangesAsync();
+            return true;
+        }
+
+
 
 
 

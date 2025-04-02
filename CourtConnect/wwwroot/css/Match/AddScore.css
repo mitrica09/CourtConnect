@@ -1,0 +1,105 @@
+﻿/* Titlu principal */
+h2 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Container formular */
+form {
+    padding-bottom: 150px; /* pentru a evita suprapunerea cu footerul */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Stil container pentru fiecare set */
+.set-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+    /* Titlu pentru fiecare set */
+    .set-form h4 {
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #34495e;
+    }
+
+/* Etichetele campurilor */
+label {
+    font-weight: 500;
+    color: #495057;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Selecturile din formular */
+select.form-control {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+    /* Hover select */
+    select.form-control:focus {
+        border-color: #80bdff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+/* Butoanele */
+button {
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* Buton adaugă set */
+#addSetBtn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+    #addSetBtn:hover {
+        background-color: #5a6268;
+    }
+
+/* Buton salvează */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+/* Alertă pentru max 3 seturi */
+.alert-warning {
+    font-size: 0.95rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    .set-form {
+        padding: 15px;
+    }
+}

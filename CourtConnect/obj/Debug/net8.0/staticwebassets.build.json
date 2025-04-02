@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/SHg+elgbO7GZ3DxGsV63N/PnhSMW40NUZTTgHFhO4s=",
+  "Hash": "OmRw/venCPJ7/WD03hwCgXyroLjsdJOoJUK8zWSZ6qk=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2073,6 +2073,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Announce\\MyAnnounces.css"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\AddScore.css",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "css/Match/AddScore#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c18t9yf0i4",
+      "Integrity": "ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Match\\AddScore.css"
     },
     {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MatchDetails.css",
@@ -11205,7 +11226,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 15:30:22 GMT"
+          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11250,7 +11271,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 15:30:22 GMT"
+          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11295,7 +11316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 15:30:22 GMT"
+          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11332,7 +11353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 15:30:22 GMT"
+          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11999,6 +12020,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-lLc78VdOHUG/rXIxMr10yoXH12Y0M6J7ODq+89uK3C4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Match/AddScore.c18t9yf0i4.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\AddScore.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:17:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c18t9yf0i4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Match/AddScore.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Match/AddScore.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\AddScore.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:17:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ENHWrKnv1EPF85dmi7kDDbxg84iwoyF9BJgT9oMJoOg="
         }
       ]
     },

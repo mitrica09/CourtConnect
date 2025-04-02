@@ -94,6 +94,7 @@ wwwroot\css\Admin\IndexAdmin.css
 wwwroot\css\Announce\AnnounceMatchroomDetails.css
 wwwroot\css\Announce\IndexAnnounce.css
 wwwroot\css\Announce\MyAnnounces.css
+wwwroot\css\Match\AddScore.css
 wwwroot\css\Match\MatchDetails.css
 wwwroot\css\notifications.css
 wwwroot\css\Ranking\Ranking.css
