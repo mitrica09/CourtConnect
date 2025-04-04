@@ -48,5 +48,10 @@ namespace CourtConnect.Service.Match
         {
             return _matchRepository.SetScoreAlreadyExists(matchId, setId);
         }
+
+        public async Task<Models.Match> GetMatchById(int matchId)
+        {
+            return await _matchRepository.GetMatchById(matchId);
+        }
     }
 }

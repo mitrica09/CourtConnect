@@ -15,7 +15,7 @@ namespace CourtConnect.ViewModel.Match
         public int MatchId { get; set; }
         public int AnnounceId { get; set; }
 
-        public List<MatchResultItemViewModel> SetResults { get; set; } = new(); // ADĂUGAT
+        public List<MatchResultItemViewModel> SetResults { get; set; } = new();
 
         public IEnumerable<SelectListItem> Sets { get; set; }
 

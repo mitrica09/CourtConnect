@@ -126,4 +126,15 @@
     margin-top: 15px;
 }
 
+.scores {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+
+.score-value {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 

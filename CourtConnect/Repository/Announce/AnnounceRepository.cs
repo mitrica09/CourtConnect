@@ -291,6 +291,7 @@ namespace CourtConnect.Repository.Announce
                     {
                         StatusId = 1, // presupunem că 1 = Match Confirmed
                         ResultId = 1,
+                        AnnounceId = announceId,
                         UserMatches = new List<UserMatch>
                 {
                     new UserMatch { UserId = announce.UserId },

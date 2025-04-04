@@ -32,6 +32,10 @@ namespace CourtConnect.Controllers
         public async Task<IActionResult> AddScore(int matchId)
         {
             var model = _matchService.GetScoreForDDL(matchId);
+
+            var match = await _matchService.GetMatchById(matchId);
+            model.AnnounceId = match.AnnounceId;
+
             model.SetResults = new List<MatchResultItemViewModel>
             {
                 new MatchResultItemViewModel()
@@ -46,7 +50,6 @@ namespace CourtConnect.Controllers
             ModelState.Remove("Players");
             ModelState.Remove("Scores");
 
-            // ✅ Verificare dacă sunt mai mult de 3 seturi
             if (model.SetResults.Count > 3)
             {
                 ModelState.AddModelError("", "Nu poți adăuga mai mult de 3 seturi.");
@@ -54,7 +57,6 @@ namespace CourtConnect.Controllers
                 return View(model);
             }
 
-            // ✅ Validare model și verificare dacă lista de seturi este nulă sau goală
             if (!ModelState.IsValid || model.SetResults == null || !model.SetResults.Any())
             {
                 model = _matchService.GetScoreForDDL(model.MatchId);
@@ -62,7 +64,6 @@ namespace CourtConnect.Controllers
                 return View(model);
             }
 
-            // ✅ Verificare dacă există deja scoruri pentru vreun set
             foreach (var set in model.SetResults)
             {
                 if (await _matchService.SetScoreAlreadyExists(model.MatchId, set.SetId))
@@ -73,8 +74,7 @@ namespace CourtConnect.Controllers
                 }
             }
 
-            // ✅ Salvare scoruri
-            var result = await _matchService.CreateResultMatch(model); // Salvează toate seturile
+            var result = await _matchService.CreateResultMatch(model);
 
             if (result)
             {
@@ -84,6 +84,7 @@ namespace CourtConnect.Controllers
             ModelState.AddModelError("", "A apărut o eroare la salvarea scorului.");
             return View(model);
         }
+
 
 
 

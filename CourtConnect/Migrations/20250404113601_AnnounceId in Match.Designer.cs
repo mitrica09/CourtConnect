@@ -4,6 +4,7 @@ using CourtConnect.StartPackage.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CourtConnect.Migrations
 {
     [DbContext(typeof(CourtConnectDbContext))]
-    partial class CourtConnectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250404113601_AnnounceId in Match")]
+    partial class AnnounceIdinMatch
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

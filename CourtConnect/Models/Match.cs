@@ -10,6 +10,8 @@ namespace CourtConnect.Models
         public Status Status { get; set; }
         public int ResultId { get; set; }
         public Result Result { get; set; }
+        public int AnnounceId { get; set; }
+        public Announce Announce { get; set; }
 
         public virtual ICollection<UserMatch> UserMatches { get; set; }
         public virtual ICollection<SetResult> SetResults { get; set; }

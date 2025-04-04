@@ -51,6 +51,28 @@ namespace CourtConnect.Repository.Match
                 ? await _db.Results.FindAsync(match.ResultId)
                 : null;
 
+
+            // 4. Seturi jucate
+            var setResultsRaw = await _db.SetsResult
+                .Where(s => s.MatchId == matchId)
+                .Include(s => s.User)
+                .Include(s => s.Set)
+                .ToListAsync();
+
+            var setResults = setResultsRaw
+                .Select(s => new SetResultViewModel
+                {
+                    PlayerName = s.User.FullName,
+                    Score = s.Score,
+                    SetName = s.Set.Name,
+                    UserId = s.UserId,
+                    SetOrder = s.Set.Id // presupunem că Set.Id reflectă ordinea (sau adaugă un câmp Order)
+                })
+                .ToList();
+
+
+            var hasScores = await _db.SetsResult.AnyAsync(s => s.MatchId == matchId);
+
             return new MatchDetailsViewModel
             {
                 MatchId = match.Id,
@@ -67,7 +89,10 @@ namespace CourtConnect.Repository.Match
                 StartDate = announce.StartDate.ToString("dd MMM yyyy, HH:mm"),
 
                 Status = match.Status?.Name,
-                ResultDescription = match.Result?.Name
+                ResultDescription = match.Result?.Name,
+
+                HasScores = hasScores,
+                SetResults = setResults
             };
         }
 
@@ -148,6 +173,14 @@ namespace CourtConnect.Repository.Match
             return await _db.SetsResult
                 .AnyAsync(s => s.MatchId == matchId && s.SetId == setId);
         }
+
+        public async Task<Models.Match> GetMatchById(int matchId)
+        {
+            return await _db.Matches.FindAsync(matchId);
+        }
+
+
+
 
 
 

@@ -66,6 +66,13 @@ namespace CourtConnect.StartPackage.Database
             .HasOne(b => b.Result)
             .WithMany(a => a.Matches)
             .HasForeignKey(b => b.ResultId);
+
+            modelBuilder.Entity<Match>()
+            .HasOne(m => m.Announce)
+            .WithMany(a => a.Matches) 
+            .HasForeignKey(m => m.AnnounceId)
+            .OnDelete(DeleteBehavior.Restrict);
+
             #endregion
 
             #region Relationship UserMatch

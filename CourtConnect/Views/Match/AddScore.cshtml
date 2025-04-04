@@ -27,6 +27,7 @@
 
 <form asp-action="AddScore" method="post" id="scoreForm">
     <input type="hidden" asp-for="MatchId" />
+    <input type="hidden" asp-for="AnnounceId" />
 
     <div id="setContainer">
         @for (int i = 0; i < Model.SetResults.Count; i++)

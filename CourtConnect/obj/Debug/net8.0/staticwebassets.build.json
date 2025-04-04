@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OmRw/venCPJ7/WD03hwCgXyroLjsdJOoJUK8zWSZ6qk=",
+  "Hash": "smmCwjapxxUEOlcte8ySsOYCxM978++JKdFQggaJDKo=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2110,8 +2110,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "yek4fqqbxq",
-      "Integrity": "pkhqu04QYSOhX5DpbSAUapXKc7MZ3R93TuM43x1nLEQ=",
+      "Fingerprint": "yvawqzyb5c",
+      "Integrity": "4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Match\\MatchDetails.css"
@@ -11226,7 +11226,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
+          "Value": "Fri, 04 Apr 2025 11:18:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11271,7 +11271,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
+          "Value": "Fri, 04 Apr 2025 11:18:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11316,7 +11316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
+          "Value": "Fri, 04 Apr 2025 11:18:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11353,7 +11353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 16:40:22 GMT"
+          "Value": "Fri, 04 Apr 2025 11:18:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12116,7 +12116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2458"
+          "Value": "2620"
         },
         {
           "Name": "Content-Type",
@@ -12124,11 +12124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pkhqu04QYSOhX5DpbSAUapXKc7MZ3R93TuM43x1nLEQ=\""
+          "Value": "\"4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 08:42:51 GMT"
+          "Value": "Fri, 04 Apr 2025 13:01:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12138,12 +12138,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pkhqu04QYSOhX5DpbSAUapXKc7MZ3R93TuM43x1nLEQ="
+          "Value": "sha256-4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8="
         }
       ]
     },
     {
-      "Route": "css/Match/MatchDetails.yek4fqqbxq.css",
+      "Route": "css/Match/MatchDetails.yvawqzyb5c.css",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MatchDetails.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12153,7 +12153,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2458"
+          "Value": "2620"
         },
         {
           "Name": "Content-Type",
@@ -12161,11 +12161,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pkhqu04QYSOhX5DpbSAUapXKc7MZ3R93TuM43x1nLEQ=\""
+          "Value": "\"4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 08:42:51 GMT"
+          "Value": "Fri, 04 Apr 2025 13:01:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12175,7 +12175,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "yek4fqqbxq"
+          "Value": "yvawqzyb5c"
         },
         {
           "Name": "label",
@@ -12183,7 +12183,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pkhqu04QYSOhX5DpbSAUapXKc7MZ3R93TuM43x1nLEQ="
+          "Value": "sha256-4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8="
         }
       ]
     },

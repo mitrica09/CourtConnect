@@ -31,16 +31,37 @@
 
                 <a href="@Url.Action("Index", "Match")" class="btn-back">Înapoi la meciuri</a>
 
-                <button id="startMatchBtn" class="btn-start">Start Match</button>
-                <a id="stopMatchBtn" class="btn-stop" style="display:none;"
-                   href="@Url.Action("AddScore", "Match", new { matchId = Model.MatchId })">
-                    Stop Match
-                </a>
+                @if (!Model.HasScores)
+                {
+                    <button id="startMatchBtn" class="btn-start">Start Match</button>
+                    <a id="stopMatchBtn" class="btn-stop" style="display:none;"
+                       href="@Url.Action("AddScore", "Match", new { matchId = Model.MatchId })">
+                        Stop Match
+                    </a>
+                    <p id="matchTimer" class="timer-display">00:00</p>
+                }
+                else
+                {
+                    <div class="text-white mt-3">
+                        <h5 class="mb-2">Scoruri pe Seturi</h5>
 
-
-                <p id="matchTimer" class="timer-display">00:00</p>
+                        @foreach (var set in Model.SetResults.GroupBy(s => s.SetName))
+                        {
+                            <div class="mb-2 ps-2">
+                                @foreach (var item in set)
+                                {
+                                    <div class="d-flex justify-content-between pe-2">
+                                        <span class="player-name text-truncate">@item.PlayerName</span>
+                                        <span class="score-value">
+                                            @item.Score
+                                        </span>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                }
             </div>
-
         </div>
 
         <!-- Player 2 -->
@@ -57,6 +78,3 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
-
-
-

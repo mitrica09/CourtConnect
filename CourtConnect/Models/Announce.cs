@@ -18,5 +18,7 @@ namespace CourtConnect.Models
         public bool ConfirmHost { get; set; }
         public bool ConfirmGuest { get; set; }
         public string? GuestUserId { get; set; }
+
+        public ICollection<Match> Matches { get; set; }
     }
 }
