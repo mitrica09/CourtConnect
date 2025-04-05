@@ -38,5 +38,10 @@ namespace CourtConnect.Service.Ranking
         {
             return _rankingRepository.GetRankingByName(rankingViewModels, name);
         }
+
+        public  Task UpdatePoints(string userId, int points)
+        {
+            return  _rankingRepository.UpdatePoints(userId, points);
+        }
     }
 }

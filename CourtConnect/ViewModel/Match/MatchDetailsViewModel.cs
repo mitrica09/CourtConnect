@@ -15,6 +15,7 @@
         public string Status { get; set; }
         public string ResultDescription { get; set; }
         public bool HasScores { get; set; }
+        public string WinnerName { get; set; }
         public List<SetResultViewModel> SetResults { get; set; } = new();
 
     }

@@ -78,13 +78,13 @@ namespace CourtConnect.Controllers
 
             if (result)
             {
+                await _matchService.DeclareWinner(model.MatchId);
                 return RedirectToAction("Details", new { announceId = model.AnnounceId, matchId = model.MatchId });
             }
 
             ModelState.AddModelError("", "A apărut o eroare la salvarea scorului.");
             return View(model);
         }
-
 
 
 

@@ -4,11 +4,15 @@ using CourtConnect.StartPackage.Database;
 using CourtConnect.ViewModel.Match;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc;
+using CourtConnect.Service.Ranking;
+using CourtConnect.Repository.Ranking;
 
 namespace CourtConnect.Repository.Match
 {
     public class MatchRepository : IMatchRepository
     {
+        private readonly IRankingService _rankingService;
         private readonly CourtConnectDbContext _db;
 
         private readonly UserManager<User> _userManager;
@@ -17,11 +21,13 @@ namespace CourtConnect.Repository.Match
 
         public MatchRepository(CourtConnectDbContext db
                                 , UserManager<User> userManager
-                                , IHttpContextAccessor httpContextAccessor)
+                                , IHttpContextAccessor httpContextAccessor
+                                ,IRankingService rankingService)
         {
             _db = db;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
+            _rankingService = rankingService;
         }
 
         public async Task<MatchDetailsViewModel> GetMatchDetails(int announceId, int matchId)
@@ -178,6 +184,62 @@ namespace CourtConnect.Repository.Match
         {
             return await _db.Matches.FindAsync(matchId);
         }
+
+        public async Task<bool> DeclareWinner(int matchId)
+        {
+            var sets = await _db.SetsResult
+                .Where(s => s.MatchId == matchId)
+                .ToListAsync();
+
+            var userWins = sets.GroupBy(s => s.UserId)
+                               .ToDictionary(g => g.Key, g => g.Count());
+
+            // Câștigătorul și pierzătorul sunt selectați pe baza numărului de seturi câștigate
+            var winnerUserId = userWins.OrderByDescending(g => g.Value).FirstOrDefault().Key;
+            var loserUserId = userWins.OrderBy(g => g.Value).FirstOrDefault().Key;
+
+            // Obținem punctele actuale pentru câștigător și pierzător
+            int winnerPoints = await _rankingService.GetPointsByUserId(winnerUserId);
+            int loserPoints = await _rankingService.GetPointsByUserId(loserUserId);
+
+            // Actualizăm punctele
+            await _rankingService.UpdatePoints(winnerUserId, winnerPoints + 50);  // Câștigătorul primește 50 de puncte
+            await _rankingService.UpdatePoints(loserUserId, loserPoints - 50);    // Pierzătorul pierde 50 de puncte
+
+            // Determinăm numele câștigătorului
+            var winnerUser = await _db.Users.FindAsync(winnerUserId);
+            var winnerName = winnerUser?.FullName ?? "Necunoscut";
+
+            // Verificăm dacă există deja un rezultat cu acest nume
+            var result = await _db.Results
+                .Where(r => r.Name == winnerName)
+                .FirstOrDefaultAsync();
+
+            if (result == null)
+            {
+                // Dacă nu există, adăugăm un nou rezultat
+                result = new Result
+                {
+                    Name = winnerName
+                };
+                _db.Results.Add(result);
+                await _db.SaveChangesAsync();
+            }
+
+            // Actualizăm meciul cu rezultatul și statusul
+            var match = await _db.Matches.FirstOrDefaultAsync(m => m.Id == matchId);
+            if (match != null)
+            {
+                match.ResultId = result.Id;
+                match.StatusId = 5; // Finalizat
+                await _db.SaveChangesAsync();
+            }
+
+            return true;
+        }
+
+
+
 
 
 

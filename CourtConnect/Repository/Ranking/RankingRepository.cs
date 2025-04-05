@@ -68,6 +68,29 @@ namespace CourtConnect.Repository.Ranking
         {
             return rankingViewModels.Where(s => s.FullName.ToUpper().Contains(name.ToUpper())).ToList();
         }
+
+        public async Task UpdatePoints(string userId, int points)
+        {
+            try
+            {
+                var userRanking = _db.Rankings
+                    .FirstOrDefault(r => r.UserId == userId); // Sincron
+
+                if (userRanking != null)
+                {
+                    userRanking.Points = points;
+                    await _db.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception("User not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error in UpdatePoints method: {ex.Message}", ex);
+            }
+        }
     }
 }
 
