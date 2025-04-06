@@ -185,23 +185,35 @@ namespace CourtConnect.Repository.Match
             return await _db.Matches.FindAsync(matchId);
         }
 
+
         public async Task<bool> DeclareWinner(int matchId)
         {
+            // Obținem seturile asociate cu acest meci
             var sets = await _db.SetsResult
                 .Where(s => s.MatchId == matchId)
                 .ToListAsync();
 
-            var userWins = sets.GroupBy(s => s.UserId)
-                               .ToDictionary(g => g.Key, g => g.Count());
+            // Grupăm seturile pe utilizator și numărăm câte seturi a câștigat fiecare
+            var userWins = sets
+                .GroupBy(s => s.UserId)
+                .ToDictionary(g => g.Key, g => g.Count());
 
-            // Câștigătorul și pierzătorul sunt selectați pe baza numărului de seturi câștigate
+            // Căutăm câștigătorul pe baza numărului de seturi câștigate
             var winnerUserId = userWins.OrderByDescending(g => g.Value).FirstOrDefault().Key;
-            var loserUserId = userWins.OrderBy(g => g.Value).FirstOrDefault().Key;
 
+            // Obținem utilizatorii care au participat la meci folosind tabela UserMatches
+            var allPlayers = await _db.UserMatches
+                .Where(um => um.MatchId == matchId)
+                .Select(um => um.UserId)
+                .ToListAsync();
+
+            // Verificăm cine este pierzătorul
+            var loserUserId = allPlayers.FirstOrDefault(u => u != winnerUserId);
+
+            // Verificăm dacă loserUserId este valid
             if (loserUserId == null)
             {
-                // Aici, pierzătorul este jucătorul care nu are nici un set câștigat.
-                loserUserId = userWins.Keys.FirstOrDefault(g => g != winnerUserId);
+                throw new Exception("User not found for the loser.");
             }
 
             // Obținem punctele actuale pentru câștigător și pierzător
@@ -243,16 +255,6 @@ namespace CourtConnect.Repository.Match
 
             return true;
         }
-
-
-
-
-
-
-
-
-
-
 
 
 
