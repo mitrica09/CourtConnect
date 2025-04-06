@@ -29,8 +29,17 @@ namespace CourtConnect.Controllers
         
         public async Task<IActionResult> MyAnnounces()
         {
-           List<AnnounceDetailsViewModel> announces = await _announceService.GetMyAnnounces();
-           return View(announces);
+            if (User.Identity.IsAuthenticated)
+            {
+                List<AnnounceDetailsViewModel> announces = await _announceService.GetMyAnnounces();
+                return View(announces);
+            }
+            else
+            {
+                TempData["NotificationMessage"] = "Trebuie sa fii logat";
+                TempData["NotificationType"] = "error";
+                return RedirectToAction("Login", "Account");
+            }
         }
 
         [HttpGet]

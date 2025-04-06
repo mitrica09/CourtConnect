@@ -1,45 +1,48 @@
-﻿.matchroom-container {
+﻿.match-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 16px;
     max-width: 1000px;
-    width: 100%;
-    gap: 20px;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    gap: 30px; /* Gap între carduri */
 }
 
 .player-card {
-    flex: 1;
-    padding: 25px;
-    text-align: center;
+    background-color: white;
+    padding: 20px;
     border-radius: 12px;
-    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 280px;
+}
+
+.vs-card {
+    background-color: #004d40;
     color: white;
     font-weight: bold;
-}
-
-.host {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-}
-
-.guest {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-}
-
-.match-details {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 20px;
-    background: #f9f9f9;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px; /* Setează și pentru acest card lățimea */
+}
+
+.player-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 h2 {
-    margin-bottom: 15px;
     font-size: 1.5em;
 }
 
@@ -48,10 +51,30 @@ p {
     margin: 5px 0;
 }
 
+.btn-play {
+    margin-top: 10px;
+    background-color: #019875;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+    .btn-play:hover {
+        background-color: #2e7453;
+    }
+
 @media (max-width: 768px) {
-    .matchroom-container {
+    .match-container {
         flex-direction: column;
         gap: 15px;
     }
+
+    .player-card, .vs-card {
+        width: 100%;
+    }
 }
-ChatGPT is still generating a response...

@@ -1704,8 +1704,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>79plqgfv9w</Fingerprint>
-      <Integrity>5UJHPw12JCGU605p/JNCMZSd3TVSwCLofrAlL63UKNg=</Integrity>
+      <Fingerprint>oq5dp0isag</Fingerprint>
+      <Integrity>UDfCubavJ/gMGmf/P1+9XlHd1AX2NDKg298jrD7p1ZQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Announce\AnnounceMatchroomDetails.css'))</OriginalItemSpec>

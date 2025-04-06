@@ -198,6 +198,12 @@ namespace CourtConnect.Repository.Match
             var winnerUserId = userWins.OrderByDescending(g => g.Value).FirstOrDefault().Key;
             var loserUserId = userWins.OrderBy(g => g.Value).FirstOrDefault().Key;
 
+            if (loserUserId == null)
+            {
+                // Aici, pierzătorul este jucătorul care nu are nici un set câștigat.
+                loserUserId = userWins.Keys.FirstOrDefault(g => g != winnerUserId);
+            }
+
             // Obținem punctele actuale pentru câștigător și pierzător
             int winnerPoints = await _rankingService.GetPointsByUserId(winnerUserId);
             int loserPoints = await _rankingService.GetPointsByUserId(loserUserId);

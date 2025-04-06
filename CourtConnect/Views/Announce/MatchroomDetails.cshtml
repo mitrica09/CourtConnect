@@ -7,7 +7,7 @@
 @model CourtConnect.ViewModel.Announce.AnnounceDetailsViewModel
 
 @{
-    ViewData["Title"] = "Matchroom Details";
+    ViewData["Title"] = "Match Details";
 }
 
 <!-- 🔹 Mesaje de succes/eroare -->
@@ -21,38 +21,39 @@
     <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
 }
 
-<div class="matchroom-container">
+<div class="match-container">
     <div class="player-card host">
+        <img src="~/images/player1.png" class="player-img" alt="Player 1" />
         <h2>@Model.HostFullName</h2>
         <p>Club: @Model.HostClub</p>
         <p>Level: @Model.HostLevel</p>
         <p>Puncte: @Model.HostRank</p>
     </div>
 
-    <div class="match-details">
-        <h2>Match Details</h2>
-        <p><strong>Location:</strong> @Model.LocationDetails</p>
+    <div class="vs-card">
+        <h2>VS</h2>
+        <p> @Model.LocationDetails </p>
         <p><strong>Start Date:</strong> @Model.StartDate</p>
 
-        @* 🔹 Dacă meciul este confirmat de amândoi, afișăm mesajul "Meci Confirmat!" *@
         @if (Model.ConfirmGuest && Model.ConfirmHost)
         {
             <p class="text-success"><strong>Meci Confirmat!</strong></p>
         }
         else
         {
-            @* 🔹 Guest-ul poate confirma că vrea să joace *@
             @if (!Model.ConfirmGuest && !Model.IsHost)
             {
                 <form method="post" action="/Announce/ConfirmGuest">
                     <input type="hidden" name="announceId" value="@Model.Id" />
-                    <button type="submit" class="btn btn-primary">Joacă</button>
+                    <button type="submit" class="btn-play btn-primary">Joacă</button>
                 </form>
             }
         }
+
     </div>
 
     <div class="player-card guest">
+        <img src="~/images/player1.png" class="player-img" alt="Player 2" />
         <h2>@Model.GuestFullName</h2>
         <p>Club: @Model.GuestClub</p>
         <p>Level: @Model.GuestLevel</p>
@@ -61,8 +62,3 @@
 </div>
 
 
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
