@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CourtConnect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea2f2cd16c01f1ff04960a24ca0ed2db54f3ca3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adf2e2b87c2f585ccac5b37b1ebe53136980362d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CourtConnect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CourtConnect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

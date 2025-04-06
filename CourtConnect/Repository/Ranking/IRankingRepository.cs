@@ -12,6 +12,7 @@ namespace CourtConnect.Repository.Ranking
         Task<List<RankingForDisplayViewModel>> GetRankingByClubId(List<RankingForDisplayViewModel> rankingViewModels, int clubId);
         Task<List<RankingForDisplayViewModel>> GetRankingByName(List<RankingForDisplayViewModel> rankingViewModels, string name);
         public Task UpdatePoints(string userId, int points);
+        public Task UpdatePlayerLevel(string userId);
 
 
     }
