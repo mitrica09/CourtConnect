@@ -1,38 +1,43 @@
 ﻿@model CourtConnect.ViewModel.Account.ProfileViewModel
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 <link href="~/css/account/profile.css" rel="stylesheet" />
 
 <div class="profile-container">
     <h1>@Model.FullName</h1>
-    <p class="profile-info">@Model.Level - @Model.Club</p>
 
     <img src="~/images/@Model.ImageUrl" asp-append-version="true" alt="User avatar" class="profile-avatar">
 
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" style="width: @Model.Progress%"></div>
+        <div class="progress-text">@Model.PointsToNextLevel</div>
+    </div>
+
     <form class="profile-form">
         <div class="form-group">
-            <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
-            <input type="text" id="fullName" value="@Model.FullName" readonly class="profile-input">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" value="@Model.FullName" readonly>
         </div>
 
         <div class="form-group">
-            <label for="level"><i class="fas fa-trophy"></i> Level</label>
-            <input type="text" id="level" value="@Model.Level" readonly class="profile-input">
+            <label for="level">Level</label>
+            <input type="text" id="level" value="@Model.Level" readonly>
         </div>
 
         <div class="form-group">
-            <label for="club"><i class="fas fa-building"></i> Club</label>
-            <input type="text" id="club" value="@Model.Club" readonly class="profile-input">
+            <label for="club">Club</label>
+            <input type="text" id="club" value="@Model.Club" readonly>
         </div>
 
         <div class="form-group">
-            <label for="rank"><i class="fas fa-trophy"></i> Rank</label>
-            <input type="text" id="rank" value="@Model.Rank" readonly class="profile-input">
+            <label for="rank">Rank</label>
+            <input type="text" id="rank" value="@Model.Rank" readonly>
         </div>
 
         <div class="form-group">
-            <label for="points"><i class="fas fa-star"></i> Points</label>
-            <input type="text" id="points" value="@Model.Points" readonly class="profile-input">
+            <label for="points">Points</label>
+            <input type="text" id="points" value="@Model.Points" readonly>
         </div>
+
     </form>
 </div>

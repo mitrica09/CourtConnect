@@ -57,6 +57,16 @@ namespace CourtConnect.Repository.Account
             user.Level = await _db.Levels.FindAsync(user.LevelId);
 
             int PlayerPoints = await _rankingService.GetPointsByUserId(userId);
+
+            var currentLevel = await _db.Levels.FindAsync(user.LevelId);
+            var nextLevel =  _db.Levels.OrderBy(l => l.Target).FirstOrDefault(l => l.Target > PlayerPoints);
+            int progress = 0;
+            if (nextLevel != null)
+            {
+                progress = (int)((float)PlayerPoints / nextLevel.Target * 100); // Progresul ca procentaj
+            }
+
+
             var rank =  _db.Rankings
                     .Where(r => r.Points >= PlayerPoints)
                     .Count();
@@ -70,8 +80,10 @@ namespace CourtConnect.Repository.Account
                 Club = user.Club.Name,
                 ImageUrl = user.ImageUrl,
                 Points = await _rankingService.GetPointsByUserId(userId),
-                Rank = rank
-
+                Rank = rank,
+                Progress = progress, 
+                NextLevel = nextLevel?.Name, 
+                PointsToNextLevel = nextLevel.Target - PlayerPoints 
             };
         }
 

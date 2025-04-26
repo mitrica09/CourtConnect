@@ -11,6 +11,9 @@ namespace CourtConnect.ViewModel.Account
         public int Points { get; set; }
         public string ImageUrl { get; set; }
         public int Rank { get; set; }
+        public int Progress { get; set; }  // Progresul
+        public string NextLevel { get; set; }  // Numele nivelului următor
+        public int PointsToNextLevel { get; set; }  // Punctele necesare pentru nivelul următor
 
     }
 }
