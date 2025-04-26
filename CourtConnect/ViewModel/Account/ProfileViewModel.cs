@@ -10,5 +10,7 @@ namespace CourtConnect.ViewModel.Account
         public string Club { get; set; }
         public int Points { get; set; }
         public string ImageUrl { get; set; }
+        public int Rank { get; set; }
+
     }
 }

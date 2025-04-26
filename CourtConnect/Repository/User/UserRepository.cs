@@ -46,19 +46,20 @@ namespace CourtConnect.Repository.Account
 
         public async Task<ProfileViewModel> GetMyProfile(string userId)
         {
-            var user = await _userManager.FindByIdAsync(userId); // 🔥 Corect pentru IdentityUser
+            var user = await _userManager.FindByIdAsync(userId); 
 
             if (user == null)
             {
                 return null;
             }
 
-            // 🔥 Încarcă manual relațiile
             user.Club = await _db.Clubs.FindAsync(user.ClubId);
             user.Level = await _db.Levels.FindAsync(user.LevelId);
 
-            int p = await _rankingService.GetPointsByUserId(userId);
-
+            int PlayerPoints = await _rankingService.GetPointsByUserId(userId);
+            var rank =  _db.Rankings
+                    .Where(r => r.Points >= PlayerPoints)
+                    .Count();
 
 
             return new ProfileViewModel
@@ -69,7 +70,7 @@ namespace CourtConnect.Repository.Account
                 Club = user.Club.Name,
                 ImageUrl = user.ImageUrl,
                 Points = await _rankingService.GetPointsByUserId(userId),
-              
+                Rank = rank
 
             };
         }
@@ -115,12 +116,16 @@ namespace CourtConnect.Repository.Account
               
             };
 
+            var selectedLevel = await _db.Levels.FindAsync(registerViewModel.LevelId);
+            int points = 0; 
+            if (selectedLevel != null)
+            {
+                points = selectedLevel.Target;
+            }
+
             Models.Club club =await  _db.Clubs.FindAsync(registerViewModel.ClubId);
             club.NumberOfPlayers += 1;
             await _db.SaveChangesAsync();
-
-
-
 
             var result = await _userManager.CreateAsync(user, registerViewModel.Password);
             if (result.Succeeded)
@@ -141,11 +146,14 @@ namespace CourtConnect.Repository.Account
                 }
             }
 
-            Models.Ranking rank = new Models.Ranking();
-            rank.UserId = user.Id;
-            rank.Points = 0;
+            Models.Ranking rank = new Models.Ranking
+            {
+                UserId = user.Id,
+                Points = points,
+            };
             await _db.Rankings.AddAsync(rank);
             await _db.SaveChangesAsync();
+
             return result;
         }
 

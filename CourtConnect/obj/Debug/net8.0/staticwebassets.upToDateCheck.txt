@@ -107,14 +107,17 @@ wwwroot\images\4fcae4c0-4eb0-4d73-b06c-698c9fe7502b_profile_photo.jpeg
 wwwroot\images\4fdf7d95-6d2c-43f9-8e08-f11e229527b4_fs.webp
 wwwroot\images\501e3180-3b3b-4a7f-8eb1-0946e0a8bca5_cat.jpg
 wwwroot\images\735545bb-ba36-4786-9b05-a6bd48244ad6_pexels-enginakyurt-1672304.jpg
+wwwroot\images\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg
 wwwroot\images\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp
 wwwroot\images\995d9976-37e4-4511-b0ab-0462f4ad27dc_download.png
 wwwroot\images\9fef49c8-6b2f-45bf-8a5f-69e2a02dcb35_pexels-pixabay-236214.jpg
 wwwroot\images\account-bg.jpg
+wwwroot\images\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png
 wwwroot\images\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp
 wwwroot\images\c3501c13-c936-4f4e-8a23-0c4bd63b443a_fs.webp
 wwwroot\images\c7366036-5d13-4553-bcc4-0662986be6fd_pexels-mohamedelaminemsiouri-2245436.jpg
 wwwroot\images\c7871be9-697c-492c-a256-ff1157841383_fs.webp
+wwwroot\images\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg
 wwwroot\images\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp
 wwwroot\images\e837a52a-120d-4d01-ae76-e0695b3c2ff9_dog.jpg
 wwwroot\images\ea2a8e87-bab7-44a0-8fae-544ede48ab92_fs.webp

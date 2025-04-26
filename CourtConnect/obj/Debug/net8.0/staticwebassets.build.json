@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RydSwzYUtEMMrGYTlu6zLUaeH79mBZ6/V+k244CfzKA=",
+  "Hash": "lRj7Ui7GrEIXOysdLDT8s8/Zb1WM/ZSsOvIO0dVJ/Bo=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -1942,8 +1942,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bzi2hjfq0r",
-      "Integrity": "aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI=",
+      "Fingerprint": "v6x2mdp81l",
+      "Integrity": "eTHg0OVUIJ+siRW/Bva0ocM7w2wjuKL0R8Ae23+25Cc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Account\\Profile.css"
@@ -2348,6 +2348,27 @@
       "OriginalItemSpec": "wwwroot\\images\\735545bb-ba36-4786-9b05-a6bd48244ad6_pexels-enginakyurt-1672304.jpg"
     },
     {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vekxdflfqw",
+      "Integrity": "aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg"
+    },
+    {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp",
       "SourceId": "CourtConnect",
       "SourceType": "Discovered",
@@ -2432,6 +2453,27 @@
       "OriginalItemSpec": "wwwroot\\images\\account-bg.jpg"
     },
     {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7ud9rj4mxd",
+      "Integrity": "T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png"
+    },
+    {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp",
       "SourceId": "CourtConnect",
       "SourceType": "Discovered",
@@ -2514,6 +2556,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\c7871be9-697c-492c-a256-ff1157841383_fs.webp"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0faexitz65",
+      "Integrity": "PAU5/YC0B0tghqRCnq7X5d5+2DCpQ0sgqccRn1FrDJI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg"
     },
     {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp",
@@ -11450,51 +11513,6 @@
       ]
     },
     {
-      "Route": "css/Account/Profile.bzi2hjfq0r.css",
-      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Account\\Profile.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1991"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 08:07:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bzi2hjfq0r"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Account/Profile.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI="
-        }
-      ]
-    },
-    {
       "Route": "css/Account/Profile.css",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Account\\Profile.css",
       "Selectors": [],
@@ -11505,7 +11523,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1991"
+          "Value": "1856"
         },
         {
           "Name": "Content-Type",
@@ -11513,11 +11531,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI=\""
+          "Value": "\"eTHg0OVUIJ+siRW/Bva0ocM7w2wjuKL0R8Ae23+25Cc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 08:07:16 GMT"
+          "Value": "Sat, 26 Apr 2025 11:45:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11527,7 +11545,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI="
+          "Value": "sha256-eTHg0OVUIJ+siRW/Bva0ocM7w2wjuKL0R8Ae23+25Cc="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/Profile.v6x2mdp81l.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Account\\Profile.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eTHg0OVUIJ+siRW/Bva0ocM7w2wjuKL0R8Ae23+25Cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 11:45:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6x2mdp81l"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Account/Profile.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eTHg0OVUIJ+siRW/Bva0ocM7w2wjuKL0R8Ae23+25Cc="
         }
       ]
     },
@@ -13090,6 +13153,88 @@
       ]
     },
     {
+      "Route": "images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0="
+        }
+      ]
+    },
+    {
+      "Route": "images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman.vekxdflfqw.jpg",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 10:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vekxdflfqw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0="
+        }
+      ]
+    },
+    {
       "Route": "images/92d840ff-e5f2-4135-b13b-484d4168c23f_fs.9urj4hq3q4.webp",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp",
       "Selectors": [],
@@ -13418,6 +13563,88 @@
       ]
     },
     {
+      "Route": "images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.7ud9rj4mxd.png",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 20:19:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7ud9rj4mxd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU="
+        }
+      ]
+    },
+    {
+      "Route": "images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 20:19:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU="
+        }
+      ]
+    },
+    {
       "Route": "images/c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.9urj4hq3q4.webp",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp",
       "Selectors": [],
@@ -13742,6 +13969,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-sdv1wWEVCtIEreN7i/N5Pelws1zI9KmojSzHhbP2V5k="
+        }
+      ]
+    },
+    {
+      "Route": "images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.0faexitz65.jpg",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38860"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PAU5/YC0B0tghqRCnq7X5d5+2DCpQ0sgqccRn1FrDJI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 11:18:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0faexitz65"
+        },
+        {
+          "Name": "label",
+          "Value": "images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PAU5/YC0B0tghqRCnq7X5d5+2DCpQ0sgqccRn1FrDJI="
+        }
+      ]
+    },
+    {
+      "Route": "images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38860"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PAU5/YC0B0tghqRCnq7X5d5+2DCpQ0sgqccRn1FrDJI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 11:18:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PAU5/YC0B0tghqRCnq7X5d5+2DCpQ0sgqccRn1FrDJI="
         }
       ]
     },

@@ -1080,17 +1080,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ijrkwb5tch"},{"Name":"integrity","Value":"sha256-knsvnMdMw7S47tRH2PheMM0fXuHlpfAJWzZl1SkRSOU="},{"Name":"label","Value":"_content/CourtConnect/css/Account/account.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"554"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022knsvnMdMw7S47tRH2PheMM0fXuHlpfAJWzZl1SkRSOU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 11:09:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Account/Profile.bzi2hjfq0r.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Account\Profile.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bzi2hjfq0r"},{"Name":"integrity","Value":"sha256-aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI="},{"Name":"label","Value":"_content/CourtConnect/css/Account/Profile.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1991"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 08:07:16 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Account/Profile.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Account\Profile.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1991"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aeYPRSnVKtqq6cfo6fV3GLbYzKr2Cm/4Bfg3d74HxjI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 08:07:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eTHg0OVUIJ\u002BsiRW/Bva0ocM7w2wjuKL0R8Ae23\u002B25Cc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1856"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eTHg0OVUIJ\u002BsiRW/Bva0ocM7w2wjuKL0R8Ae23\u002B25Cc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 11:45:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Account/Profile.v6x2mdp81l.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Account\Profile.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v6x2mdp81l"},{"Name":"integrity","Value":"sha256-eTHg0OVUIJ\u002BsiRW/Bva0ocM7w2wjuKL0R8Ae23\u002B25Cc="},{"Name":"label","Value":"_content/CourtConnect/css/Account/Profile.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1856"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eTHg0OVUIJ\u002BsiRW/Bva0ocM7w2wjuKL0R8Ae23\u002B25Cc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 11:45:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/css/Admin/admin.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Admin\admin.css'))</AssetFile>
@@ -1320,6 +1320,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tiqi0sm3ja"},{"Name":"integrity","Value":"sha256-O5kH4VxW7tPUKJ\u002BD0beGWBXe51boXeh27\u002BaELwl9uCU="},{"Name":"label","Value":"_content/CourtConnect/images/735545bb-ba36-4786-9b05-a6bd48244ad6_pexels-enginakyurt-1672304.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1696168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022O5kH4VxW7tPUKJ\u002BD0beGWBXe51boXeh27\u002BaELwl9uCU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 08:07:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"36769"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 10:58:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman.vekxdflfqw.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vekxdflfqw"},{"Name":"integrity","Value":"sha256-aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0="},{"Name":"label","Value":"_content/CourtConnect/images/8f15873e-694e-4411-91e1-13b66a1fd28c_batman.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36769"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aUHPIzGiHlaMufovUx0xdrotb6lpD2hRcAV3Q8TAzO0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 10:58:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/images/92d840ff-e5f2-4135-b13b-484d4168c23f_fs.9urj4hq3q4.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\92d840ff-e5f2-4135-b13b-484d4168c23f_fs.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1368,6 +1380,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"stuepsepmj"},{"Name":"integrity","Value":"sha256-kFwOVPZMZyZHcz\u002BpOtNkjYGaWYEMFA9\u002BQVs59m9TU\u002BY="},{"Name":"label","Value":"_content/CourtConnect/images/account-bg.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"102448"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022kFwOVPZMZyZHcz\u002BpOtNkjYGaWYEMFA9\u002BQVs59m9TU\u002BY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 11:09:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.7ud9rj4mxd.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7ud9rj4mxd"},{"Name":"integrity","Value":"sha256-T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU="},{"Name":"label","Value":"_content/CourtConnect/images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12956"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Apr 2025 20:19:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/images/b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b6b44b30-32a6-4772-8409-f0309a947630_Dresses by Andrette.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12956"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022T5WP0lY21hAEpR6H9d7aoSrkXEqwRH2/HAfMAWsfLSU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Apr 2025 20:19:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/images/c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.9urj4hq3q4.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c2f7c040-58e3-4011-8f5f-dac87553e6b4_fs.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1415,6 +1439,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sdv1wWEVCtIEreN7i/N5Pelws1zI9KmojSzHhbP2V5k="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"16240"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022sdv1wWEVCtIEreN7i/N5Pelws1zI9KmojSzHhbP2V5k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 11:09:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.0faexitz65.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0faexitz65"},{"Name":"integrity","Value":"sha256-PAU5/YC0B0tghqRCnq7X5d5\u002B2DCpQ0sgqccRn1FrDJI="},{"Name":"label","Value":"_content/CourtConnect/images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38860"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PAU5/YC0B0tghqRCnq7X5d5\u002B2DCpQ0sgqccRn1FrDJI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 11:18:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CourtConnect/images/d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PAU5/YC0B0tghqRCnq7X5d5\u002B2DCpQ0sgqccRn1FrDJI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"38860"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022PAU5/YC0B0tghqRCnq7X5d5\u002B2DCpQ0sgqccRn1FrDJI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 11:18:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CourtConnect/images/e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.9urj4hq3q4.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp'))</AssetFile>

@@ -1,37 +1,38 @@
 ﻿@model CourtConnect.ViewModel.Account.ProfileViewModel
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 <link href="~/css/account/profile.css" rel="stylesheet" />
-
-
 
 <div class="profile-container">
     <h1>@Model.FullName</h1>
-    <p>@Model.Level - @Model.Club</p>
+    <p class="profile-info">@Model.Level - @Model.Club</p>
 
     <img src="~/images/@Model.ImageUrl" asp-append-version="true" alt="User avatar" class="profile-avatar">
 
     <form class="profile-form">
         <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" placeholder="Enter your full name" value="@Model.FullName">
+            <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+            <input type="text" id="fullName" value="@Model.FullName" readonly class="profile-input">
         </div>
 
         <div class="form-group">
-            <label for="level">Level</label>
-            <input type="text" id="level" placeholder="Enter your level" value="@Model.Level">
+            <label for="level"><i class="fas fa-trophy"></i> Level</label>
+            <input type="text" id="level" value="@Model.Level" readonly class="profile-input">
         </div>
 
         <div class="form-group">
-            <label for="club">Club</label>
-            <input type="text" id="club" placeholder="Enter your club" value="@Model.Club">
+            <label for="club"><i class="fas fa-building"></i> Club</label>
+            <input type="text" id="club" value="@Model.Club" readonly class="profile-input">
         </div>
 
         <div class="form-group">
-            <label for="club">Numar de puncte</label>
-            <input type="text" id="club" placeholder="Enter your club" value="@Model.Points">
+            <label for="rank"><i class="fas fa-trophy"></i> Rank</label>
+            <input type="text" id="rank" value="@Model.Rank" readonly class="profile-input">
         </div>
 
-
-        <button type="submit" class="profile-btn">Update Account Details</button>
+        <div class="form-group">
+            <label for="points"><i class="fas fa-star"></i> Points</label>
+            <input type="text" id="points" value="@Model.Points" readonly class="profile-input">
+        </div>
     </form>
 </div>

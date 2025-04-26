@@ -1,10 +1,4 @@
-﻿/* 🔹 Stil general pentru pagina de profil */
-body {
-    background-color: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
-}
-
-.profile-container {
+﻿.profile-container {
     max-width: 600px;
     margin: 50px auto;
     background: white;
@@ -27,7 +21,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* 🔹 Stil pentru avatar */
 .profile-avatar {
     width: 120px;
     height: 120px;
@@ -41,7 +34,6 @@ body {
     transform: scale(1.05);
 }
 
-/* 🔹 Form styling */
 .profile-form {
     margin-top: 20px;
     text-align: left;
@@ -69,14 +61,12 @@ body {
     outline: none;
 }
 
-/* 🔹 Butoane - container */
 .profile-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-/* 🔹 Buton principal */
 .profile-btn {
     width: 48%;
     background: #4CAF50;
@@ -96,7 +86,6 @@ body {
     background: #45a049;
 }
 
-/* 🔹 Buton secundar (My Announces) */
 .secondary-btn {
     background: #007bff;
 }
