@@ -1,0 +1,68 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.hero {
+    z-index: 1;
+    max-width: 800px;
+    animation: fadeIn 2s ease forwards;
+}
+
+    .hero h1 {
+        font-size: 2.5rem;
+        color: #1b1b1b;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+.btn-cta {
+    background: #c5f274;
+    color: slategrey;
+    padding: 14px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-cta:hover {
+        background: #a8e330;
+        color: lightslategrey;
+        transform: scale(1.05);
+    }
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

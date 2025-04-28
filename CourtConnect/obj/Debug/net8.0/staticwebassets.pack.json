@@ -389,6 +389,14 @@
       "PackagePath": "staticwebassets\\css\\Announce\\MyAnnounces.css"
     },
     {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\ball.css",
+      "PackagePath": "staticwebassets\\css\\Home\\ball.css"
+    },
+    {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\Home\\homepage.css"
+    },
+    {
       "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\AddScore.css",
       "PackagePath": "staticwebassets\\css\\Match\\AddScore.css"
     },

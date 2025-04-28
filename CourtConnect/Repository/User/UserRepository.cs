@@ -46,31 +46,34 @@ namespace CourtConnect.Repository.Account
 
         public async Task<ProfileViewModel> GetMyProfile(string userId)
         {
-            var user = await _userManager.FindByIdAsync(userId); 
+            var user = await _userManager.FindByIdAsync(userId);
 
             if (user == null)
             {
-                return null;
+                return null; // Dacă utilizatorul nu este găsit, returnăm null
             }
 
             user.Club = await _db.Clubs.FindAsync(user.ClubId);
             user.Level = await _db.Levels.FindAsync(user.LevelId);
 
-            int PlayerPoints = await _rankingService.GetPointsByUserId(userId);
+            int playerPoints = await _rankingService.GetPointsByUserId(userId);
 
             var currentLevel = await _db.Levels.FindAsync(user.LevelId);
-            var nextLevel =  _db.Levels.OrderBy(l => l.Target).FirstOrDefault(l => l.Target > PlayerPoints);
+
+            var nextLevel = _db.Levels.OrderBy(l => l.Target).FirstOrDefault(l => l.Target > playerPoints);
+
             int progress = 0;
+            int pointsToNextLevel = 0;
+
             if (nextLevel != null)
             {
-                progress = (int)((float)PlayerPoints / nextLevel.Target * 100); // Progresul ca procentaj
+                progress = (int)((float)playerPoints / nextLevel.Target * 100); 
+                pointsToNextLevel = nextLevel.Target - playerPoints;
             }
 
-
-            var rank =  _db.Rankings
-                    .Where(r => r.Points >= PlayerPoints)
-                    .Count();
-
+            var rank = _db.Rankings
+                .Where(r => r.Points >= playerPoints)
+                .Count();
 
             return new ProfileViewModel
             {
@@ -79,13 +82,14 @@ namespace CourtConnect.Repository.Account
                 Level = user.Level.Name,
                 Club = user.Club.Name,
                 ImageUrl = user.ImageUrl,
-                Points = await _rankingService.GetPointsByUserId(userId),
+                Points = playerPoints,
                 Rank = rank,
-                Progress = progress, 
-                NextLevel = nextLevel?.Name, 
-                PointsToNextLevel = nextLevel.Target - PlayerPoints 
+                Progress = progress,
+                NextLevel = nextLevel?.Name,
+                PointsToNextLevel = pointsToNextLevel
             };
         }
+
 
 
 
@@ -173,12 +177,3 @@ namespace CourtConnect.Repository.Account
 
     }
 }
-/*
-De facut:
--de afisat locul ocupat in clasament
--de afisat cat mai ai pana ajungi la nivelul urmator
-
--cand 2 useri s au asociat sa joace sa poata sa si scrie in matchroom ca un fel de chat
--sa primesti notificare cand un user ti-a accesat anuntul sa jucati cum ca meciul este confirmat
-
-*/

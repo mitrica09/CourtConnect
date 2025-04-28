@@ -319,10 +319,4 @@ namespace CourtConnect.Repository.Announce
     }
 }
 
-/*
- * 
- De facut:
-Ca GuestUser daca ai deja un meci confirmat, sa nu mai poti confirma altul pana nu primesti un raspuns de la anuntul respectiv.
- */
-
 

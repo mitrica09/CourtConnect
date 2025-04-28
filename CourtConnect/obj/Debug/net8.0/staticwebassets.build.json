@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RPXFIrCw0H/n39SAnq6UZ2qkybMF3BrIssXJLvdC3ss=",
+  "Hash": "+IkaYFKnuGlTf5XnxApXLpUltdjQ8xmJg1JxlC2rnQ4=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2075,6 +2075,48 @@
       "OriginalItemSpec": "wwwroot\\css\\Announce\\MyAnnounces.css"
     },
     {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\ball.css",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "css/Home/ball#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "71om7j85uj",
+      "Integrity": "1Ymo5HPqmnz6nWu8Exn5q+KqZAc600hzm4+Jd3ZWtR8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Home\\ball.css"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\homepage.css",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "css/Home/homepage#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1vft5cxpf0",
+      "Integrity": "c+WGt7dVgvzGFaEO5i8QdatLghPd03X2RkSZNa01PJg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Home\\homepage.css"
+    },
+    {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\AddScore.css",
       "SourceId": "CourtConnect",
       "SourceType": "Discovered",
@@ -2194,8 +2236,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ymywfxlsol",
-      "Integrity": "pqVhID80Oav9bSdvdONVJFJbTKk9vzqb+MSXUavksKc=",
+      "Fingerprint": "23gyanw6fd",
+      "Integrity": "7gsYkhydo/1WFadVlVDi9MWq6tPR/Y5DtMw3I7Kpjio=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -12087,6 +12129,170 @@
       ]
     },
     {
+      "Route": "css/Home/ball.71om7j85uj.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\ball.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1794"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Ymo5HPqmnz6nWu8Exn5q+KqZAc600hzm4+Jd3ZWtR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 10:20:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "71om7j85uj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Home/ball.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Ymo5HPqmnz6nWu8Exn5q+KqZAc600hzm4+Jd3ZWtR8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Home/ball.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\ball.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1794"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Ymo5HPqmnz6nWu8Exn5q+KqZAc600hzm4+Jd3ZWtR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 10:20:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Ymo5HPqmnz6nWu8Exn5q+KqZAc600hzm4+Jd3ZWtR8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Home/homepage.1vft5cxpf0.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\homepage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1225"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c+WGt7dVgvzGFaEO5i8QdatLghPd03X2RkSZNa01PJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 10:21:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1vft5cxpf0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Home/homepage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c+WGt7dVgvzGFaEO5i8QdatLghPd03X2RkSZNa01PJg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Home/homepage.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Home\\homepage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1225"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c+WGt7dVgvzGFaEO5i8QdatLghPd03X2RkSZNa01PJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 10:21:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c+WGt7dVgvzGFaEO5i8QdatLghPd03X2RkSZNa01PJg="
+        }
+      ]
+    },
+    {
       "Route": "css/Match/AddScore.c18t9yf0i4.css",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\AddScore.css",
       "Selectors": [],
@@ -12497,6 +12703,51 @@
       ]
     },
     {
+      "Route": "css/site.23gyanw6fd.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7gsYkhydo/1WFadVlVDi9MWq6tPR/Y5DtMw3I7Kpjio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 10:24:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "23gyanw6fd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7gsYkhydo/1WFadVlVDi9MWq6tPR/Y5DtMw3I7Kpjio="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -12515,11 +12766,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pqVhID80Oav9bSdvdONVJFJbTKk9vzqb+MSXUavksKc=\""
+          "Value": "\"7gsYkhydo/1WFadVlVDi9MWq6tPR/Y5DtMw3I7Kpjio=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:02:25 GMT"
+          "Value": "Mon, 28 Apr 2025 10:24:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12529,52 +12780,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pqVhID80Oav9bSdvdONVJFJbTKk9vzqb+MSXUavksKc="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.ymywfxlsol.css",
-      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2107"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pqVhID80Oav9bSdvdONVJFJbTKk9vzqb+MSXUavksKc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:02:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ymywfxlsol"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pqVhID80Oav9bSdvdONVJFJbTKk9vzqb+MSXUavksKc="
+          "Value": "sha256-7gsYkhydo/1WFadVlVDi9MWq6tPR/Y5DtMw3I7Kpjio="
         }
       ]
     },

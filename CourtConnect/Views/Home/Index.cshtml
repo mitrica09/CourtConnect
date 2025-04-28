@@ -2,12 +2,21 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link href="~/css/home/homepage.css" rel="stylesheet" />
+<link href="~/css/home/ball.css" rel="stylesheet" />
+
+<div class="main-content">
+    <div class="hero">
+        <h1>Conectăm jucători, creăm campioni</h1>
+        <p>Fii parte din cea mai activă comunitate de tenis. Clasamente live, turnee și anunțuri exclusive!</p>
+        <a href="/Ranking" class="btn-cta">Vezi Clasamentul</a>
+    </div>
+
+    <div class="ball-container">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+    </div>
 </div>
-
-
 
 <script> window.chtlConfig = { chatbotId: "3518742726" } </script>
 <script async data-id="3518742726" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>

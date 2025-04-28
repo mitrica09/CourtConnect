@@ -71,27 +71,20 @@ namespace CourtConnect.Repository.Ranking
 
         public async Task UpdatePlayerLevel(string userId)
         {
-            // Obținem punctele actuale ale jucătorului
             int playerPoints = await GetPointsByUserId(userId);
 
-            // Obținem nivelurile și pragurile lor
             var levels =  _db.Levels.OrderBy(l => l.Target).ToList();
 
-            // Determinăm nivelul în funcție de puncte
             var playerLevel = levels.LastOrDefault(l => playerPoints >= l.Target);
 
-            // Debug: Verifică ce nivel s-a ales pentru player
             Console.WriteLine($"Player: {userId}, Points: {playerPoints}, Level: {playerLevel?.Name}");
 
             if (playerLevel != null)
             {
-                // Actualizăm nivelul jucătorului
                 var player = await _db.Users.FindAsync(userId);
                 if (player != null && player.LevelId != playerLevel.Id)
                 {
                     player.LevelId = playerLevel.Id;
-
-                    // Salvează schimbările în baza de date
                     await _db.SaveChangesAsync();
                 }
             }
