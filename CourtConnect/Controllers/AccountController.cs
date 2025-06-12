@@ -46,7 +46,6 @@ namespace CourtConnect.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel register)
         {
-            // Excludem validarea inutilă
             ModelState.Remove("Clubs");
             ModelState.Remove("Levels");
 
@@ -108,7 +107,3 @@ namespace CourtConnect.Controllers
         }
     }
 }
-
-/*
- * Sa ai campul de name obligatoriu cand creezi un anunt ca sa nu ti arunce eroare 
- */

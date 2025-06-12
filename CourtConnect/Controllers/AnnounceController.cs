@@ -65,13 +65,13 @@ namespace CourtConnect.Controllers
             bool ok = await _announceService.Create(announceFormViewModel);
             if (ok)
             {
-                TempData["NotificationMessage"] = "Anutul a fost adaugat cu succes";
-                TempData["NotificationType"] = "succes";
+                TempData["NotificationMessage"] = "Anuntul a fost adaugat cu succes";
+                TempData["NotificationType"] = "success";
                 return RedirectToAction("MyAnnounces","Announce");
             }
             else
             {
-                TempData["NotificationMessage"] = "Oopps a aparut o eroare va rugam sa contactati responsabilul de aplicatie";
+                TempData["NotificationMessage"] = "Oopps, a aparut o eroare va rugam sa contactati responsabilul de aplicatie!";
                 TempData["NotificationType"] = "error";
                 return View();
             }
@@ -97,11 +97,14 @@ namespace CourtConnect.Controllers
 
             if (success)
             {
-                TempData["SuccessMessage"] = "Ai confirmat meciul!";
+
+                TempData["NotificationMessage"] = "Ai confirmat meciul!";
+                TempData["NotificationType"] = "success";
             }
             else
             {
-                TempData["ErrorMessage"] = "Eroare la confirmarea meciului!";
+                TempData["NotificationMessage"] = "Eroare la confirmarea meciului!";
+                TempData["NotificationType"] = "error";
             }
 
             return RedirectToAction("MyAnnounces");
@@ -117,26 +120,26 @@ namespace CourtConnect.Controllers
 
             if (success)
             {
-                // Obținem din nou anunțul ca să verificăm statusul actualizat
                 var announce = await _announceService.GetAnnounceDetails(announceId, userId);
 
                 if (announce.ConfirmHost && announce.ConfirmGuest)
                 {
-                    // Dacă amândoi au confirmat, creăm meciul și redirectăm spre detalii
                     var matchId = await _announceService.CreateMatch(announceId);
 
                     if (matchId != null)
                     {
+                        TempData["NotificationMessage"] = "Meci confirmat!";
+                        TempData["NotificationType"] = "success";
                         return RedirectToAction("Details", "Match", new { announceId = announceId, matchId = matchId });
-                        // 👈 te duce direct la pagina de meci
+
                     }
                 }
 
-                TempData["SuccessMessage"] = "Meci confirmat!";
             }
             else
             {
-                TempData["ErrorMessage"] = "Eroare la confirmare!";
+                TempData["NotificationMessage"] = "Eroare la confirmarea meciului!";
+                TempData["NotificationType"] = "error";
             }
 
             return RedirectToAction("MyAnnounces");
@@ -150,11 +153,13 @@ namespace CourtConnect.Controllers
 
             if (success)
             {
-                TempData["SuccessMessage"] = "Adversarul a fost refuzat!";
+                TempData["NotificationMessage"] = "Adversarul a fost refuzat cu succes!";
+                TempData["NotificationType"] = "success";
             }
             else
             {
-                TempData["ErrorMessage"] = "Eroare la refuz!";
+                TempData["NotificationMessage"] = "Eroare la refuzarea adversarului!";
+                TempData["NotificationType"] = "error";
             }
 
             return RedirectToAction("MyAnnounces");

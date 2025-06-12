@@ -7,7 +7,6 @@
         var alertTitle = document.getElementById("notificationAlertTitle");
         var alertMessage = document.getElementById("notificationAlertMessage");
 
-        // Configurează titlul si stilul în functie de tipul notificarii
         if (notificationType === "success") {
             alertElement.style.backgroundColor = "#4CAF50"; // Verde
             alertTitle.textContent = "Succes!";
@@ -19,14 +18,11 @@
             alertTitle.textContent = "Notificare";
         }
 
-        // Setează mesajul notificării
         alertMessage.textContent = notificationMessage;
 
-        // Afi?ează alerta
         alertElement.classList.remove("hidden");
         alertElement.classList.add("visible");
 
-        // Ascunde alerta automat după 3 secunde
         setTimeout(function () {
             alertElement.classList.remove("visible");
             alertElement.classList.add("hidden");

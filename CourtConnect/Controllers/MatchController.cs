@@ -79,6 +79,10 @@ namespace CourtConnect.Controllers
             if (result)
             {
                 await _matchService.DeclareWinner(model.MatchId);
+
+                TempData["NotificationMessage"] = "Scorul a fost adăugat cu succes!";
+                TempData["NotificationType"] = "success";
+
                 return RedirectToAction("Details", new { announceId = model.AnnounceId, matchId = model.MatchId });
             }
 

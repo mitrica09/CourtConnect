@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/Hrgz0n2Ok2XkVoXoSLezlPQzf3rMY7+yOLJZAo8LZs=",
+  "Hash": "urkLrWGb5FCtGb5jJ58W2fWD1Gma2mi9yWXWNQATpZ0=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2950,8 +2950,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ct6z4npwz",
-      "Integrity": "++KkjwrJ1raB41SlLCGlDVZrZFIqpBO6Nrb5nm1xRLc=",
+      "Fingerprint": "o3jk7xsj4h",
+      "Integrity": "TFeSd4hFgWj40W7tI4Mo07sk509b8TYQ/vvNyLSBsQ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\notifications.js"
@@ -12563,7 +12563,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Jun 2025 11:16:46 GMT"
+          "Value": "Thu, 12 Jun 2025 11:33:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12600,7 +12600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Jun 2025 11:16:46 GMT"
+          "Value": "Thu, 12 Jun 2025 11:33:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15575,51 +15575,6 @@
       ]
     },
     {
-      "Route": "js/notifications.5ct6z4npwz.js",
-      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\notifications.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1516"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"++KkjwrJ1raB41SlLCGlDVZrZFIqpBO6Nrb5nm1xRLc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 11:09:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ct6z4npwz"
-        },
-        {
-          "Name": "label",
-          "Value": "js/notifications.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-++KkjwrJ1raB41SlLCGlDVZrZFIqpBO6Nrb5nm1xRLc="
-        }
-      ]
-    },
-    {
       "Route": "js/notifications.js",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\notifications.js",
       "Selectors": [],
@@ -15630,7 +15585,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1516"
+          "Value": "1318"
         },
         {
           "Name": "Content-Type",
@@ -15638,11 +15593,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"++KkjwrJ1raB41SlLCGlDVZrZFIqpBO6Nrb5nm1xRLc=\""
+          "Value": "\"TFeSd4hFgWj40W7tI4Mo07sk509b8TYQ/vvNyLSBsQ0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 11:09:35 GMT"
+          "Value": "Thu, 12 Jun 2025 14:08:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15652,7 +15607,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-++KkjwrJ1raB41SlLCGlDVZrZFIqpBO6Nrb5nm1xRLc="
+          "Value": "sha256-TFeSd4hFgWj40W7tI4Mo07sk509b8TYQ/vvNyLSBsQ0="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.o3jk7xsj4h.js",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\js\\notifications.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1318"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TFeSd4hFgWj40W7tI4Mo07sk509b8TYQ/vvNyLSBsQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 14:08:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o3jk7xsj4h"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TFeSd4hFgWj40W7tI4Mo07sk509b8TYQ/vvNyLSBsQ0="
         }
       ]
     },
