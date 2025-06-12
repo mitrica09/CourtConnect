@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vwoGnPeAhUVHwUSlvk4hocDz3Pctdndq5Yt21W7jW2A=",
+  "Hash": "/Hrgz0n2Ok2XkVoXoSLezlPQzf3rMY7+yOLJZAo8LZs=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -2152,8 +2152,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "yvawqzyb5c",
-      "Integrity": "4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=",
+      "Fingerprint": "u0unlv5wn4",
+      "Integrity": "vlhPBjg3NKZ/ti5FjxRjmf/nrdF1DYUZPrP+UHvBZAM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Match\\MatchDetails.css"
@@ -2173,8 +2173,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7xxslmuw4n",
-      "Integrity": "u8fEpamusNMtFn+zPrS8TIbOnaEoEf++AsNslFoW0Z4=",
+      "Fingerprint": "d2945a6o75",
+      "Integrity": "GwynplK4gZere+eDA9mh5TyxvLNy0WVc0plB7frjjSo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Match\\MyMatches.css"
@@ -2682,6 +2682,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\dde32cb4-8562-4333-9e15-ec39c24f06b0_WhatsApp Image 2025-05-30 at 18.45.20.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "images/df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ufdrr75z8",
+      "Integrity": "bYjwKTGUjswHns6VSgACNwsS3q30QRN9+DixypeZCZQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png"
     },
     {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp",
@@ -12448,7 +12469,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2620"
+          "Value": "2731"
         },
         {
           "Name": "Content-Type",
@@ -12456,11 +12477,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=\""
+          "Value": "\"vlhPBjg3NKZ/ti5FjxRjmf/nrdF1DYUZPrP+UHvBZAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 13:01:00 GMT"
+          "Value": "Thu, 12 Jun 2025 10:58:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12470,12 +12491,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8="
+          "Value": "sha256-vlhPBjg3NKZ/ti5FjxRjmf/nrdF1DYUZPrP+UHvBZAM="
         }
       ]
     },
     {
-      "Route": "css/Match/MatchDetails.yvawqzyb5c.css",
+      "Route": "css/Match/MatchDetails.u0unlv5wn4.css",
       "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MatchDetails.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12485,7 +12506,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2620"
+          "Value": "2731"
         },
         {
           "Name": "Content-Type",
@@ -12493,11 +12514,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=\""
+          "Value": "\"vlhPBjg3NKZ/ti5FjxRjmf/nrdF1DYUZPrP+UHvBZAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 13:01:00 GMT"
+          "Value": "Thu, 12 Jun 2025 10:58:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12507,7 +12528,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "yvawqzyb5c"
+          "Value": "u0unlv5wn4"
         },
         {
           "Name": "label",
@@ -12515,52 +12536,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8="
-        }
-      ]
-    },
-    {
-      "Route": "css/Match/MyMatches.7xxslmuw4n.css",
-      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MyMatches.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1743"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u8fEpamusNMtFn+zPrS8TIbOnaEoEf++AsNslFoW0Z4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 12 Jun 2025 09:38:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7xxslmuw4n"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Match/MyMatches.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u8fEpamusNMtFn+zPrS8TIbOnaEoEf++AsNslFoW0Z4="
+          "Value": "sha256-vlhPBjg3NKZ/ti5FjxRjmf/nrdF1DYUZPrP+UHvBZAM="
         }
       ]
     },
@@ -12575,7 +12551,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1743"
+          "Value": "2101"
         },
         {
           "Name": "Content-Type",
@@ -12583,11 +12559,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u8fEpamusNMtFn+zPrS8TIbOnaEoEf++AsNslFoW0Z4=\""
+          "Value": "\"GwynplK4gZere+eDA9mh5TyxvLNy0WVc0plB7frjjSo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Jun 2025 09:38:07 GMT"
+          "Value": "Thu, 12 Jun 2025 11:16:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12597,7 +12573,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u8fEpamusNMtFn+zPrS8TIbOnaEoEf++AsNslFoW0Z4="
+          "Value": "sha256-GwynplK4gZere+eDA9mh5TyxvLNy0WVc0plB7frjjSo="
+        }
+      ]
+    },
+    {
+      "Route": "css/Match/MyMatches.d2945a6o75.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MyMatches.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GwynplK4gZere+eDA9mh5TyxvLNy0WVc0plB7frjjSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:16:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d2945a6o75"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Match/MyMatches.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GwynplK4gZere+eDA9mh5TyxvLNy0WVc0plB7frjjSo="
         }
       ]
     },
@@ -14566,6 +14587,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-RZsnLMiwTNpuqg+o4YX6fdT/jxFTfWcwauv0BCKMA1s="
+        }
+      ]
+    },
+    {
+      "Route": "images/df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.5ufdrr75z8.png",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1473386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bYjwKTGUjswHns6VSgACNwsS3q30QRN9+DixypeZCZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 10:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ufdrr75z8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bYjwKTGUjswHns6VSgACNwsS3q30QRN9+DixypeZCZQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1473386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bYjwKTGUjswHns6VSgACNwsS3q30QRN9+DixypeZCZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 10:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bYjwKTGUjswHns6VSgACNwsS3q30QRN9+DixypeZCZQ="
         }
       ]
     },

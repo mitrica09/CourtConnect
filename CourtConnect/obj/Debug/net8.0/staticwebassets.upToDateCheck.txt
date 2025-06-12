@@ -123,6 +123,7 @@ wwwroot\images\c7871be9-697c-492c-a256-ff1157841383_fs.webp
 wwwroot\images\ce61ce1e-6863-4935-adc2-25877f1235be_WhatsApp Image 2025-05-30 at 18.45.20 (1).jpeg
 wwwroot\images\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg
 wwwroot\images\dde32cb4-8562-4333-9e15-ec39c24f06b0_WhatsApp Image 2025-05-30 at 18.45.20.jpeg
+wwwroot\images\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png
 wwwroot\images\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp
 wwwroot\images\e837a52a-120d-4d01-ae76-e0695b3c2ff9_dog.jpg
 wwwroot\images\ea2a8e87-bab7-44a0-8fae-544ede48ab92_fs.webp

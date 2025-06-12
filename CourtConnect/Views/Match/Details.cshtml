@@ -29,7 +29,7 @@
                 <p><strong>Status:</strong> @Model.Status</p>
                 <p><strong>Rezultat:</strong> @(string.IsNullOrEmpty(Model.ResultDescription) ? "Meci neinceput" : Model.ResultDescription)</p>
 
-                <a href="@Url.Action("Index", "Match")" class="btn-back">Înapoi la meciuri</a>
+                <a href="@Url.Action("MyMatches", "Match")" class="btn-back">Înapoi la meciuri</a>
 
                 @if (!Model.HasScores)
                 {

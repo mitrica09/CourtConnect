@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using CourtConnect.Service.Ranking;
 using CourtConnect.Repository.Ranking;
 using System.Security.Claims;
+using System.Globalization;
 
 namespace CourtConnect.Repository.Match
 {
@@ -273,21 +274,21 @@ namespace CourtConnect.Repository.Match
                 var opponentId = isHost ? announce.GuestUserId : announce.UserId;
                 var opponent = await _userManager.FindByIdAsync(opponentId);
 
-                // determinarea rezultatului afișat
+
                 string rezultatFinal = "-";
-                if (result != null)
+                if (match.StatusId == 1) 
+                {
+                    rezultatFinal = "În așteptare";
+                }
+                else if (match.StatusId == 5 && result != null)
                 {
                     if (result.Name == opponent?.FullName)
-                    {
                         rezultatFinal = "Lose";
-                    }
                     else
-                    {
                         rezultatFinal = "Win";
-                    }
                 }
 
-                var matchVm = new MyMatchesViewModel
+                matchViewModels.Add(new MyMatchesViewModel
                 {
                     MatchId = match.Id,
                     AnnounceId = announce.Id,
@@ -296,13 +297,16 @@ namespace CourtConnect.Repository.Match
                     Status = status?.Name ?? "-",
                     Result = rezultatFinal,
                     IsConfirmed = announce.ConfirmHost && announce.ConfirmGuest
-                };
-
-                matchViewModels.Add(matchVm);
+                });
             }
 
-            return matchViewModels;
+            return matchViewModels
+                .OrderByDescending(m => DateTime.ParseExact(m.MatchDate, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture))
+                .ToList();
+
+
         }
+
 
 
     }

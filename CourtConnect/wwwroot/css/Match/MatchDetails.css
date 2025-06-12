@@ -58,7 +58,7 @@
 
 .btn-back {
     margin-top: 10px;
-    background-color: #2f54eb;
+    background-color: #00b894;
     color: white;
     padding: 8px 20px;
     border-radius: 8px;
@@ -68,8 +68,12 @@
     transition: background-color 0.3s ease;
 }
 
-    .btn-back:hover {
-        background-color: #1d39c4;
+    .btn-back:hover,
+    .btn-back:focus,
+    .btn-back:active {
+        background-color: #019875;
+        color: white !important;
+        text-decoration: none;
     }
 
 .player-img {

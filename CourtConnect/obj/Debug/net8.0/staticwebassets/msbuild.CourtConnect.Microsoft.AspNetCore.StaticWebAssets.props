@@ -1812,8 +1812,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>yvawqzyb5c</Fingerprint>
-      <Integrity>4looNbeRoPL9UxAxrsltWDDG+eP/0HgFE6ERQPeCeQ8=</Integrity>
+      <Fingerprint>u0unlv5wn4</Fingerprint>
+      <Integrity>vlhPBjg3NKZ/ti5FjxRjmf/nrdF1DYUZPrP+UHvBZAM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Match\MatchDetails.css'))</OriginalItemSpec>
@@ -1830,8 +1830,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7xxslmuw4n</Fingerprint>
-      <Integrity>u8fEpamusNMtFn+zPrS8TIbOnaEoEf++AsNslFoW0Z4=</Integrity>
+      <Fingerprint>d2945a6o75</Fingerprint>
+      <Integrity>GwynplK4gZere+eDA9mh5TyxvLNy0WVc0plB7frjjSo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Match\MyMatches.css'))</OriginalItemSpec>
@@ -2267,6 +2267,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dde32cb4-8562-4333-9e15-ec39c24f06b0_WhatsApp Image 2025-05-30 at 18.45.20.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourtConnect</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourtConnect</BasePath>
+      <RelativePath>images/df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5ufdrr75z8</Fingerprint>
+      <Integrity>bYjwKTGUjswHns6VSgACNwsS3q30QRN9+DixypeZCZQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\df576bc7-e3ba-4dbc-bf01-d06802ffbff8_ChatGPT Image Mar 27, 2025, 01_37_16 PM.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp'))">
       <SourceType>Package</SourceType>

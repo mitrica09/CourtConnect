@@ -270,7 +270,10 @@ namespace CourtConnect.Repository.Announce
                 });
             }
 
-            return announceDetailsViewModels;
+            return announceDetailsViewModels
+                .OrderByDescending(a => DateTime.Parse(a.StartDate))
+                .ToList();
+
         }
 
         public async Task<int?> CreateMatch(int announceId)
