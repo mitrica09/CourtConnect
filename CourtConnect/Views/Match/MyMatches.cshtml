@@ -1,0 +1,51 @@
+﻿@model List<CourtConnect.ViewModel.Match.MyMatchesViewModel>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/match/mymatches.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<h2 class="page-title">Meciurile Mele</h2>
+
+@if (!Model.Any())
+{
+    <p class="no-matches">Nu ai meciuri înregistrate.</p>
+}
+else
+{
+    <div class="match-table-wrapper">
+        <table class="match-table">
+            <thead>
+                <tr>
+                    <th>Adversar</th>
+                    <th>Data meci</th>
+                    <th>Status</th>
+                    <th>Rezultat</th>
+                    <th>Acțiuni</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var match in Model)
+                {
+                    <tr class="@(match.IsConfirmed ? "confirmed-row" : "pending-row")">
+                        <td>@match.OpponentName</td>
+                        <td>@match.MatchDate</td>
+                        <td>
+                            <span class="status-badge @(match.Status == "Terminat" ? "confirmed" : "pending")">
+                                @match.Status
+                            </span>
+                        </td>
+                        <td>
+                            <span class="@(match.Result == "Win" ? "win-result" : match.Result == "Lose" ? "lose-result" : "neutral-result")">
+                                @match.Result
+                            </span>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary" href="/Match/Details?announceId=@match.AnnounceId&matchId=@match.MatchId">Vezi</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

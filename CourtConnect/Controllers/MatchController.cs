@@ -25,7 +25,7 @@ namespace CourtConnect.Controllers
                 return NotFound();
             }
 
-            return View(match); // trimitem ViewModel-ul către pagina Details.cshtml
+            return View(match);
         }
 
         [HttpGet]
@@ -86,10 +86,10 @@ namespace CourtConnect.Controllers
             return View(model);
         }
 
-
-
-
-
-
+        public async Task<IActionResult> MyMatches()
+        {
+            var matches = await _matchService.GetMyMatches();
+            return View(matches);
+        }
     }
 }

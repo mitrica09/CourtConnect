@@ -405,6 +405,10 @@
       "PackagePath": "staticwebassets\\css\\Match\\MatchDetails.css"
     },
     {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Match\\MyMatches.css",
+      "PackagePath": "staticwebassets\\css\\Match\\MyMatches.css"
+    },
+    {
       "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Ranking\\Ranking.css",
       "PackagePath": "staticwebassets\\css\\Ranking\\Ranking.css"
     },
@@ -489,8 +493,16 @@
       "PackagePath": "staticwebassets\\images\\c7871be9-697c-492c-a256-ff1157841383_fs.webp"
     },
     {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\ce61ce1e-6863-4935-adc2-25877f1235be_WhatsApp Image 2025-05-30 at 18.45.20 (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\ce61ce1e-6863-4935-adc2-25877f1235be_WhatsApp Image 2025-05-30 at 18.45.20 (1).jpeg"
+    },
+    {
       "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg",
       "PackagePath": "staticwebassets\\images\\d05e7527-3bdf-4e9b-854a-4545da520c9f_d73b666157bdaa14bb29c06a8702e21a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\dde32cb4-8562-4333-9e15-ec39c24f06b0_WhatsApp Image 2025-05-30 at 18.45.20.jpeg",
+      "PackagePath": "staticwebassets\\images\\dde32cb4-8562-4333-9e15-ec39c24f06b0_WhatsApp Image 2025-05-30 at 18.45.20.jpeg"
     },
     {
       "Id": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\images\\e6aa53f3-7c53-4366-a0c4-ac384f099050_fs.webp",

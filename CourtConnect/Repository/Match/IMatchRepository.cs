@@ -16,9 +16,6 @@ namespace CourtConnect.Repository.Match
         public Task<bool> SetScoreAlreadyExists(int matchId, int setId);
         public Task<Models.Match> GetMatchById(int matchId);
         public Task<bool> DeclareWinner(int matchId);
-
-
-
-
+        public Task<List<MyMatchesViewModel>> GetMyMatches();
     }
 }

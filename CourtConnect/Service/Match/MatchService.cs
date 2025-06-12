@@ -58,5 +58,10 @@ namespace CourtConnect.Service.Match
         {
             return await _matchRepository.DeclareWinner(matchId);
         }
+
+        public async Task<List<MyMatchesViewModel>> GetMyMatches()
+        {
+            return await _matchRepository.GetMyMatches();
+        }
     }
 }

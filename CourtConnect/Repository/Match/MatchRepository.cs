@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using CourtConnect.Service.Ranking;
 using CourtConnect.Repository.Ranking;
+using System.Security.Claims;
 
 namespace CourtConnect.Repository.Match
 {
@@ -48,7 +49,6 @@ namespace CourtConnect.Repository.Match
             var hostRank = _db.Rankings.FirstOrDefault(r => r.UserId == hostUser.Id)?.Points ?? 0;
             var guestRank = _db.Rankings.FirstOrDefault(r => r.UserId == guestUser.Id)?.Points ?? 0;
 
-            // 3. Ia match-ul real (status, rezultat)
             var match = await _db.Matches.FindAsync(matchId);
             match.Status = await _db.Statuses.FindAsync(match.StatusId);
             match.Result = match.ResultId != null
@@ -185,43 +185,34 @@ namespace CourtConnect.Repository.Match
 
         public async Task<bool> DeclareWinner(int matchId)
         {
-            // Obținem seturile asociate cu acest meci
             var sets = await _db.SetsResult
                 .Where(s => s.MatchId == matchId)
                 .ToListAsync();
 
-            // Grupăm seturile pe utilizator și numărăm câte seturi a câștigat fiecare
             var userWins = sets
                 .GroupBy(s => s.UserId)
                 .ToDictionary(g => g.Key, g => g.Count());
 
-            // Căutăm câștigătorul pe baza numărului de seturi câștigate
             var winnerUserId = userWins.OrderByDescending(g => g.Value).FirstOrDefault().Key;
 
-            // Obținem utilizatorii care au participat la meci folosind tabela UserMatches
             var allPlayers = await _db.UserMatches
                 .Where(um => um.MatchId == matchId)
                 .Select(um => um.UserId)
                 .ToListAsync();
 
-            // Verificăm cine este pierzătorul
             var loserUserId = allPlayers.FirstOrDefault(u => u != winnerUserId);
 
-            // Verificăm dacă loserUserId este valid
             if (loserUserId == null)
             {
                 throw new Exception("User not found for the loser.");
             }
 
-            // Obținem punctele actuale pentru câștigător și pierzător
             int winnerPoints = await _rankingService.GetPointsByUserId(winnerUserId);
             int loserPoints = await _rankingService.GetPointsByUserId(loserUserId);
 
-            // Actualizăm punctele
             await _rankingService.UpdatePoints(winnerUserId, winnerPoints + 50);
             await _rankingService.UpdatePoints(loserUserId, loserPoints - 50);
 
-            // Determinăm numele câștigătorului
             var winnerUser = await _db.Users.FindAsync(winnerUserId);
             var winnerName = winnerUser?.FullName ?? "Necunoscut";
 
@@ -243,11 +234,76 @@ namespace CourtConnect.Repository.Match
             if (match != null)
             {
                 match.ResultId = result.Id;
-                match.StatusId = 5; // Finalizat
+                match.StatusId = 5;
                 await _db.SaveChangesAsync();
             }
 
             return true;
         }
+
+        public async Task<List<MyMatchesViewModel>> GetMyMatches()
+        {
+            var user = _httpContextAccessor.HttpContext?.User;
+            string userId = user?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                return new List<MyMatchesViewModel>();
+
+            var userMatches = await _db.UserMatches
+                .Where(um => um.UserId == userId)
+                .AsNoTracking()
+                .ToListAsync();
+
+            var matchViewModels = new List<MyMatchesViewModel>();
+
+            foreach (var userMatch in userMatches)
+            {
+                var match = await _db.Matches.FindAsync(userMatch.MatchId);
+                if (match == null)
+                    continue;
+
+                var announce = await _db.Announces.FindAsync(match.AnnounceId);
+                if (announce == null)
+                    continue;
+
+                var status = await _db.Statuses.FindAsync(match.StatusId);
+                var result = match.ResultId != 0 ? await _db.Results.FindAsync(match.ResultId) : null;
+
+                var isHost = announce.UserId == userId;
+                var opponentId = isHost ? announce.GuestUserId : announce.UserId;
+                var opponent = await _userManager.FindByIdAsync(opponentId);
+
+                // determinarea rezultatului afișat
+                string rezultatFinal = "-";
+                if (result != null)
+                {
+                    if (result.Name == opponent?.FullName)
+                    {
+                        rezultatFinal = "Lose";
+                    }
+                    else
+                    {
+                        rezultatFinal = "Win";
+                    }
+                }
+
+                var matchVm = new MyMatchesViewModel
+                {
+                    MatchId = match.Id,
+                    AnnounceId = announce.Id,
+                    OpponentName = opponent?.FullName ?? "-",
+                    MatchDate = announce.StartDate.ToString("dd/MM/yyyy HH:mm"),
+                    Status = status?.Name ?? "-",
+                    Result = rezultatFinal,
+                    IsConfirmed = announce.ConfirmHost && announce.ConfirmGuest
+                };
+
+                matchViewModels.Add(matchVm);
+            }
+
+            return matchViewModels;
+        }
+
+
     }
 }

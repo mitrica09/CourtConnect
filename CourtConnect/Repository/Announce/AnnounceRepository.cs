@@ -67,7 +67,6 @@ namespace CourtConnect.Repository.Announce
             return true;
         }
 
-
         public async Task<bool> RejectGuest(int announceId, string userId)
         {
             var announce = await _db.Announces.FindAsync(announceId);
@@ -155,9 +154,6 @@ namespace CourtConnect.Repository.Announce
 
             return announceForDisplayViewModels;
         }
-
-
-
 
         public async Task<AnnounceDetailsViewModel> GetAnnounceDetails(int announceId, string userId)
         {
@@ -289,7 +285,7 @@ namespace CourtConnect.Repository.Announce
                 {
                     var match = new Models.Match
                     {
-                        StatusId = 1, // presupunem că 1 = Match Confirmed
+                        StatusId = 1,
                         ResultId = 1,
                         AnnounceId = announceId,
                         UserMatches = new List<UserMatch>
@@ -301,7 +297,6 @@ namespace CourtConnect.Repository.Announce
 
                     _db.Matches.Add(match);
 
-                    // Schimbăm și statusul anunțului dacă e nevoie (ex: 2 = „match creat”)
                     announce.AnnounceStatusId = 2;
                     _db.Announces.Update(announce);
 
