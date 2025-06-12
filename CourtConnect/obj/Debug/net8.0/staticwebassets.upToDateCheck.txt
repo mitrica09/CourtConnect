@@ -86,6 +86,7 @@ wwwroot\account-bg.jpd_files\vendors-node_modules_react-reverse-portal_dist_web_
 wwwroot\account-bg.jpd_files\vendors-node_modules_remark-gfm_lib_index_js-node_modules_remark-parse_lib_index_js-node_modu-44d0fc-295763c7af92.js.download
 wwwroot\account-bg.jpd_files\vendors-node_modules_tanstack_query-core_build_modern_queryObserver_js-node_modules_tanstack_-defd52-843b41414e0e.js.download
 wwwroot\account-bg.jpd_files\wp-runtime-0344c4588f5c.js.download
+wwwroot\css\AccessDenied.css
 wwwroot\css\Account\account.css
 wwwroot\css\Account\Profile.css
 wwwroot\css\Admin\admin.css

@@ -105,5 +105,11 @@ namespace CourtConnect.Controllers
             ProfileViewModel profileViewModel = await _userService.GetMyProfile(userId);
             return View(profileViewModel);
         }
+
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }

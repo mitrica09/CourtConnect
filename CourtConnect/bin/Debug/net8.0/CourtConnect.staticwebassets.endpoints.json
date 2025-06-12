@@ -7301,6 +7301,88 @@
       ]
     },
     {
+      "Route": "css/AccessDenied.7s5sqstips.css",
+      "AssetFile": "css/AccessDenied.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:20:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7s5sqstips"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo="
+        },
+        {
+          "Name": "label",
+          "Value": "css/AccessDenied.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/AccessDenied.css",
+      "AssetFile": "css/AccessDenied.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:20:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo="
+        }
+      ]
+    },
+    {
       "Route": "css/Account/Profile.css",
       "AssetFile": "css/Account/Profile.css",
       "Selectors": [],

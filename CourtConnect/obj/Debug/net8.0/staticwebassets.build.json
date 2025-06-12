@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "urkLrWGb5FCtGb5jJ58W2fWD1Gma2mi9yWXWNQATpZ0=",
+  "Hash": "JcbUyZT2jeKAOCqK59ZzS1DcvMzUe+K0NF/5WPrePLQ=",
   "Source": "CourtConnect",
   "BasePath": "_content/CourtConnect",
   "Mode": "Default",
@@ -1905,6 +1905,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\account-bg.jpd_files\\wp-runtime-0344c4588f5c.js.download"
+    },
+    {
+      "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\AccessDenied.css",
+      "SourceId": "CourtConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\",
+      "BasePath": "_content/CourtConnect",
+      "RelativePath": "css/AccessDenied#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7s5sqstips",
+      "Integrity": "uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AccessDenied.css"
     },
     {
       "Identity": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\Account\\account.css",
@@ -11553,6 +11574,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-H2tsX+RlfgeQPp+LEsQnkycpVMk/leMEgQBUiYG8BRI="
+        }
+      ]
+    },
+    {
+      "Route": "css/AccessDenied.7s5sqstips.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\AccessDenied.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:20:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7s5sqstips"
+        },
+        {
+          "Name": "label",
+          "Value": "css/AccessDenied.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo="
+        }
+      ]
+    },
+    {
+      "Route": "css/AccessDenied.css",
+      "AssetFile": "C:\\Users\\alexm\\Desktop\\Facultate\\An4Sem1\\LICENTA\\CourtConnect\\CourtConnect\\wwwroot\\css\\AccessDenied.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 18:20:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uVkJjnG4+5+2zyMbvPhQBsJ9b1rk/EvjHInknY8rclo="
         }
       ]
     },
